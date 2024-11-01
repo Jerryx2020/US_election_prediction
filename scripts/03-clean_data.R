@@ -1,44 +1,38 @@
 #### Preamble ####
-# Purpose: Cleans the raw plane data recorded by two observers..... [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 6 April 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
-# License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
+# Purpose: To read and clean data on 2024 U.S. presidential election polling 
+#          from the FiveThirtyEight poll aggregation at 
+#          https://projects.fivethirtyeight.com/polls/president-general/2024/national/.
+# Author: Peter Fan, Jerry Xia, Jason Yang
+# Date: 01 November 2024
+# Contact: 
+# License: None
+# - Ensure the 'tidyverse' and 'janitor' packages are installed for data manipulation.
+# - Data should be downloaded and saved in the local project directory in a 'data/01-raw_data' folder.
 
 #### Workspace setup ####
 library(tidyverse)
 
 #### Clean data ####
-raw_data <- read_csv("inputs/data/plane_data.csv")
 
-cleaned_data <-
-  raw_data |>
-  janitor::clean_names() |>
-  select(wing_width_mm, wing_length_mm, flying_time_sec_first_timer) |>
-  filter(wing_width_mm != "caw") |>
-  mutate(
-    flying_time_sec_first_timer = if_else(flying_time_sec_first_timer == "1,35",
-                                   "1.35",
-                                   flying_time_sec_first_timer)
-  ) |>
-  mutate(wing_width_mm = if_else(wing_width_mm == "490",
-                                 "49",
-                                 wing_width_mm)) |>
-  mutate(wing_width_mm = if_else(wing_width_mm == "6",
-                                 "60",
-                                 wing_width_mm)) |>
-  mutate(
-    wing_width_mm = as.numeric(wing_width_mm),
-    wing_length_mm = as.numeric(wing_length_mm),
-    flying_time_sec_first_timer = as.numeric(flying_time_sec_first_timer)
-  ) |>
-  rename(flying_time = flying_time_sec_first_timer,
-         width = wing_width_mm,
-         length = wing_length_mm
-         ) |> 
-  tidyr::drop_na()
+raw_data <- read_csv("data/01-raw_data/president_polls.csv") |>
+  clean_names()
 
-#### Save data ####
-write_csv(cleaned_data, "outputs/data/analysis_data.csv")
+Analysis_data <- raw_data |> filter(numeric_grade >= 3.0) %>% 
+  select(candidate_name,pollster,sample_size,end_date,numeric_grade,methodology,state,pct,pollscore
+         ) %>%
+  mutate(
+    end_date = mdy(end_date),
+    state = if_else(is.na(state), "National", state)
+  )
+
+
+just_harris_high_quality <- Analysis_data |>
+  filter(
+    candidate_name == "Kamala Harris",
+    end_date >= as.Date("2024-07-21"))  |> 
+  mutate(
+    num_harris = round((pct / 100) * sample_size, 0) 
+  )
+
+write_csv(Analysis_data, "data/02-analysis_data/Analysis_data.csv")
+write_csv(just_harris_high_quality, "data/02-analysis_data/just_harris_high_quality.csv")
