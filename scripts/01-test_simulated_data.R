@@ -13,7 +13,7 @@
 #### Workspace setup ####
 library(tidyverse)
 
-analysis_data <- read_csv("data/00-simulated_data/simulated_data.csv")
+simulated_data <- read_csv("data/00-simulated_data/simulated_data.csv")
 
 # Test if the data was successfully loaded
 if (exists("analysis_data")) {
@@ -79,3 +79,4 @@ if (all(stimulated_votes$total_votes >= 0)) {
 } else {
   stop("Test Failed: 'total_votes' contains negative values.")
 }
+

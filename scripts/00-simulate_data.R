@@ -23,11 +23,11 @@ pollsters <- Analysis_data %>% distinct(pollster) %>% pull(pollster)
 
 # Generate simulated data
 simulated_data <- tibble(
-  poll_id = 1:n_polls,
+  poll_id = as.integer(1:n_polls),
   candidate = sample(candidates, n_polls, replace = TRUE),
   state = sample(states, n_polls, replace = TRUE),
   pollster = sample(pollsters, n_polls, replace = TRUE),
-  sample_size = sample(500:1000, n_polls, replace = TRUE),  # Random sample sizes between 500 and 3000
+  sample_size = as.integer(sample(500:1000, n_polls, replace = TRUE)),  # Random sample sizes between 500 and 3000
   pct = round(runif(n_polls, 40, 60), 1)  # Random polling percentage between 40% and 60%
 )
 
@@ -39,3 +39,4 @@ stimulated_votes <- Analysis_data %>%
   ungroup()                                             # Remove grouping for a clean data frame
 
 write_csv(simulated_data, "data/00-simulated_data/simulated_data.csv")
+
