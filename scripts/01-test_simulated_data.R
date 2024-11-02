@@ -7,13 +7,13 @@
 # Pre-requisites:
 # - Ensure that 'tidyverse' is installed for data manipulation.
 # - The 'Analysis_data' dataset should be loaded with valid pollster data.
-# - This script will output a CSV file of the simulated data in the "data/00-simulated_data" directory.
+# - This script will output a CSV file of the simulated data in the "data/00-test_data" directory.
 # - Run this script after generating simulated data to validate its integrity and consistency.
 
 #### Workspace setup ####
 library(tidyverse)
 
-simulated_data <- read_csv("data/00-simulated_data/simulated_data.csv")
+test_data <- read_csv("data/00-simulated_data/simulated_data.csv")
 
 # Test if the data was successfully loaded
 if (exists("analysis_data")) {
@@ -26,7 +26,7 @@ if (exists("analysis_data")) {
 #### Test data ####
 
 # Check if the dataset has 100 rows
-if (nrow(analysis_data) == 100) {
+if (nrow(test_data) == 100) {
   message("Test Passed: The dataset has 100 rows.")
 } else {
   stop("Test Failed: The dataset does not have 100 rows.")
@@ -34,40 +34,40 @@ if (nrow(analysis_data) == 100) {
 
 # Check if the dataset has all the columns
 expected_columns <- c("poll_id", "candidate", "state", "pollster", "sample_size", "pct")
-if (all(expected_columns %in% colnames(simulated_data))) {
+if (all(expected_columns %in% colnames(test_data))) {
   message("Test Passed: The dataset has all the columns.")
 } else {
   stop("Test Failed: The dataset does not have 3 columns.")
 }
 
 # Test if data types are correct
-if (is.integer(simulated_data$poll_id) &&
-    is.character(simulated_data$candidate) &&
-    is.character(simulated_data$state) &&
-    is.character(simulated_data$pollster) &&
-    is.integer(simulated_data$sample_size) &&
-    is.numeric(simulated_data$pct)) {
-  message("Test Passed: Data types are correct for 'simulated_data'.")
+if (is.numeric(test_data$poll_id) &&
+    is.character(test_data$candidate) &&
+    is.character(test_data$state) &&
+    is.character(test_data$pollster) &&
+    is.numeric(test_data$sample_size) &&
+    is.numeric(test_data$pct)) {
+  message("Test Passed: Data types are correct for 'test_data'.")
 } else {
-  stop("Test Failed: One or more columns in 'simulated_data' have incorrect data types.")
+  stop("Test Failed: One or more columns in 'test_data' have incorrect data types.")
 }
 
 # Test if candidate only contains "Donald Trump" and "Kamala Harris"
-if (all(simulated_data$candidate %in% c("Donald Trump", "Kamala Harris"))) {
+if (all(test_data$candidate %in% c("Donald Trump", "Kamala Harris"))) {
   message("Test Passed: 'candidate' only contains 'Donald Trump' and 'Kamala Harris'.")
 } else {
   stop("Test Failed: 'candidate' contains values other than 'Donald Trump' and 'Kamala Harris'.")
 }
 
 # Test if state contains only valid U.S. state names
-if (all(simulated_data$state %in% state.name)) {
+if (all(test_data$state %in% state.name)) {
   message("Test Passed: 'state' only contains valid U.S. state names.")
 } else {
   stop("Test Failed: 'state' contains invalid U.S. state names.")
 }
 
 # Test if pct is within the range 40 to 60
-if (all(simulated_data$pct >= 40 & simulated_data$pct <= 60)) {
+if (all(test_data$pct >= 40 & test_data$pct <= 60)) {
   message("Test Passed: 'pct' values are within the range 40 to 60.")
 } else {
   stop("Test Failed: 'pct' values are outside the range 40 to 60.")

@@ -26,6 +26,11 @@ Analysis_data <- raw_data |>
   ) %>%
   filter(candidate_name %in% c("Donald Trump", "Kamala Harris"))
 
+Analysis_data <- Analysis_data %>%
+  mutate(state = case_when(
+    state == "Nebraska CD-2" ~ "Nebraska",
+    TRUE ~ state  # Keeps all other values as they are
+  ))
 
 just_harris_high_quality <- Analysis_data |>
   filter(
@@ -37,3 +42,4 @@ just_harris_high_quality <- Analysis_data |>
 
 write_csv(Analysis_data, "data/02-analysis_data/Analysis_data.csv")
 write_csv(just_harris_high_quality, "data/02-analysis_data/just_harris_high_quality.csv")
+
