@@ -7,11 +7,12 @@ library(broom)
 library(modelsummary)
 library(rstanarm)
 library(splines)
+library(here)
 
 
 #### Prepare dataset ####
 # Read in the data and clean variable names
-data <- read_csv("president_polls (3).csv") |>
+data <- read_csv("data/01-raw_data/president_polls.csv") |>
   clean_names()
 
 # Filter data to Harris estimates based on high-quality polls after she declared
@@ -226,3 +227,4 @@ ggplot(just_harris_high_quality, aes(x = end_date_num, y = pct, color = pollster
   theme_minimal()
 
 # Obviously this is just quick and dirty code but I hope it helps you with getting started. 
+

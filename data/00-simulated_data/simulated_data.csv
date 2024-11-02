@@ -1,152 +1,101 @@
-division,state,party
-Division 1,Victoria,Liberal
-Division 2,New South Wales,Liberal
-Division 3,Tasmania,Liberal
-Division 4,New South Wales,Liberal
-Division 5,Queensland,Liberal
-Division 6,New South Wales,Labor
-Division 7,Victoria,Liberal
-Division 8,Western Australia,Labor
-Division 9,Western Australia,Greens
-Division 10,Queensland,Labor
-Division 11,Queensland,Labor
-Division 12,Northern Territory,Liberal
-Division 13,New South Wales,Labor
-Division 14,Western Australia,Labor
-Division 15,Western Australia,National
-Division 16,Victoria,Liberal
-Division 17,South Australia,Liberal
-Division 18,Victoria,Liberal
-Division 19,Western Australia,Labor
-Division 20,South Australia,Labor
-Division 21,New South Wales,Liberal
-Division 22,Queensland,Greens
-Division 23,New South Wales,Liberal
-Division 24,New South Wales,Liberal
-Division 25,Queensland,Labor
-Division 26,Victoria,National
-Division 27,New South Wales,Liberal
-Division 28,Queensland,Liberal
-Division 29,Tasmania,Liberal
-Division 30,South Australia,Liberal
-Division 31,New South Wales,Liberal
-Division 32,Victoria,Labor
-Division 33,Tasmania,Liberal
-Division 34,New South Wales,Liberal
-Division 35,Western Australia,Labor
-Division 36,New South Wales,Liberal
-Division 37,Tasmania,Greens
-Division 38,Tasmania,Labor
-Division 39,Victoria,Greens
-Division 40,South Australia,Labor
-Division 41,New South Wales,Other
-Division 42,New South Wales,Other
-Division 43,Tasmania,Labor
-Division 44,Tasmania,National
-Division 45,Queensland,Liberal
-Division 46,Australian Capital Territory,Other
-Division 47,Queensland,Labor
-Division 48,Queensland,Other
-Division 49,South Australia,Liberal
-Division 50,Victoria,National
-Division 51,South Australia,Liberal
-Division 52,Victoria,Labor
-Division 53,South Australia,National
-Division 54,Queensland,Liberal
-Division 55,Queensland,Labor
-Division 56,South Australia,Liberal
-Division 57,New South Wales,Other
-Division 58,Northern Territory,Liberal
-Division 59,New South Wales,Labor
-Division 60,Western Australia,Labor
-Division 61,New South Wales,Liberal
-Division 62,South Australia,Liberal
-Division 63,Queensland,Labor
-Division 64,Tasmania,Labor
-Division 65,South Australia,Labor
-Division 66,Victoria,Labor
-Division 67,Queensland,Liberal
-Division 68,Queensland,Liberal
-Division 69,Tasmania,Labor
-Division 70,South Australia,National
-Division 71,Australian Capital Territory,Labor
-Division 72,Western Australia,Labor
-Division 73,Queensland,National
-Division 74,Victoria,Labor
-Division 75,Western Australia,Labor
-Division 76,Tasmania,Labor
-Division 77,Queensland,Liberal
-Division 78,Western Australia,Liberal
-Division 79,Queensland,Labor
-Division 80,Queensland,Liberal
-Division 81,Victoria,Labor
-Division 82,New South Wales,Liberal
-Division 83,Victoria,Liberal
-Division 84,Queensland,National
-Division 85,Western Australia,Liberal
-Division 86,New South Wales,Labor
-Division 87,Queensland,Liberal
-Division 88,New South Wales,Liberal
-Division 89,Tasmania,Liberal
-Division 90,South Australia,Labor
-Division 91,Victoria,Liberal
-Division 92,New South Wales,Labor
-Division 93,Tasmania,Labor
-Division 94,South Australia,Labor
-Division 95,Victoria,Liberal
-Division 96,Victoria,Labor
-Division 97,Western Australia,Liberal
-Division 98,Queensland,Liberal
-Division 99,South Australia,Liberal
-Division 100,New South Wales,Labor
-Division 101,South Australia,Labor
-Division 102,New South Wales,Labor
-Division 103,Victoria,Labor
-Division 104,Victoria,Labor
-Division 105,South Australia,Other
-Division 106,Western Australia,Labor
-Division 107,Tasmania,Liberal
-Division 108,Victoria,Labor
-Division 109,Queensland,Liberal
-Division 110,Victoria,Labor
-Division 111,Australian Capital Territory,Labor
-Division 112,Victoria,Liberal
-Division 113,Victoria,Liberal
-Division 114,Victoria,Liberal
-Division 115,Tasmania,Labor
-Division 116,Victoria,Labor
-Division 117,New South Wales,Labor
-Division 118,Victoria,Labor
-Division 119,Victoria,Greens
-Division 120,Northern Territory,Labor
-Division 121,South Australia,Liberal
-Division 122,New South Wales,Liberal
-Division 123,New South Wales,Labor
-Division 124,New South Wales,Liberal
-Division 125,New South Wales,National
-Division 126,New South Wales,Labor
-Division 127,Queensland,Labor
-Division 128,New South Wales,Other
-Division 129,Queensland,Labor
-Division 130,Australian Capital Territory,Liberal
-Division 131,Tasmania,Greens
-Division 132,New South Wales,National
-Division 133,New South Wales,Labor
-Division 134,Northern Territory,Labor
-Division 135,South Australia,National
-Division 136,Victoria,Labor
-Division 137,Tasmania,National
-Division 138,South Australia,Liberal
-Division 139,New South Wales,Labor
-Division 140,Victoria,Other
-Division 141,Queensland,Greens
-Division 142,Victoria,National
-Division 143,Western Australia,Labor
-Division 144,Victoria,Labor
-Division 145,Queensland,Liberal
-Division 146,Tasmania,Liberal
-Division 147,South Australia,Liberal
-Division 148,Victoria,Labor
-Division 149,New South Wales,National
-Division 150,New South Wales,Labor
-Division 151,Victoria,Liberal
+poll_id,candidate,state,pollster,sample_size,pct
+1,Kamala Harris,Hawaii,Marquette Law School,598,42.1
+2,Kamala Harris,Louisiana,Marquette Law School,848,49.6
+3,Kamala Harris,New York,Siena/NYT,680,51.7
+4,Donald Trump,South Dakota,YouGov/Center for Working Class Politics,778,43.2
+5,Donald Trump,Oklahoma,McCourtney Institute/YouGov,999,57.1
+6,Kamala Harris,Oklahoma,YouGov/Center for Working Class Politics,802,56.1
+7,Kamala Harris,Idaho,YouGov,516,41.3
+8,Donald Trump,Washington,McCourtney Institute/YouGov,607,55.5
+9,Donald Trump,Nevada,The Washington Post,572,57.1
+10,Kamala Harris,Illinois,ABC/Washington Post,769,59.2
+11,Donald Trump,Arizona,Siena/NYT,720,50.5
+12,Kamala Harris,Maine,YouGov,668,55.9
+13,Donald Trump,Oregon,McCourtney Institute/YouGov,570,58.7
+14,Donald Trump,Washington,Marquette Law School,537,48.3
+15,Donald Trump,Maryland,ABC/Washington Post,815,51.4
+16,Donald Trump,Washington,YouGov Blue,845,54.3
+17,Kamala Harris,Arizona,YouGov,818,49.9
+18,Donald Trump,Kentucky,YouGov/Center for Working Class Politics,675,46.4
+19,Kamala Harris,Utah,Siena/NYT,766,49.1
+20,Kamala Harris,Ohio,YouGov/Center for Working Class Politics,995,58.4
+21,Donald Trump,North Dakota,The Washington Post,850,51.9
+22,Kamala Harris,Hawaii,YouGov/Center for Working Class Politics,656,54.9
+23,Donald Trump,Nebraska,YouGov/Center for Working Class Politics,510,47.9
+24,Kamala Harris,Louisiana,ABC/Washington Post,689,47.6
+25,Kamala Harris,Mississippi,The Washington Post,536,55.6
+26,Kamala Harris,California,Siena/NYT,788,48.9
+27,Donald Trump,Colorado,YouGov Blue,829,56
+28,Kamala Harris,Nebraska,Siena/NYT,564,41.1
+29,Donald Trump,Virginia,The Washington Post,613,53.5
+30,Kamala Harris,South Dakota,YouGov,795,42.2
+31,Kamala Harris,Pennsylvania,Marquette Law School,852,51.2
+32,Donald Trump,California,ABC/Washington Post,710,51.6
+33,Donald Trump,Virginia,YouGov Blue,540,41.1
+34,Kamala Harris,Alabama,ABC/Washington Post,761,57.2
+35,Kamala Harris,Missouri,YouGov/Center for Working Class Politics,645,51
+36,Kamala Harris,New Jersey,Siena/NYT,715,43.8
+37,Donald Trump,Oklahoma,McCourtney Institute/YouGov,611,42.5
+38,Kamala Harris,Missouri,McCourtney Institute/YouGov,751,48.1
+39,Kamala Harris,Louisiana,YouGov Blue,850,44.6
+40,Donald Trump,Colorado,The Washington Post,726,55.8
+41,Kamala Harris,Georgia,ABC/Washington Post,885,54.8
+42,Kamala Harris,Texas,YouGov,663,45.3
+43,Kamala Harris,New Hampshire,ABC/Washington Post,802,41
+44,Kamala Harris,New Mexico,The Washington Post,945,54.5
+45,Kamala Harris,North Dakota,The Washington Post,864,42.8
+46,Kamala Harris,Arizona,Siena/NYT,670,49.5
+47,Kamala Harris,Illinois,Marquette Law School,862,45.4
+48,Kamala Harris,Utah,YouGov/Center for Working Class Politics,683,47.2
+49,Kamala Harris,Florida,YouGov,848,47.9
+50,Kamala Harris,New Mexico,Siena/NYT,963,50.3
+51,Donald Trump,Indiana,YouGov Blue,770,51.5
+52,Kamala Harris,Alaska,McCourtney Institute/YouGov,652,58.3
+53,Donald Trump,California,McCourtney Institute/YouGov,928,54.2
+54,Donald Trump,Delaware,YouGov/Center for Working Class Politics,866,45.6
+55,Kamala Harris,Hawaii,Siena/NYT,649,54.9
+56,Kamala Harris,Massachusetts,McCourtney Institute/YouGov,872,46.7
+57,Kamala Harris,Idaho,YouGov,542,41.7
+58,Kamala Harris,Maryland,YouGov/Center for Working Class Politics,780,42.7
+59,Donald Trump,Arizona,YouGov Blue,985,56.7
+60,Donald Trump,Washington,YouGov Blue,890,45.6
+61,Donald Trump,Tennessee,The Washington Post,505,46.3
+62,Kamala Harris,Georgia,YouGov Blue,618,41.9
+63,Donald Trump,New York,The Washington Post,939,52.2
+64,Donald Trump,Virginia,YouGov,720,49.7
+65,Donald Trump,Louisiana,YouGov,838,49.9
+66,Kamala Harris,New Mexico,The Washington Post,926,52.4
+67,Kamala Harris,North Carolina,ABC/Washington Post,974,46
+68,Kamala Harris,Oklahoma,ABC/Washington Post,725,52.4
+69,Kamala Harris,Oregon,YouGov Blue,688,56.2
+70,Kamala Harris,Tennessee,ABC/Washington Post,850,46.9
+71,Donald Trump,Michigan,ABC/Washington Post,518,44.2
+72,Kamala Harris,Oklahoma,YouGov,841,55.5
+73,Donald Trump,New Jersey,YouGov,688,59.1
+74,Donald Trump,Arkansas,YouGov,503,45.7
+75,Kamala Harris,Illinois,YouGov Blue,619,41.6
+76,Donald Trump,Oklahoma,YouGov,961,53.2
+77,Kamala Harris,Kansas,Marquette Law School,554,46.2
+78,Kamala Harris,New Jersey,Marquette Law School,732,52.6
+79,Donald Trump,Kansas,ABC/Washington Post,993,52.1
+80,Kamala Harris,Missouri,McCourtney Institute/YouGov,723,57.5
+81,Kamala Harris,Oklahoma,YouGov,787,40.7
+82,Kamala Harris,South Dakota,YouGov/Center for Working Class Politics,592,55.4
+83,Donald Trump,West Virginia,YouGov/Center for Working Class Politics,851,58.7
+84,Kamala Harris,Vermont,YouGov,618,45.1
+85,Donald Trump,Kentucky,YouGov/Center for Working Class Politics,911,47.9
+86,Donald Trump,Iowa,Siena/NYT,889,48.2
+87,Kamala Harris,New Mexico,McCourtney Institute/YouGov,970,53
+88,Kamala Harris,New Hampshire,ABC/Washington Post,606,44.7
+89,Donald Trump,Virginia,McCourtney Institute/YouGov,925,44.8
+90,Donald Trump,New Hampshire,McCourtney Institute/YouGov,858,49.3
+91,Kamala Harris,Idaho,YouGov Blue,634,41.5
+92,Kamala Harris,Montana,YouGov Blue,773,54.8
+93,Kamala Harris,Nevada,ABC/Washington Post,952,53
+94,Donald Trump,Mississippi,YouGov Blue,828,50
+95,Kamala Harris,Virginia,YouGov,949,56.9
+96,Donald Trump,Arizona,Marquette Law School,852,48.5
+97,Kamala Harris,New Hampshire,The Washington Post,596,45.2
+98,Donald Trump,New Hampshire,McCourtney Institute/YouGov,977,56.9
+99,Kamala Harris,Hawaii,The Washington Post,620,46.5
+100,Donald Trump,Virginia,ABC/Washington Post,590,41.5

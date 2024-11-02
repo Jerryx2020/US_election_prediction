@@ -17,13 +17,14 @@ library(tidyverse)
 raw_data <- read_csv("data/01-raw_data/president_polls.csv") |>
   clean_names()
 
-Analysis_data <- raw_data |> filter(numeric_grade >= 3.0) %>% 
-  select(candidate_name,pollster,sample_size,end_date,numeric_grade,methodology,state,pct,pollscore
-         ) %>%
+Analysis_data <- raw_data |> 
+  filter(numeric_grade >= 3.0) %>% 
+  select(candidate_name, pollster, sample_size, end_date, numeric_grade, methodology, state, pct, pollscore) %>%
   mutate(
     end_date = mdy(end_date),
     state = if_else(is.na(state), "National", state)
-  )
+  ) %>%
+  filter(candidate_name %in% c("Donald Trump", "Kamala Harris"))
 
 
 just_harris_high_quality <- Analysis_data |>

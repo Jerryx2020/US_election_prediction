@@ -1,52 +1,41 @@
 #### Preamble ####
-# Purpose: Simulates a dataset of Australian electoral divisions, including the 
-  #state and party that won each division.
-# Author: Rohan Alexander
-# Date: 26 September 2024
-# Contact: rohan.alexander@utoronto.ca
-# License: MIT
-# Pre-requisites: The `tidyverse` package must be installed
-# Any other information needed? Make sure you are in the `starter_folder` rproj
-
+# Purpose: To simulate plausible polling data for Kamala Harris's performance in the 
+#          2024 U.S. presidential election.
+# Authors: Peter Fan, Jerry Xia, Jason Yang
+# Date: 01 November 2024
+# Contact: 
+# License: None
+# Pre-requisites:
+# - Ensure the 'tidyverse' and 'here' packages are installed for data manipulation 
+#   and file path management.
 
 #### Workspace setup ####
 library(tidyverse)
-set.seed(853)
+library(here)
+set.seed(666)
 
 
 #### Simulate data ####
-# State names
-states <- c(
-  "New South Wales",
-  "Victoria",
-  "Queensland",
-  "South Australia",
-  "Western Australia",
-  "Tasmania",
-  "Northern Territory",
-  "Australian Capital Territory"
+states <- state.name
+n_polls <- 100  # Number of polls to simulate
+candidates <- c("Donald Trump", "Kamala Harris")
+pollsters <- Analysis_data %>% distinct(pollster) %>% pull(pollster)
+
+# Generate simulated data
+simulated_data <- tibble(
+  poll_id = 1:n_polls,
+  candidate = sample(candidates, n_polls, replace = TRUE),
+  state = sample(states, n_polls, replace = TRUE),
+  pollster = sample(pollsters, n_polls, replace = TRUE),
+  sample_size = sample(500:1000, n_polls, replace = TRUE),  # Random sample sizes between 500 and 3000
+  pct = round(runif(n_polls, 40, 60), 1)  # Random polling percentage between 40% and 60%
 )
 
-# Political parties
-parties <- c("Labor", "Liberal", "Greens", "National", "Other")
+# Adjust polling percentages to ensure that each candidate has plausible values
+stimulated_votes <- Analysis_data %>%
+  mutate(votes = round((pct / 100) * sample_size)) %>%  # Calculate number of votes per poll
+  group_by(candidate_name, state) %>%                   # Group by candidate and state
+  summarize(total_votes = sum(votes, na.rm = TRUE)) %>% # Sum votes within each group
+  ungroup()                                             # Remove grouping for a clean data frame
 
-# Create a dataset by randomly assigning states and parties to divisions
-analysis_data <- tibble(
-  division = paste("Division", 1:151),  # Add "Division" to make it a character
-  state = sample(
-    states,
-    size = 151,
-    replace = TRUE,
-    prob = c(0.25, 0.25, 0.15, 0.1, 0.1, 0.1, 0.025, 0.025) # Rough state population distribution
-  ),
-  party = sample(
-    parties,
-    size = 151,
-    replace = TRUE,
-    prob = c(0.40, 0.40, 0.05, 0.1, 0.05) # Rough party distribution
-  )
-)
-
-
-#### Save data ####
-write_csv(analysis_data, "data/00-simulated_data/simulated_data.csv")
+write_csv(simulated_data, "data/00-simulated_data/simulated_data.csv")
