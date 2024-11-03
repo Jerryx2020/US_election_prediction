@@ -1,13 +1,12 @@
 ---
 title: "Forecasting the 2024 U.S. Presidential Election"
-subtitle: "My subtitle if needed"
 author: 
   - Jason Yang
   - Another author
 thanks: "Code and data are available at: [https://github.com/Jerryx2020/US_election_prediction/tree/main]."
 date: "`r format(Sys.Date() - 1, '%A, %B %d, %Y')`" #chatgpt assisted how to create a custom date for due date November 4
 date-format: long
-abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+abstract: "This paper presents a multiple linear regression model and a bayesian model for forecasting the outcome of the 2024 U.S. Presidential Election. Using the data collected from high-quality polls from various pollsters, we generate these models by selecting relevant variables such as sample size, percentage support for each candidate, and sate. By comparing the predictive power of both models, we aim to provide a reliable forecast of the election outcome and a deeper understanding of public sentiment and polling reliability."
 format: pdf
 number-sections: true
 bibliography: references.bib
@@ -160,7 +159,8 @@ The survey will be implemented on Google Forms, with a link provided in the appe
 
 ## Idealized Survey 
 
-The proposed survey is designed using Google Forms,https://docs.google.com/forms/d/e/1FAIpQLSeHHeKaryNQ6sKgbuOH-ZgXwQYkNw9jBdxIbgeXWVj_t1ob2w/viewform?usp=sf_link
+The proposed survey is designed using Google Forms,
+https://docs.google.com/forms/d/e/1FAIpQLSeHHeKaryNQ6sKgbuOH-ZgXwQYkNw9jBdxIbgeXWVj_t1ob2w/viewform?usp=sf_link
 
 
 ## Survey Copy 
