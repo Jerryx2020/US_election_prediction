@@ -77,16 +77,14 @@ The multiple linear regression model is designed to predict the candidate's perc
 &\quad + \sum_{k=1}^{K} \delta_k \cdot \text{state}_{ik} + \beta_4 \cdot \text{end\_date}_i + \epsilon_i,
 \end{align*}
 
-\begin{align} 
-y_i|\mu_i, \sigma &\sim \mbox{Normal}(\mu_i, \sigma) \\
-\mu_i &= \alpha + \beta_i + \gamma_i\\
-\alpha &\sim \mbox{Normal}(0, 2.5) \\
-\beta &\sim \mbox{Normal}(0, 2.5) \\
-\gamma &\sim \mbox{Normal}(0, 2.5) \\
-\sigma &\sim \mbox{Exponential}(1)
-\end{align}
+- pct: The percentage of the vote or support that the candidate received in the poll (e.g., 51.0 for Kamala Harris, 48.0 for Donald Trump).
+- numeric_grade: A numeric rating given to the pollster to indicate their quality or reliability (e.g., 3.0).
+- sample_size: The total number of respondents participating in the poll (e.g., 2712).
+- transparency_score:A score reflecting the pollster’s transparency about their methodology (e.g., 9.0). "A grade for how transparent a pollster is, calculated based on how much information it discloses about its polls and weighted by recency. The highest Transparency Score is 10."
+- state: The U.S. state where the poll was conducted or focused, if applicable.
+- end_date: The date the poll ended (e.g., 10/11/24).
+- $\epsilon_i$: The error term for poll accounting for variability not explained by the predictors.
 
-We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
 
 
 ### Model justification
