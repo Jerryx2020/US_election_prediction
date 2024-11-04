@@ -1,20 +1,40 @@
 #### Preamble ####
-# Purpose: To analyze the results of the linear model for Kamala Harris's polling performance in the 2024 U.S. presidential election.
+# Purpose: To build and analyze a linear model for Kamala Harris's polling performance in the 2024 U.S. presidential election.
 # Authors: Peter Fan, Jerry Xia, Jason Yang
 # Date: 04 November 2024
 # Contact: 
 # License: None
 # Pre-requisites: 
 # - Ensure the necessary packages ('tidyverse', 'broom', 'modelsummary') are installed for data manipulation and model analysis.
-# - The linear model must be available in 'models/linear_model.rds'.
+# - The cleaned data must be available in 'data/02-analysis_data/analysis_data.csv'.
 
 #### Workspace setup ####
 library(tidyverse)
 library(broom)
 library(modelsummary)
 
-#### Read model ####
-linear_model <- readRDS("models/linear_model.rds")
+#### Read data ####
+# Load cleaned dataset for Kamala Harris's polling performance
+analysis_data <- read_csv("data/02-analysis_data/analysis_data.csv")
+
+# Filter data for Kamala Harris
+just_harris_high_quality <- analysis_data %>%
+  filter(candidate_name == "Kamala Harris") %>%
+  mutate(
+    pollster = as.factor(pollster),
+    state = as.factor(state),
+    sample_size = as.numeric(sample_size),
+    end_date = as.Date(end_date)
+  )
+
+#### Build Linear Model ####
+linear_model <- lm(
+  pct ~ sample_size + state + end_date, 
+  data = just_harris_high_quality
+)
+
+#### Save Model ####
+saveRDS(linear_model, "models/linear_model.rds")
 
 #### Model Analysis ####
 # Get a tidy summary of the linear model
