@@ -1,51 +1,45 @@
 #### Preamble ####
-# Purpose: Models... [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 11 February 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
-# License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
-
+# Purpose: To analyze the results of the linear model for Kamala Harris's polling performance in the 2024 U.S. presidential election.
+# Authors: Peter Fan, Jerry Xia, Jason Yang
+# Date: 04 November 2024
+# Contact: 
+# License: None
+# Pre-requisites: 
+# - Ensure the necessary packages ('tidyverse', 'broom', 'modelsummary') are installed for data manipulation and model analysis.
+# - The linear model must be available in 'models/linear_model.rds'.
 
 #### Workspace setup ####
 library(tidyverse)
-library(janitor)
-library(lubridate)
 library(broom)
 library(modelsummary)
-library(rstanarm)
-library(splines)
-library(here)
 
-#### Read data ####
-data <- read_csv("data/02-analysis_data/analysis_data.csv")
+#### Read model ####
+linear_model <- readRDS("models/linear_model.rds")
 
-just_harris_high_quality <- read.csv("data/02-analysis_data/just_harris_high_quality.csv")
+#### Model Analysis ####
+# Get a tidy summary of the linear model
+model_summary <- tidy(linear_model)
 
-just_harris_high_quality <- just_harris_high_quality %>%
-  mutate(
-    pollster = as.factor(pollster),
-    state = as.factor(state),
-    methodology = factor(methodology),
-    numeric_grade = as.numeric(numeric_grade),
-    transparency_score = as.numeric(transparency_score),
-    sample_size = as.numeric(sample_size),
-    end_date = as.Date(end_date),
-    start_date = as.Date(start_date)
-  )
+# Print model summary to console
+print(model_summary)
 
+# Save model summary as CSV
+write_csv(model_summary, "data/05-model_results/linear_model_summary.csv")
 
-linear_model <- lm(
-  pct ~ pollscore + numeric_grade + sample_size + state + end_date, 
-  data = just_harris_high_quality
-)
+# Create a visual summary of the model coefficients
+plot_model <- ggplot(model_summary, aes(x = term, y = estimate)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = estimate - std.error, ymax = estimate + std.error), width = 0.2) +
+  coord_flip() +
+  labs(
+    title = "Linear Model Coefficients for Kamala Harris Polling Performance",
+    x = "Predictor",
+    y = "Estimate"
+  ) +
+  theme_minimal()
 
+# Save plot
+ggsave("figures/linear_model_coefficients.png", plot_model, width = 10, height = 8)
 
-#### Save Key Results ####
-
-write_csv(just_harris_high_quality, "data/02-analysis_data/just_harris_high_quality.csv")
-saveRDS(linear_model, "models/linear_model.rds")
-
-
-
+# Create a summary table for the model
+modelsummary(linear_model, output = "data/05-model_results/linear_model_summary.html")
