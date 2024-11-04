@@ -205,6 +205,21 @@ https://docs.google.com/forms/d/e/1FAIpQLSeHHeKaryNQ6sKgbuOH-ZgXwQYkNw9jBdxIbgeX
   - Donald Trump 
   - Other: 
 
+# Pollster Analysis
+
+The Marquette Law School Poll employs a rigorous methodology to survey adults in the US on national issues, incorporating probability-based sampling that combines Address-Based Sampling (ABS) and Stratified Random Sampling. This approach, including online and offline respondents, ensures broad representativeness. The SSRS Polling Panel supports participant recruitment, and weighting adjustments enhance result accuracy.
+
+## What is the population, frame, and sample?
+
+## How is the sample recruited?
+
+## What sampling approach is taken, and what are some of the trade-offs of this?
+
+## How is non-response handled?
+
+## What is good and bad about the questionnaire?
+
+
 
 
 \newpage
