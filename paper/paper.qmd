@@ -30,6 +30,8 @@ library(janitor)
 library(knitr)
 library(flextable)
 library(arrow)
+
+#Reads the data and store it into analysis_data 
 analysis_data <- read_parquet(here("data/02-analysis_data/analysis_data.parquet"))
 ```
 
@@ -73,6 +75,9 @@ To ensure data quality, a filtering process was applied to remove polls conducte
 The raw data was subjected to multiple cleaning steps to prepare it for analysis. First, duplicate entries were removed, and column names were standardized for consistency. Key variables, such as candidate name, pollster, sample size, and poll end date, were retained, while irrelevant or redundant information was discarded. Additionally, the state variable was adjusted to aggregate specific districts—such as Nebraska CD-2 and Maine CD-1—into their respective states to facilitate streamlined geographic analysis. This transformation is essential for creating a consistent dataset that aligns with the electoral college framework discussed in Section 6.
 
 ```{r visualize-sample-size}
+#| warning: false
+#| message: false
+#| echo: false
 # Ensure 'analysis_data' is already loaded at this point
 ggplot(analysis_data, aes(x = sample_size)) +
   geom_histogram(binwidth = 100, fill = "skyblue", color = "black") +
@@ -100,6 +105,9 @@ The key variables retained for analysis include:
 - **Percentage Support (pct)**: The percentage of respondents supporting each candidate, which serves as the primary measure of voter preference.
 
 ```{r}
+#| warning: false
+#| message: false
+#| echo: false
 # Visualization: Candidate Support by State
 filtered_data <- analysis_data %>% filter(state != "National")
 ggplot(filtered_data, aes(x = state, y = pct, fill = candidate_name)) +
@@ -109,6 +117,7 @@ ggplot(filtered_data, aes(x = state, y = pct, fill = candidate_name)) +
        y = "Percentage Support") +
   theme(axis.text.x = element_text(angle = 90, hjust = 1), 
         legend.position = "top")
+
 ```
 
 Figure 2.2 displays the percentage support for each candidate across different states. This visualization helps identify regional strengths and weaknesses for both candidates, providing a more granular view of voter sentiment.
@@ -206,9 +215,19 @@ In the Residuals vs. Fitted, there is no clear curved pattern, which suggests th
 
 ## Results 
 
-
 # Discussion
 
+## Purpose 
+
+This paper analyzes and predicts the 2024 U.S. presidential election by fitting a regression model based on polling data downloaded from FiveThirtyEight (@fivethirtyeight). Our analysis focuses on the leading candidates, examining key variables such as the pollster, the date the poll was conducted, sample size, and the percentage of respondents supporting each candidate. 
+
+Additionally, this analysis aimed to estimate the 2024 U.S. presidential election electoral college outcome by propagating uncertainty through polling data. Using Monte Carlo simulations, we captured the variability in candidate support across states and produced a distribution of possible electoral outcomes. This integration enabled us to estimate electoral votes for each candidate by state, taking into account each state's unique polling landscape. 
+
+## Limitations 
+
+While Monte Carlo simulations provide a robust framework for propagating uncertainty, the reliability of our estimates is reliant upon the accuracy and representatives of polling data. 
+
+As our estimates are contingent upon the accuracy and representativeness of polling data, we cannot guarantee absolute precision in our projections. Nate Silver (2024) highlights a particular challenge in polling known as "herding," where polling organizations may unintentionally align their results to avoid being statistical outliers (@NYMagHerding2024).This alignment can distort the true range of our estimates. Since our projections suggest that Trump would win, it’s important to address the role of standard deviations in our estimates and consider the possibility that Harris’s support may be underestimated, similar to how Trump’s support was in 2020 (@FTArticle2024). The idea of Harris being underestimated, much like Trump was in 2020, hinges on the possibility that polling errors or biases could be systematically missing certain groups of voters who support her. In 2020, Trump’s support was underestimated in some key swing states due to factors such as nonresponse bias, where Trump-leaning voters were less likely to participate in polls, and demographic weighting errors. 
 
 
 
