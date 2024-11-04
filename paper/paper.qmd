@@ -215,6 +215,8 @@ The population for the poll includes adults aged 18 and over across all 50 state
 
 ## How is the sample recruited?
 
+Participants were recruited via the SSRS Omnibus Panel, a probability panel formed from ABS and telephone survey data. This dual approach ensured that both Internet and non-Internet users were included, minimizing online-only bias. Stratified by demographics (age, gender, race, education, region, and partisan affiliation), this process produced a balanced representation across groups. Selected participants received an email invitation with a unique link to the survey. Non-responders received up to two reminder emails, and those who opted for text notifications also received reminders. Participants received an e-gift card incentive upon survey completion.
+
 ## What sampling approach is taken, and what are some of the trade-offs of this?
 
 ## How is non-response handled?
