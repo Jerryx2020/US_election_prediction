@@ -60,6 +60,3 @@ plot_model <- ggplot(model_summary, aes(x = term, y = estimate)) +
 
 # Save plot
 ggsave("figures/linear_model_coefficients.png", plot_model, width = 10, height = 8)
-
-# Save model summary as a text file for easier inclusion in reports
-write.table(model_summary, file = "data/05-model_results/linear_model_summary.txt", sep = "\t", row.names = FALSE, quote = FALSE)
