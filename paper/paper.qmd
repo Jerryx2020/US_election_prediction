@@ -223,6 +223,8 @@ The Marquette Law School Poll combines ABS and stratified random sampling. The A
 
 ## How is non-response handled?
 
+To address non-response and improve representativeness, SSRS applies weighting adjustments based on demographic variables such as age, gender, race, education, region, and Internet use. This process aligns sample characteristics with adult population parameters, reducing bias from demographic differences in response rates.
+
 ## What is good and bad about the questionnaire?
 
 
