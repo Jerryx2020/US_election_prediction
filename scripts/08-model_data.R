@@ -5,13 +5,13 @@
 # Contact: 
 # License: None
 # Pre-requisites: 
-# - Ensure the necessary packages ('tidyverse', 'broom', 'modelsummary') are installed for data manipulation and model analysis.
+# - Ensure the necessary packages ('tidyverse', 'broom') are installed for data manipulation and model analysis.
 # - The cleaned data must be available in 'data/02-analysis_data/analysis_data.parquet'.
 
 #### Workspace setup ####
 library(tidyverse)
 library(broom)
-library(modelsummary)
+library(arrow)
 
 #### Read data ####
 # Load cleaned dataset for Kamala Harris's polling performance
@@ -61,5 +61,5 @@ plot_model <- ggplot(model_summary, aes(x = term, y = estimate)) +
 # Save plot
 ggsave("figures/linear_model_coefficients.png", plot_model, width = 10, height = 8)
 
-# Create a summary table for the model
-modelsummary(linear_model, output = "data/05-model_results/linear_model_summary.html")
+# Save model summary as a text file for easier inclusion in reports
+write.table(model_summary, file = "data/05-model_results/linear_model_summary.txt", sep = "\t", row.names = FALSE, quote = FALSE)
