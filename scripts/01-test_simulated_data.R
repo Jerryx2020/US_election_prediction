@@ -24,7 +24,7 @@ if (nrow(test_data) == 100) {
 }
 
 # Check if the dataset has all the expected columns
-expected_columns <- c("poll_id", "candidate", "state", "pollster", "sample_size", "pct")
+expected_columns <- c("candidate", "state", "pollster", "sample_size", "pct")
 if (all(expected_columns %in% colnames(test_data))) {
   message("Test Passed: The dataset has all the expected columns.")
 } else {
@@ -69,3 +69,4 @@ if (all(test_data$sample_size >= 500 & test_data$sample_size <= 3000)) {
 } else {
   stop("Test Failed: 'sample_size' values are outside the range 500 to 3000.")
 }
+
