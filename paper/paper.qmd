@@ -1,11 +1,12 @@
 ---
-title: "Forecasting the 2024 U.S. Presidential Election"
+title: "Forecasting the 2024 U.S. Presidential Election: Polling Trends and Dynamics Based on National General Election Polls"
+subtitle: "Trump Consistently Leads in National Polls, with Harris Showing Sporadic Gains in Certain Polling Periods"
 author: 
   - Jason Yang
   - Jerry Xia 
   - Peter Fan
-thanks: "Code and data are available at: [https://github.com/Jerryx2020/US_election_prediction/tree/main]."
-date: "`r format(Sys.Date() - 1, '%A, %B %d, %Y')`" #chatgpt assisted how to create a custom date for due date November 4
+thanks: "Code and data are available at: <https://github.com/Jerryx2020/US_election_prediction/tree/main>."
+date: today
 date-format: long
 abstract: ""
 format: pdf
