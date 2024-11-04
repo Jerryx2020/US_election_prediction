@@ -1,0 +1,750 @@
+candidate_name,pollster,sample_size,end_date,numeric_grade,methodology,state,pct,pollscore,transparency_score,start_date,num_harris
+Kamala Harris,PPP,571,2024-10-17,1.4,IVR/Text,Washington,55,0,4,2024-10-16,314
+Kamala Harris,PPP,716,2024-10-17,1.4,IVR/Text,Oregon,53,0,4,2024-10-16,379
+Kamala Harris,RMG Research,788,2024-10-17,2.3,Online Panel,Florida,47,-0.4,5,2024-10-14,370
+Kamala Harris,YouGov,1435,2024-10-16,3,Online Panel,Arizona,48,-1.1,9,2024-10-11,689
+Kamala Harris,RMG Research,787,2024-10-16,2.3,Online Panel,Wisconsin,49,-0.4,5,2024-10-10,386
+Kamala Harris,RMG Research,789,2024-10-16,2.3,Online Panel,Michigan,49,-0.4,5,2024-10-10,387
+Kamala Harris,Morning Consult,653,2024-10-15,1.9,Online Panel,Arizona,49,-0.3,3,2024-10-06,320
+Kamala Harris,Morning Consult,1002,2024-10-15,1.9,Online Panel,Georgia,48,-0.3,3,2024-10-06,481
+Kamala Harris,Morning Consult,490,2024-10-15,1.9,Online Panel,Maryland,64,-0.3,3,2024-10-06,314
+Kamala Harris,Morning Consult,1065,2024-10-15,1.9,Online Panel,Michigan,49,-0.3,3,2024-10-06,522
+Kamala Harris,Morning Consult,496,2024-10-15,1.9,Online Panel,Nevada,49,-0.3,3,2024-10-06,243
+Kamala Harris,Morning Consult,1072,2024-10-15,1.9,Online Panel,North Carolina,48,-0.3,3,2024-10-06,515
+Kamala Harris,Morning Consult,1243,2024-10-15,1.9,Online Panel,Ohio,45,-0.3,3,2024-10-06,559
+Kamala Harris,Morning Consult,1395,2024-10-15,1.9,Online Panel,Pennsylvania,49,-0.3,3,2024-10-06,684
+Kamala Harris,Morning Consult,2048,2024-10-15,1.9,Online Panel,Texas,46,-0.3,3,2024-10-06,942
+Kamala Harris,Morning Consult,527,2024-10-15,1.9,Online Panel,Wisconsin,47,-0.3,3,2024-10-06,248
+Kamala Harris,Patriot Polling,803,2024-10-14,1.1,IVR,Wisconsin,49,0.6,5,2024-10-12,393
+Kamala Harris,Emerson,1000,2024-10-14,2.9,IVR/Online Panel,California,61,-1.1,7,2024-10-12,610
+Kamala Harris,Redfield & Wilton Strategies,620,2024-10-14,1.8,Online Panel,North Carolina,46,0.4,9,2024-10-12,285
+Kamala Harris,Redfield & Wilton Strategies,1141,2024-10-14,1.8,Online Panel,Arizona,46,0.4,9,2024-10-12,525
+Kamala Harris,Redfield & Wilton Strategies,1009,2024-10-14,1.8,Online Panel,Florida,44,0.4,9,2024-10-12,444
+Kamala Harris,Redfield & Wilton Strategies,637,2024-10-14,1.8,Online Panel,Georgia,47,0.4,9,2024-10-12,299
+Kamala Harris,Redfield & Wilton Strategies,682,2024-10-14,1.8,Online Panel,Michigan,47,0.4,9,2024-10-12,321
+Kamala Harris,Redfield & Wilton Strategies,544,2024-10-14,1.8,Online Panel,Minnesota,51,0.4,9,2024-10-12,277
+Kamala Harris,Redfield & Wilton Strategies,838,2024-10-14,1.8,Online Panel,Nevada,47,0.4,9,2024-10-12,394
+Kamala Harris,Redfield & Wilton Strategies,382,2024-10-14,1.8,Online Panel,New Mexico,49,0.4,9,2024-10-12,187
+Kamala Harris,Redfield & Wilton Strategies,1649,2024-10-14,1.8,Online Panel,Pennsylvania,48,0.4,9,2024-10-12,792
+Kamala Harris,Redfield & Wilton Strategies,641,2024-10-14,1.8,Online Panel,Wisconsin,48,0.4,9,2024-10-12,308
+Kamala Harris,Cygnal,600,2024-10-14,2.1,Live Phone/Text-to-Web,North Carolina,46.6,-1.1,4,2024-10-12,280
+Kamala Harris,Quinnipiac,1328,2024-10-14,2.8,Live Phone,Georgia,45,-0.5,9,2024-10-10,598
+Kamala Harris,Quinnipiac,1328,2024-10-14,2.8,Live Phone,Georgia,46,-0.5,9,2024-10-10,611
+Kamala Harris,Quinnipiac,1031,2024-10-14,2.8,Live Phone,North Carolina,49,-0.5,9,2024-10-10,505
+Kamala Harris,Quinnipiac,1031,2024-10-14,2.8,Live Phone,North Carolina,50,-0.5,9,2024-10-10,516
+Kamala Harris,SurveyUSA,703,2024-10-14,2.8,Online Panel,Washington,57,-1.3,8,2024-10-09,401
+Kamala Harris,East Carolina University,701,2024-10-14,2.6,IVR/Text-to-Web,Georgia,45.8,-0.5,7,2024-10-09,321
+Kamala Harris,Elway,401,2024-10-12,1.9,Live Phone/Text-to-Web,Washington,57,-0.2,6,2024-10-08,229
+Kamala Harris,MRG (Marketing Resource Group),600,2024-10-11,1.8,Live Phone,Michigan,44.9,0.1,6,2024-10-07,269
+Kamala Harris,Siena/NYT,857,2024-10-10,3,Live Phone,Pennsylvania,50,-1.5,9,2024-10-07,428
+Kamala Harris,Siena/NYT,857,2024-10-10,3,Live Phone,Pennsylvania,49,-1.5,9,2024-10-07,420
+Kamala Harris,Siena/NYT,857,2024-10-10,3,Live Phone,Pennsylvania,50,-1.5,9,2024-10-07,428
+Kamala Harris,Siena/NYT,857,2024-10-10,3,Live Phone,Pennsylvania,49,-1.5,9,2024-10-07,420
+Kamala Harris,Siena/NYT,808,2024-10-10,3,Live Phone,Arizona,46,-1.5,9,2024-10-07,372
+Kamala Harris,Siena/NYT,808,2024-10-10,3,Live Phone,Arizona,45,-1.5,9,2024-10-07,364
+Kamala Harris,Siena/NYT,808,2024-10-10,3,Live Phone,Arizona,45,-1.5,9,2024-10-07,364
+Kamala Harris,Siena/NYT,808,2024-10-10,3,Live Phone,Arizona,44,-1.5,9,2024-10-07,356
+Kamala Harris,RMG Research,731,2024-10-10,2.3,Online Panel,Georgia,47,-0.4,5,2024-10-07,344
+Kamala Harris,UMass Amherst/YouGov,700,2024-10-10,2.4,Online Panel,Massachusetts,56,-0.4,7.5,2024-10-03,392
+Kamala Harris,University of Massachusetts Lowell/YouGov,600,2024-10-10,2.9,Online Panel,New Hampshire,50,-1,9,2024-10-02,300
+Kamala Harris,YouGov,1091,2024-10-10,3,Online Panel,Texas,46,-1.1,9,2024-10-02,502
+Kamala Harris,U. Houston,1329,2024-10-10,2.2,Online Panel,Texas,46,-0.3,4,2024-09-26,611
+Kamala Harris,InsiderAdvantage,800,2024-10-09,2,Text,Michigan,46,-0.3,5,2024-10-08,368
+Kamala Harris,InsiderAdvantage,800,2024-10-09,2,Text,Wisconsin,48,-0.3,5,2024-10-08,384
+Kamala Harris,Redfield & Wilton Strategies,608,2024-10-09,1.8,Online Panel,Georgia,47,0.4,9,2024-10-08,286
+Kamala Harris,Redfield & Wilton Strategies,707,2024-10-09,1.8,Online Panel,Pennsylvania,46,0.4,9,2024-10-08,325
+Kamala Harris,Alaska Survey Research,1254,2024-10-09,1.9,Text-to-Web,Alaska,43,-0.1,7,2024-10-08,539
+Kamala Harris,Alaska Survey Research,1254,2024-10-09,1.9,Text-to-Web,Alaska,46,-0.1,7,2024-10-08,577
+Kamala Harris,TIPP,1079,2024-10-09,1.8,Online Panel,Pennsylvania,49.2,-0.4,3,2024-10-07,531
+Kamala Harris,TIPP,803,2024-10-09,1.8,Online Panel,Pennsylvania,47.5,-0.4,3,2024-10-07,381
+Kamala Harris,TIPP,1079,2024-10-09,1.8,Online Panel,Pennsylvania,48.5,-0.4,3,2024-10-07,523
+Kamala Harris,TIPP,803,2024-10-09,1.8,Online Panel,Pennsylvania,48.3,-0.4,3,2024-10-07,388
+Kamala Harris,University of Massachusetts Lowell/YouGov,800,2024-10-09,2.9,Online Panel,Pennsylvania,46,-1,9,2024-10-02,368
+Kamala Harris,InsiderAdvantage,800,2024-10-08,2,Text,Pennsylvania,47,-0.3,5,2024-10-07,376
+Kamala Harris,Emerson,1000,2024-10-08,2.9,IVR/Online Panel/Text-to-Web,Arizona,48.2,-1.1,7,2024-10-05,482
+Kamala Harris,Emerson,1000,2024-10-08,2.9,IVR/Online Panel/Text-to-Web,Georgia,49.8,-1.1,7,2024-10-05,498
+Kamala Harris,Emerson,950,2024-10-08,2.9,IVR/Online Panel/Text-to-Web,Michigan,49.7,-1.1,7,2024-10-05,472
+Kamala Harris,Emerson,900,2024-10-08,2.9,IVR/Online Panel/Text-to-Web,Nevada,49.2,-1.1,7,2024-10-05,443
+Kamala Harris,Emerson,1000,2024-10-08,2.9,IVR/Online Panel/Text-to-Web,North Carolina,49,-1.1,7,2024-10-05,490
+Kamala Harris,Emerson,1000,2024-10-08,2.9,IVR/Online Panel/Text-to-Web,Pennsylvania,49,-1.1,7,2024-10-05,490
+Kamala Harris,Emerson,1000,2024-10-08,2.9,IVR/Online Panel/Text-to-Web,Wisconsin,49.2,-1.1,7,2024-10-05,492
+Kamala Harris,Siena/NYT,656,2024-10-08,3,Live Phone,Montana,39,-1.5,9,2024-10-05,256
+Kamala Harris,Siena/NYT,656,2024-10-08,3,Live Phone,Montana,38,-1.5,9,2024-10-05,249
+Kamala Harris,Siena/NYT,656,2024-10-08,3,Live Phone,Montana,40,-1.5,9,2024-10-05,262
+Kamala Harris,Siena/NYT,656,2024-10-08,3,Live Phone,Montana,39,-1.5,9,2024-10-05,256
+Kamala Harris,J.L. Partners,800,2024-10-08,1.6,Live Phone/Online Panel/Text-to-Web,Pennsylvania,47,0.2,6,2024-10-05,376
+Kamala Harris,Tarrance,818,2024-10-08,1.6,Live Phone/Text-to-Web,Florida,44,-0.4,1,2024-10-05,360
+Kamala Harris,Change Research,895,2024-10-08,1.4,Text-to-Web/Online Ad,Nebraska,38,0.6,5,2024-10-03,340
+Kamala Harris,Fabrizio/Impact,600,2024-10-08,1.7,Live Phone/Text-to-Web,Michigan,46,-0.3,2,2024-10-02,276
+Kamala Harris,Fabrizio/Impact,600,2024-10-08,1.7,Live Phone/Text-to-Web,Michigan,48,-0.3,2,2024-10-02,288
+Kamala Harris,Research Co.,450,2024-10-07,2.4,Online Panel,Michigan,51,-0.5,6,2024-10-05,230
+Kamala Harris,Research Co.,450,2024-10-07,2.4,Online Panel,Pennsylvania,50,-0.5,6,2024-10-05,225
+Kamala Harris,Research Co.,450,2024-10-07,2.4,Online Panel,Wisconsin,50,-0.5,6,2024-10-05,225
+Kamala Harris,Quinnipiac,1007,2024-10-07,2.8,Live Phone,Michigan,47,-0.5,9,2024-10-03,473
+Kamala Harris,Quinnipiac,1007,2024-10-07,2.8,Live Phone,Michigan,47,-0.5,9,2024-10-03,473
+Kamala Harris,Quinnipiac,1412,2024-10-07,2.8,Live Phone,Pennsylvania,49,-0.5,9,2024-10-03,692
+Kamala Harris,Quinnipiac,1412,2024-10-07,2.8,Live Phone,Pennsylvania,49,-0.5,9,2024-10-03,692
+Kamala Harris,Quinnipiac,1073,2024-10-07,2.8,Live Phone,Wisconsin,46,-0.5,9,2024-10-03,494
+Kamala Harris,Quinnipiac,1073,2024-10-07,2.8,Live Phone,Wisconsin,47,-0.5,9,2024-10-03,504
+Kamala Harris,Marist,1257,2024-10-07,2.9,Live Phone/Online Panel/Text-to-Web,Florida,47,-0.9,9,2024-10-03,591
+Kamala Harris,Marist,1410,2024-10-07,2.9,Live Phone/Online Panel/Text-to-Web,Florida,47,-0.9,9,2024-10-03,663
+Kamala Harris,Marist,1365,2024-10-07,2.9,Live Phone/Online Panel/Text-to-Web,Texas,46,-0.9,9,2024-10-03,628
+Kamala Harris,Marist,1186,2024-10-07,2.9,Live Phone/Online Panel/Text-to-Web,Texas,46,-0.9,9,2024-10-03,546
+Kamala Harris,Marist,1511,2024-10-07,2.9,Live Phone/Online Panel/Text-to-Web,Ohio,46,-0.9,9,2024-10-03,695
+Kamala Harris,Marist,1327,2024-10-07,2.9,Live Phone/Online Panel/Text-to-Web,Ohio,46,-0.9,9,2024-10-03,610
+Kamala Harris,The Washington Post,1002,2024-10-07,3,Live Phone/Text-to-Web,Ohio,45,-1.2,9,2024-10-03,451
+Kamala Harris,The Washington Post,1002,2024-10-07,3,Live Phone/Text-to-Web,Ohio,44,-1.2,9,2024-10-03,441
+Kamala Harris,Noble Predictive Insights,539,2024-10-07,2.4,Online Panel/Text-to-Web,Utah,38,-0.4,6,2024-10-02,205
+Kamala Harris,Noble Predictive Insights,539,2024-10-07,2.4,Online Panel/Text-to-Web,Utah,36,-0.4,6,2024-10-02,194
+Kamala Harris,Noble Predictive Insights,600,2024-10-07,2.4,Online Panel/Text-to-Web,Utah,39,-0.4,6,2024-10-02,234
+Kamala Harris,Noble Predictive Insights,600,2024-10-07,2.4,Online Panel/Text-to-Web,Utah,37,-0.4,6,2024-10-02,222
+Kamala Harris,Siena/NYT,622,2024-10-06,3,Live Phone,Florida,41,-1.5,9,2024-09-29,255
+Kamala Harris,Siena/NYT,622,2024-10-06,3,Live Phone,Florida,40,-1.5,9,2024-09-29,249
+Kamala Harris,Siena/NYT,622,2024-10-06,3,Live Phone,Florida,41,-1.5,9,2024-09-29,255
+Kamala Harris,Siena/NYT,622,2024-10-06,3,Live Phone,Florida,40,-1.5,9,2024-09-29,249
+Kamala Harris,Suffolk,500,2024-10-05,2.9,Live Phone,Massachusetts,61.2,-1,8,2024-10-01,306
+Kamala Harris,Glengariff Group Inc.,600,2024-10-04,1.5,Live Phone,Michigan,46.8,-0.2,1,2024-10-01,281
+Kamala Harris,Mason-Dixon,625,2024-10-04,2.6,Live Phone,Florida,43,-1.1,6,2024-10-01,269
+Kamala Harris,Siena/NYT,617,2024-10-04,3,Live Phone,Texas,44,-1.5,9,2024-09-29,271
+Kamala Harris,Siena/NYT,617,2024-10-04,3,Live Phone,Texas,42,-1.5,9,2024-09-29,259
+Kamala Harris,Siena/NYT,617,2024-10-04,3,Live Phone,Texas,44,-1.5,9,2024-09-29,271
+Kamala Harris,Siena/NYT,617,2024-10-04,3,Live Phone,Texas,41,-1.5,9,2024-09-29,253
+Kamala Harris,Christopher Newport U.,800,2024-10-04,2.8,Live Phone,Virginia,52,-0.6,9,2024-09-28,416
+Kamala Harris,RMG Research,782,2024-10-03,2.3,Online Panel,Nevada,49,-0.4,5,2024-09-30,383
+Kamala Harris,St. Anselm,2104,2024-10-02,2.4,Online Panel,New Hampshire,51,-0.5,6,2024-10-01,1073
+Kamala Harris,RMG Research,783,2024-10-02,2.3,Online Panel,Arizona,46,-0.4,5,2024-09-30,360
+Kamala Harris,Redfield & Wilton Strategies,555,2024-10-02,1.8,Online Panel,Arizona,47,0.4,9,2024-09-27,261
+Kamala Harris,Redfield & Wilton Strategies,2946,2024-10-02,1.8,Online Panel,Florida,45,0.4,9,2024-09-27,1326
+Kamala Harris,Redfield & Wilton Strategies,3783,2024-10-02,1.8,Online Panel,Georgia,47,0.4,9,2024-09-27,1778
+Kamala Harris,Redfield & Wilton Strategies,839,2024-10-02,1.8,Online Panel,Michigan,48,0.4,9,2024-09-27,403
+Kamala Harris,Redfield & Wilton Strategies,551,2024-10-02,1.8,Online Panel,Minnesota,51,0.4,9,2024-09-27,281
+Kamala Harris,Redfield & Wilton Strategies,514,2024-10-02,1.8,Online Panel,Nevada,48,0.4,9,2024-09-27,247
+Kamala Harris,Redfield & Wilton Strategies,753,2024-10-02,1.8,Online Panel,North Carolina,45,0.4,9,2024-09-27,339
+Kamala Harris,Redfield & Wilton Strategies,5686,2024-10-02,1.8,Online Panel,Pennsylvania,48,0.4,9,2024-09-27,2729
+Kamala Harris,Redfield & Wilton Strategies,533,2024-10-02,1.8,Online Panel,Wisconsin,47,0.4,9,2024-09-27,251
+Kamala Harris,YouGov/Center for Working Class Politics,1000,2024-10-02,3,Online Panel,Pennsylvania,46.8,-1.1,4.5,2024-09-24,468
+Kamala Harris,OnMessage Inc.,500,2024-10-02,1.1,Live Phone,Arizona,45,0.2,1,2024-09-24,225
+Kamala Harris,OnMessage Inc.,500,2024-10-02,1.1,Live Phone,Georgia,44,0.2,1,2024-09-24,220
+Kamala Harris,OnMessage Inc.,500,2024-10-02,1.1,Live Phone,Michigan,48,0.2,1,2024-09-24,240
+Kamala Harris,OnMessage Inc.,500,2024-10-02,1.1,Live Phone,Nevada,45,0.2,1,2024-09-24,225
+Kamala Harris,OnMessage Inc.,500,2024-10-02,1.1,Live Phone,Pennsylvania,46,0.2,1,2024-09-24,230
+Kamala Harris,OnMessage Inc.,500,2024-10-02,1.1,Live Phone,Wisconsin,46,0.2,1,2024-09-24,230
+Kamala Harris,UC Berkeley,3045,2024-10-01,2.5,Email,California,57,-0.2,9,2024-09-25,1736
+Kamala Harris,Fabrizio/Impact,600,2024-10-01,1.7,Live Phone,Arizona,47,-0.3,2,2024-09-24,282
+Kamala Harris,Fabrizio/Impact,600,2024-10-01,1.7,Live Phone,Arizona,48,-0.3,2,2024-09-24,288
+Kamala Harris,Mitchell,709,2024-09-30,2.4,Text-to-Web,Michigan,48,-0.2,7,2024-09-30,340
+Kamala Harris,Mitchell,709,2024-09-30,2.4,Text-to-Web,Michigan,47,-0.2,7,2024-09-30,333
+Kamala Harris,InsiderAdvantage,800,2024-09-30,2,Text,Arizona,47.7,-0.3,5,2024-09-29,382
+Kamala Harris,InsiderAdvantage,800,2024-09-30,2,Text,Nevada,48.4,-0.3,5,2024-09-29,387
+Kamala Harris,InsiderAdvantage,800,2024-09-30,2,Text,North Carolina,49.3,-0.3,5,2024-09-29,394
+Kamala Harris,InsiderAdvantage,800,2024-09-30,2,Text,Georgia,48.3,-0.3,5,2024-09-29,386
+Kamala Harris,WPAi,500,2024-09-30,1.7,Live Phone,North Dakota,32,-0.1,3,2024-09-28,160
+Kamala Harris,Patriot Polling,816,2024-09-29,1.1,IVR,Pennsylvania,49,0.6,5,2024-09-27,400
+Kamala Harris,Alaska Survey Research,1182,2024-09-29,1.9,Probability Panel,Alaska,43,-0.1,7,2024-09-27,508
+Kamala Harris,HighGround,500,2024-09-29,1.8,Live Phone,Arizona,47.6,-0.3,4.5,2024-09-26,238
+Kamala Harris,The Washington Post,1001,2024-09-29,3,Live Phone/Text-to-Web,North Carolina,48,-1.2,9,2024-09-25,480
+Kamala Harris,The Washington Post,1001,2024-09-29,3,Live Phone/Text-to-Web,North Carolina,47,-1.2,9,2024-09-25,470
+Kamala Harris,Quinnipiac,953,2024-09-29,2.8,Live Phone,North Carolina,47,-0.5,9,2024-09-25,448
+Kamala Harris,Quinnipiac,953,2024-09-29,2.8,Live Phone,North Carolina,48,-0.5,9,2024-09-25,457
+Kamala Harris,Quinnipiac,942,2024-09-29,2.8,Live Phone,Georgia,44,-0.5,9,2024-09-25,414
+Kamala Harris,Quinnipiac,942,2024-09-29,2.8,Live Phone,Georgia,45,-0.5,9,2024-09-25,424
+Kamala Harris,National Research,600,2024-09-29,2,Live Phone/Text-to-Web,Arizona,47,-0.5,1,2024-09-25,282
+Kamala Harris,Winthrop U.,1068,2024-09-29,2.5,Live Phone/Online Panel,South Carolina,42,-0.3,8.5,2024-09-21,449
+Kamala Harris,High Point University,814,2024-09-29,2.5,Online Panel,North Carolina,48,-0.4,8,2024-09-20,391
+Kamala Harris,High Point University,589,2024-09-29,2.5,Online Panel,North Carolina,48,-0.4,8,2024-09-20,283
+Kamala Harris,Emerson,920,2024-09-28,2.9,Online Panel/Text-to-Web,Arizona,47.6,-1.1,7,2024-09-27,438
+Kamala Harris,Emerson,850,2024-09-28,2.9,Online Panel/Text-to-Web,North Carolina,49.1,-1.1,7,2024-09-27,417
+Kamala Harris,Emerson,1000,2024-09-28,2.9,Online Panel/Text-to-Web,Pennsylvania,49.3,-1.1,7,2024-09-27,493
+Kamala Harris,PPP,612,2024-09-28,1.4,IVR/Text,Utah,39,0,4,2024-09-27,239
+Kamala Harris,RMG Research,779,2024-09-27,2.3,Online Panel,Texas,46,-0.4,5,2024-09-25,358
+Kamala Harris,RMG Research,774,2024-09-27,2.3,Online Panel,Florida,48,-0.4,5,2024-09-25,372
+Kamala Harris,RMG Research,780,2024-09-27,2.3,Online Panel,North Carolina,47,-0.4,5,2024-09-25,367
+Kamala Harris,RMG Research,789,2024-09-27,2.3,Online Panel,Michigan,50,-0.4,5,2024-09-24,394
+Kamala Harris,PPP,808,2024-09-26,1.4,IVR/Text,Florida,45,0,4,2024-09-25,364
+Kamala Harris,PPP,808,2024-09-26,1.4,IVR/Text,Florida,46,0,4,2024-09-25,372
+Kamala Harris,PPP,759,2024-09-26,1.4,IVR/Text,Texas,44,0,4,2024-09-25,334
+Kamala Harris,PPP,759,2024-09-26,1.4,IVR/Text,Texas,46,0,4,2024-09-25,349
+Kamala Harris,Siena/NYT,680,2024-09-26,3,Live Phone,Nebraska,51,-1.5,9,2024-09-24,347
+Kamala Harris,Siena/NYT,680,2024-09-26,3,Live Phone,Nebraska,49,-1.5,9,2024-09-24,333
+Kamala Harris,Siena/NYT,680,2024-09-26,3,Live Phone,Nebraska,52,-1.5,9,2024-09-24,354
+Kamala Harris,Siena/NYT,680,2024-09-26,3,Live Phone,Nebraska,51,-1.5,9,2024-09-24,347
+Kamala Harris,SurveyUSA,646,2024-09-26,2.8,Online Panel,Minnesota,50,-1.3,8,2024-09-23,323
+Kamala Harris,East Carolina University,1005,2024-09-26,2.6,IVR/Text-to-Web,North Carolina,47.1,-0.5,7,2024-09-23,473
+Kamala Harris,Siena/NYT,688,2024-09-26,3,Live Phone,Michigan,45,-1.5,9,2024-09-21,310
+Kamala Harris,Siena/NYT,688,2024-09-26,3,Live Phone,Michigan,43,-1.5,9,2024-09-21,296
+Kamala Harris,Siena/NYT,688,2024-09-26,3,Live Phone,Michigan,48,-1.5,9,2024-09-21,330
+Kamala Harris,Siena/NYT,688,2024-09-26,3,Live Phone,Michigan,46,-1.5,9,2024-09-21,316
+Kamala Harris,Siena/NYT,687,2024-09-26,3,Live Phone,Ohio,45,-1.5,9,2024-09-21,309
+Kamala Harris,Siena/NYT,687,2024-09-26,3,Live Phone,Ohio,44,-1.5,9,2024-09-21,302
+Kamala Harris,Siena/NYT,687,2024-09-26,3,Live Phone,Ohio,44,-1.5,9,2024-09-21,302
+Kamala Harris,Siena/NYT,687,2024-09-26,3,Live Phone,Ohio,43,-1.5,9,2024-09-21,295
+Kamala Harris,Siena/NYT,680,2024-09-26,3,Live Phone,Wisconsin,49,-1.5,9,2024-09-21,333
+Kamala Harris,Siena/NYT,680,2024-09-26,3,Live Phone,Wisconsin,48,-1.5,9,2024-09-21,326
+Kamala Harris,Siena/NYT,680,2024-09-26,3,Live Phone,Wisconsin,49,-1.5,9,2024-09-21,333
+Kamala Harris,Siena/NYT,680,2024-09-26,3,Live Phone,Wisconsin,48,-1.5,9,2024-09-21,326
+Kamala Harris,Marquette Law School,882,2024-09-26,3,Probability Panel,Wisconsin,52,-1.1,10,2024-09-18,459
+Kamala Harris,Marquette Law School,798,2024-09-26,3,Probability Panel,Wisconsin,52,-1.1,10,2024-09-18,415
+Kamala Harris,Marquette Law School,882,2024-09-26,3,Probability Panel,Wisconsin,48,-1.1,10,2024-09-18,423
+Kamala Harris,Marquette Law School,798,2024-09-26,3,Probability Panel,Wisconsin,49,-1.1,10,2024-09-18,391
+Kamala Harris,TIPP,1044,2024-09-25,1.8,Online Panel,Nevada,48,-0.4,3,2024-09-23,501
+Kamala Harris,TIPP,736,2024-09-25,1.8,Online Panel,Nevada,49.2,-0.4,3,2024-09-23,362
+Kamala Harris,TIPP,1044,2024-09-25,1.8,Online Panel,Nevada,47.6,-0.4,3,2024-09-23,497
+Kamala Harris,TIPP,736,2024-09-25,1.8,Online Panel,Nevada,49.7,-0.4,3,2024-09-23,366
+Kamala Harris,Emerson,1000,2024-09-25,2.9,Online Panel/Text-to-Web,New York,55.5,-1.1,7,2024-09-23,555
+Kamala Harris,Victory Insights,600,2024-09-25,1.3,IVR/Text-to-Web,Florida,44.9,0.1,1,2024-09-22,269
+Kamala Harris,CNN/SSRS,931,2024-09-25,2.8,Live Phone/Text-to-Web/Email/Mail-to-Web/Mail-to-Phone,North Carolina,48,-0.6,10,2024-09-20,447
+Kamala Harris,CNN/SSRS,749,2024-09-25,2.8,Live Phone/Text-to-Web/Email/Mail-to-Web/Mail-to-Phone,Nebraska,53,-0.6,10,2024-09-20,397
+Kamala Harris,AtlasIntel,946,2024-09-25,2.7,Online Ad,Arizona,48.6,-0.8,6,2024-09-20,460
+Kamala Harris,AtlasIntel,946,2024-09-25,2.7,Online Ad,Arizona,48.6,-0.8,6,2024-09-20,460
+Kamala Harris,AtlasIntel,918,2024-09-25,2.7,Online Ad,Michigan,46.6,-0.8,6,2024-09-20,428
+Kamala Harris,AtlasIntel,918,2024-09-25,2.7,Online Ad,Michigan,47.2,-0.8,6,2024-09-20,433
+Kamala Harris,AtlasIntel,858,2024-09-25,2.7,Online Ad,Nevada,50.6,-0.8,6,2024-09-20,434
+Kamala Harris,AtlasIntel,858,2024-09-25,2.7,Online Ad,Nevada,50.5,-0.8,6,2024-09-20,433
+Kamala Harris,AtlasIntel,1775,2024-09-25,2.7,Online Ad,Pennsylvania,48,-0.8,6,2024-09-20,852
+Kamala Harris,AtlasIntel,1775,2024-09-25,2.7,Online Ad,Pennsylvania,48.1,-0.8,6,2024-09-20,854
+Kamala Harris,AtlasIntel,1077,2024-09-25,2.7,Online Ad,Wisconsin,48.2,-0.8,6,2024-09-20,519
+Kamala Harris,AtlasIntel,1077,2024-09-25,2.7,Online Ad,Wisconsin,48.2,-0.8,6,2024-09-20,519
+Kamala Harris,AtlasIntel,1173,2024-09-25,2.7,Online Ad,North Carolina,50.8,-0.8,6,2024-09-20,596
+Kamala Harris,AtlasIntel,1173,2024-09-25,2.7,Online Ad,North Carolina,50.5,-0.8,6,2024-09-20,592
+Kamala Harris,AtlasIntel,1200,2024-09-25,2.7,Online Ad,Georgia,49,-0.8,6,2024-09-20,588
+Kamala Harris,AtlasIntel,1200,2024-09-25,2.7,Online Ad,Georgia,49,-0.8,6,2024-09-20,588
+Kamala Harris,Morning Consult,977,2024-09-25,1.9,Online Panel,Arizona,49,-0.3,3,2024-09-19,479
+Kamala Harris,Morning Consult,977,2024-09-25,1.9,Online Panel,Arizona,50,-0.3,3,2024-09-19,488
+Kamala Harris,Morning Consult,926,2024-09-25,1.9,Online Panel,Arizona,49,-0.3,3,2024-09-19,454
+Kamala Harris,Morning Consult,926,2024-09-25,1.9,Online Panel,Arizona,50,-0.3,3,2024-09-19,463
+Kamala Harris,Morning Consult,989,2024-09-25,1.9,Online Panel,Georgia,48,-0.3,3,2024-09-19,475
+Kamala Harris,Morning Consult,989,2024-09-25,1.9,Online Panel,Georgia,48,-0.3,3,2024-09-19,475
+Kamala Harris,Morning Consult,913,2024-09-25,1.9,Online Panel,Georgia,48,-0.3,3,2024-09-19,438
+Kamala Harris,Morning Consult,913,2024-09-25,1.9,Online Panel,Georgia,49,-0.3,3,2024-09-19,447
+Kamala Harris,Morning Consult,894,2024-09-25,1.9,Online Panel,Michigan,49,-0.3,3,2024-09-19,438
+Kamala Harris,Morning Consult,894,2024-09-25,1.9,Online Panel,Michigan,49,-0.3,3,2024-09-19,438
+Kamala Harris,Morning Consult,800,2024-09-25,1.9,Online Panel,Michigan,50,-0.3,3,2024-09-19,400
+Kamala Harris,Morning Consult,800,2024-09-25,1.9,Online Panel,Michigan,50,-0.3,3,2024-09-19,400
+Kamala Harris,Morning Consult,574,2024-09-25,1.9,Online Panel,Nevada,46,-0.3,3,2024-09-19,264
+Kamala Harris,Morning Consult,574,2024-09-25,1.9,Online Panel,Nevada,49,-0.3,3,2024-09-19,281
+Kamala Harris,Morning Consult,516,2024-09-25,1.9,Online Panel,Nevada,50,-0.3,3,2024-09-19,258
+Kamala Harris,Morning Consult,516,2024-09-25,1.9,Online Panel,Nevada,52,-0.3,3,2024-09-19,268
+Kamala Harris,Morning Consult,889,2024-09-25,1.9,Online Panel,North Carolina,48,-0.3,3,2024-09-19,427
+Kamala Harris,Morning Consult,889,2024-09-25,1.9,Online Panel,North Carolina,50,-0.3,3,2024-09-19,444
+Kamala Harris,Morning Consult,828,2024-09-25,1.9,Online Panel,North Carolina,49,-0.3,3,2024-09-19,406
+Kamala Harris,Morning Consult,828,2024-09-25,1.9,Online Panel,North Carolina,50,-0.3,3,2024-09-19,414
+Kamala Harris,Morning Consult,993,2024-09-25,1.9,Online Panel,Pennsylvania,50,-0.3,3,2024-09-19,496
+Kamala Harris,Morning Consult,993,2024-09-25,1.9,Online Panel,Pennsylvania,49,-0.3,3,2024-09-19,487
+Kamala Harris,Morning Consult,924,2024-09-25,1.9,Online Panel,Pennsylvania,51,-0.3,3,2024-09-19,471
+Kamala Harris,Morning Consult,924,2024-09-25,1.9,Online Panel,Pennsylvania,51,-0.3,3,2024-09-19,471
+Kamala Harris,Morning Consult,849,2024-09-25,1.9,Online Panel,Wisconsin,49,-0.3,3,2024-09-19,416
+Kamala Harris,Morning Consult,849,2024-09-25,1.9,Online Panel,Wisconsin,50,-0.3,3,2024-09-19,424
+Kamala Harris,Morning Consult,785,2024-09-25,1.9,Online Panel,Wisconsin,50,-0.3,3,2024-09-19,392
+Kamala Harris,Morning Consult,785,2024-09-25,1.9,Online Panel,Wisconsin,51,-0.3,3,2024-09-19,400
+Kamala Harris,Virginia Commonwealth U.,832,2024-09-25,2.1,Live Phone/Text-to-Web,Virginia,43,-0.1,9,2024-09-16,358
+Kamala Harris,Virginia Commonwealth U.,762,2024-09-25,2.1,Live Phone/Text-to-Web,Virginia,47.4,-0.1,9,2024-09-16,361
+Kamala Harris,Emerson,950,2024-09-24,2.9,Online Panel/Text-to-Web,Texas,46.7,-1.1,7,2024-09-22,444
+Kamala Harris,Emerson,860,2024-09-24,2.9,Online Panel/Text-to-Web,Virginia,52.7,-1.1,7,2024-09-22,453
+Kamala Harris,YouGov,1441,2024-09-24,3,Online Panel,Georgia,49,-1.1,9,2024-09-20,706
+Kamala Harris,Beacon/Shaw,1021,2024-09-24,2.8,Live Phone/Text-to-Web,Arizona,47,-1.1,9,2024-09-20,480
+Kamala Harris,Beacon/Shaw,764,2024-09-24,2.8,Live Phone/Text-to-Web,Arizona,47,-1.1,9,2024-09-20,359
+Kamala Harris,Beacon/Shaw,1021,2024-09-24,2.8,Live Phone/Text-to-Web,Arizona,48,-1.1,9,2024-09-20,490
+Kamala Harris,Beacon/Shaw,764,2024-09-24,2.8,Live Phone/Text-to-Web,Arizona,48,-1.1,9,2024-09-20,367
+Kamala Harris,Beacon/Shaw,1006,2024-09-24,2.8,Live Phone/Text-to-Web,Georgia,49,-1.1,9,2024-09-20,493
+Kamala Harris,Beacon/Shaw,707,2024-09-24,2.8,Live Phone/Text-to-Web,Georgia,50,-1.1,9,2024-09-20,354
+Kamala Harris,Beacon/Shaw,1006,2024-09-24,2.8,Live Phone/Text-to-Web,Georgia,51,-1.1,9,2024-09-20,513
+Kamala Harris,Beacon/Shaw,707,2024-09-24,2.8,Live Phone/Text-to-Web,Georgia,51,-1.1,9,2024-09-20,361
+Kamala Harris,Beacon/Shaw,787,2024-09-24,2.8,Live Phone/Text-to-Web,North Carolina,47,-1.1,9,2024-09-20,370
+Kamala Harris,Beacon/Shaw,991,2024-09-24,2.8,Live Phone/Text-to-Web,North Carolina,48,-1.1,9,2024-09-20,476
+Kamala Harris,Beacon/Shaw,787,2024-09-24,2.8,Live Phone/Text-to-Web,North Carolina,49,-1.1,9,2024-09-20,386
+Kamala Harris,Beacon/Shaw,991,2024-09-24,2.8,Live Phone/Text-to-Web,North Carolina,50,-1.1,9,2024-09-20,496
+Kamala Harris,Beacon/Shaw,775,2024-09-24,2.8,Live Phone/Text-to-Web,Pennsylvania,47,-1.1,9,2024-09-20,364
+Kamala Harris,Beacon/Shaw,1021,2024-09-24,2.8,Live Phone/Text-to-Web,Pennsylvania,48,-1.1,9,2024-09-20,490
+Kamala Harris,Beacon/Shaw,775,2024-09-24,2.8,Live Phone/Text-to-Web,Pennsylvania,49,-1.1,9,2024-09-20,380
+Kamala Harris,Beacon/Shaw,1021,2024-09-24,2.8,Live Phone/Text-to-Web,Pennsylvania,50,-1.1,9,2024-09-20,510
+Kamala Harris,Marist,1416,2024-09-24,2.9,Live Phone/Online Panel/Text-to-Web,Arizona,48,-0.9,9,2024-09-19,680
+Kamala Harris,Marist,1264,2024-09-24,2.9,Live Phone/Online Panel/Text-to-Web,Arizona,49,-0.9,9,2024-09-19,619
+Kamala Harris,Marist,1507,2024-09-24,2.9,Live Phone/Online Panel/Text-to-Web,North Carolina,49,-0.9,9,2024-09-19,738
+Kamala Harris,Marist,1348,2024-09-24,2.9,Live Phone/Online Panel/Text-to-Web,North Carolina,49,-0.9,9,2024-09-19,661
+Kamala Harris,Marist,1420,2024-09-24,2.9,Live Phone/Online Panel/Text-to-Web,Georgia,49,-0.9,9,2024-09-19,696
+Kamala Harris,Marist,1220,2024-09-24,2.9,Live Phone/Online Panel/Text-to-Web,Georgia,49,-0.9,9,2024-09-19,598
+Kamala Harris,Suffolk,500,2024-09-24,2.9,Live Phone,Arizona,42.4,-1,8,2024-09-19,212
+Kamala Harris,Fabrizio/Impact,600,2024-09-24,1.7,Live Phone/Text-to-Web,Pennsylvania,49,-0.3,2,2024-09-17,294
+Kamala Harris,Fabrizio/Impact,600,2024-09-24,1.7,Live Phone/Text-to-Web,Pennsylvania,50,-0.3,2,2024-09-17,300
+Kamala Harris,SurveyUSA,558,2024-09-23,2.8,IVR/Online Panel/Text-to-Web,Nebraska,40,-1.3,8,2024-09-20,223
+Kamala Harris,University of Maryland/Washington Post,1012,2024-09-23,2.5,Live Phone/Text-to-Web,Maryland,63,-0.3,8,2024-09-19,638
+Kamala Harris,University of Maryland/Washington Post,1012,2024-09-23,2.5,Live Phone/Text-to-Web,Maryland,64,-0.3,8,2024-09-19,648
+Kamala Harris,University of Maryland/Washington Post,1012,2024-09-23,2.5,Live Phone/Text-to-Web,Maryland,61,-0.3,8,2024-09-19,617
+Kamala Harris,University of Maryland/Washington Post,1012,2024-09-23,2.5,Live Phone/Text-to-Web,Maryland,62,-0.3,8,2024-09-19,627
+Kamala Harris,RMG Research,788,2024-09-23,2.3,Online Panel,Wisconsin,50,-0.4,5,2024-09-17,394
+Kamala Harris,Siena/NYT,713,2024-09-21,3,Live Phone,Arizona,45,-1.5,9,2024-09-17,321
+Kamala Harris,Siena/NYT,713,2024-09-21,3,Live Phone,Arizona,45,-1.5,9,2024-09-17,321
+Kamala Harris,Siena/NYT,713,2024-09-21,3,Live Phone,Arizona,42,-1.5,9,2024-09-17,299
+Kamala Harris,Siena/NYT,713,2024-09-21,3,Live Phone,Arizona,43,-1.5,9,2024-09-17,307
+Kamala Harris,Siena/NYT,682,2024-09-21,3,Live Phone,Georgia,44,-1.5,9,2024-09-17,300
+Kamala Harris,Siena/NYT,682,2024-09-21,3,Live Phone,Georgia,45,-1.5,9,2024-09-17,307
+Kamala Harris,Siena/NYT,682,2024-09-21,3,Live Phone,Georgia,43,-1.5,9,2024-09-17,293
+Kamala Harris,Siena/NYT,682,2024-09-21,3,Live Phone,Georgia,44,-1.5,9,2024-09-17,300
+Kamala Harris,Siena/NYT,682,2024-09-21,3,Live Phone,North Carolina,47,-1.5,9,2024-09-17,321
+Kamala Harris,Siena/NYT,682,2024-09-21,3,Live Phone,North Carolina,47,-1.5,9,2024-09-17,321
+Kamala Harris,Siena/NYT,682,2024-09-21,3,Live Phone,North Carolina,46,-1.5,9,2024-09-17,314
+Kamala Harris,Siena/NYT,682,2024-09-21,3,Live Phone,North Carolina,45,-1.5,9,2024-09-17,307
+Kamala Harris,RMG Research,781,2024-09-20,2.3,Online Panel,Ohio,43,-0.4,5,2024-09-18,336
+Kamala Harris,Meredith College,802,2024-09-20,1.6,Online Panel,North Carolina,48,0.3,8,2024-09-18,385
+Kamala Harris,Embold Research,876,2024-09-20,1.4,Text-to-Web/Online Ad,Rhode Island,52,0.6,6,2024-09-16,456
+Kamala Harris,Redfield & Wilton Strategies,789,2024-09-19,1.8,Online Panel,Arizona,47,0.4,9,2024-09-16,371
+Kamala Harris,Redfield & Wilton Strategies,1602,2024-09-19,1.8,Online Panel,Florida,45,0.4,9,2024-09-16,721
+Kamala Harris,Redfield & Wilton Strategies,993,2024-09-19,1.8,Online Panel,Michigan,46,0.4,9,2024-09-16,457
+Kamala Harris,Redfield & Wilton Strategies,703,2024-09-19,1.8,Online Panel,Minnesota,50,0.4,9,2024-09-16,352
+Kamala Harris,Redfield & Wilton Strategies,652,2024-09-19,1.8,Online Panel,Nevada,45,0.4,9,2024-09-16,293
+Kamala Harris,Redfield & Wilton Strategies,1086,2024-09-19,1.8,Online Panel,Pennsylvania,47,0.4,9,2024-09-16,510
+Kamala Harris,Redfield & Wilton Strategies,600,2024-09-19,1.8,Online Panel,Wisconsin,47,0.4,9,2024-09-16,282
+Kamala Harris,Redfield & Wilton Strategies,1043,2024-09-19,1.8,Online Panel,Georgia,46,0.4,9,2024-09-16,480
+Kamala Harris,Redfield & Wilton Strategies,868,2024-09-19,1.8,Online Panel,North Carolina,47,0.4,9,2024-09-16,408
+Kamala Harris,Muhlenberg,450,2024-09-19,2.8,Live Phone,Pennsylvania,48,-1,8,2024-09-16,216
+Kamala Harris,Tarrance,600,2024-09-19,1.6,Live Phone,Nevada,47,-0.4,1,2024-09-16,282
+Kamala Harris,RMG Research,491,2024-09-19,2.3,Online Panel,Montana,38,-0.4,5,2024-09-12,187
+Kamala Harris,University of Massachusetts Lowell/YouGov,650,2024-09-19,2.9,Online Panel,Michigan,48,-1,9,2024-09-11,312
+Kamala Harris,University of Massachusetts Lowell/YouGov,800,2024-09-19,2.9,Online Panel,Pennsylvania,48,-1,9,2024-09-11,384
+Kamala Harris,Victory Insights,600,2024-09-18,1.3,IVR/Text-to-Web,North Carolina,44.9,0.1,1,2024-09-16,269
+Kamala Harris,TIPP,1046,2024-09-18,1.8,Online Panel,Georgia,47.5,-0.4,3,2024-09-16,497
+Kamala Harris,TIPP,835,2024-09-18,1.8,Online Panel,Georgia,47.6,-0.4,3,2024-09-16,397
+Kamala Harris,TIPP,1046,2024-09-18,1.8,Online Panel,Georgia,46.4,-0.4,3,2024-09-16,485
+Kamala Harris,TIPP,835,2024-09-18,1.8,Online Panel,Georgia,47.8,-0.4,3,2024-09-16,399
+Kamala Harris,Mason-Dixon,800,2024-09-18,2.6,Live Phone,Minnesota,48,-1.1,6,2024-09-16,384
+Kamala Harris,Suffolk,500,2024-09-18,2.9,Live Phone,Michigan,47.6,-1,8,2024-09-16,238
+Kamala Harris,Emerson,868,2024-09-18,2.9,IVR/Online Panel/Text-to-Web,Arizona,48.7,-1.1,7,2024-09-15,423
+Kamala Harris,Emerson,975,2024-09-18,2.9,IVR/Online Panel/Text-to-Web,Georgia,48.2,-1.1,7,2024-09-15,470
+Kamala Harris,Emerson,875,2024-09-18,2.9,IVR/Online Panel/Text-to-Web,Michigan,50,-1.1,7,2024-09-15,438
+Kamala Harris,Emerson,895,2024-09-18,2.9,IVR/Online Panel/Text-to-Web,Nevada,48.8,-1.1,7,2024-09-15,437
+Kamala Harris,Emerson,880,2024-09-18,2.9,IVR/Online Panel/Text-to-Web,Pennsylvania,49.6,-1.1,7,2024-09-15,436
+Kamala Harris,Emerson,1000,2024-09-18,2.9,IVR/Online Panel/Text-to-Web,North Carolina,49.7,-1.1,7,2024-09-15,497
+Kamala Harris,Emerson,1000,2024-09-18,2.9,IVR/Online Panel/Text-to-Web,Wisconsin,48.7,-1.1,7,2024-09-15,487
+Kamala Harris,MassINC Polling Group,800,2024-09-18,2.8,Live Phone/Text-to-Web,Pennsylvania,50,-0.8,7,2024-09-12,400
+Kamala Harris,MassINC Polling Group,800,2024-09-18,2.8,Live Phone/Text-to-Web,Pennsylvania,52,-0.8,7,2024-09-12,416
+Kamala Harris,MassINC Polling Group,800,2024-09-18,2.8,Live Phone/Text-to-Web,Massachusetts,60,-0.8,7,2024-09-12,480
+Kamala Harris,MassINC Polling Group,800,2024-09-18,2.8,Live Phone/Text-to-Web,Massachusetts,63,-0.8,7,2024-09-12,504
+Kamala Harris,SurveyUSA,619,2024-09-18,2.8,Online Panel,New Mexico,50,-1.3,8,2024-09-12,310
+Kamala Harris,MassINC Polling Group,800,2024-09-18,2.8,Live Phone/Text-to-Web,Wisconsin,51,-0.8,7,2024-09-12,408
+Kamala Harris,MassINC Polling Group,800,2024-09-18,2.8,Live Phone/Text-to-Web,Wisconsin,53,-0.8,7,2024-09-12,424
+Kamala Harris,MassINC Polling Group,800,2024-09-18,2.8,Live Phone/Text-to-Web,Connecticut,53,-0.8,7,2024-09-12,424
+Kamala Harris,MassINC Polling Group,800,2024-09-18,2.8,Live Phone/Text-to-Web,Rhode Island,53,-0.8,7,2024-09-12,424
+Kamala Harris,MassINC Polling Group,800,2024-09-18,2.8,Live Phone/Text-to-Web,Rhode Island,56,-0.8,7,2024-09-12,448
+Kamala Harris,Morning Consult,862,2024-09-18,1.9,Online Panel,Arizona,48.37,-0.3,3,2024-09-09,417
+Kamala Harris,Morning Consult,2948,2024-09-18,1.9,Online Panel,Florida,46.8,-0.3,3,2024-09-09,1380
+Kamala Harris,Morning Consult,578,2024-09-18,1.9,Online Panel,Maryland,61.41,-0.3,3,2024-09-09,355
+Kamala Harris,Morning Consult,1297,2024-09-18,1.9,Online Panel,Michigan,51.97,-0.3,3,2024-09-09,674
+Kamala Harris,Morning Consult,474,2024-09-18,1.9,Online Panel,Nevada,50.87,-0.3,3,2024-09-09,241
+Kamala Harris,Morning Consult,1488,2024-09-18,1.9,Online Panel,Ohio,43.02,-0.3,3,2024-09-09,640
+Kamala Harris,Morning Consult,1756,2024-09-18,1.9,Online Panel,Pennsylvania,48.74,-0.3,3,2024-09-09,856
+Kamala Harris,Morning Consult,2716,2024-09-18,1.9,Online Panel,Texas,45.77,-0.3,3,2024-09-09,1243
+Kamala Harris,Morning Consult,600,2024-09-18,1.9,Online Panel,Wisconsin,50.22,-0.3,3,2024-09-09,301
+Kamala Harris,Morning Consult,1314,2024-09-18,1.9,Online Panel,North Carolina,49.33,-0.3,3,2024-09-09,648
+Kamala Harris,Morning Consult,512,2024-09-18,1.9,Online Panel,Colorado,52.5,-0.3,3,2024-09-09,269
+Kamala Harris,Morning Consult,1347,2024-09-18,1.9,Online Panel,Georgia,47.68,-0.3,3,2024-09-09,642
+Kamala Harris,Morning Consult,517,2024-09-18,1.9,Online Panel,Minnesota,49.56,-0.3,3,2024-09-09,256
+Kamala Harris,Morning Consult,899,2024-09-18,1.9,Online Panel,Virginia,50.76,-0.3,3,2024-09-09,456
+Kamala Harris,PPP,543,2024-09-17,1.4,IVR/Text,Maryland,64,0,4,2024-09-16,348
+Kamala Harris,Marist,1663,2024-09-17,2.9,Live Phone/Online Panel/Text-to-Web,Pennsylvania,49,-0.9,7,2024-09-12,815
+Kamala Harris,Marist,1476,2024-09-17,2.9,Live Phone/Online Panel/Text-to-Web,Pennsylvania,49,-0.9,7,2024-09-12,723
+Kamala Harris,Marist,1312,2024-09-17,2.9,Live Phone/Online Panel/Text-to-Web,Wisconsin,50,-0.9,7,2024-09-12,656
+Kamala Harris,Marist,1194,2024-09-17,2.9,Live Phone/Online Panel/Text-to-Web,Wisconsin,50,-0.9,7,2024-09-12,597
+Kamala Harris,Marist,1282,2024-09-17,2.9,Live Phone/Online Panel/Text-to-Web,Michigan,50,-0.9,7,2024-09-12,641
+Kamala Harris,Marist,1138,2024-09-17,2.9,Live Phone/Online Panel/Text-to-Web,Michigan,52,-0.9,7,2024-09-12,592
+Kamala Harris,Cygnal,600,2024-09-16,2.1,Live Phone/Text-to-Web,North Carolina,45.3,-1.1,4,2024-09-15,272
+Kamala Harris,Quinnipiac,1331,2024-09-16,2.8,Live Phone,Pennsylvania,51,-0.5,9,2024-09-12,679
+Kamala Harris,Quinnipiac,1331,2024-09-16,2.8,Live Phone,Pennsylvania,51,-0.5,9,2024-09-12,679
+Kamala Harris,Quinnipiac,905,2024-09-16,2.8,Live Phone,Michigan,50,-0.5,9,2024-09-12,452
+Kamala Harris,Quinnipiac,905,2024-09-16,2.8,Live Phone,Michigan,51,-0.5,9,2024-09-12,462
+Kamala Harris,Quinnipiac,1075,2024-09-16,2.8,Live Phone,Wisconsin,48,-0.5,9,2024-09-12,516
+Kamala Harris,Quinnipiac,1075,2024-09-16,2.8,Live Phone,Wisconsin,49,-0.5,9,2024-09-12,527
+Kamala Harris,U. New Hampshire,683,2024-09-16,2.6,Probability Panel,Rhode Island,58,-0.3,10,2024-09-12,396
+Kamala Harris,U. New Hampshire,564,2024-09-16,2.6,Probability Panel,Massachusetts,62,-0.3,10,2024-09-12,350
+Kamala Harris,U. New Hampshire,1695,2024-09-16,2.6,Probability Panel,New Hampshire,54,-0.3,10,2024-09-12,915
+Kamala Harris,The Washington Post,1003,2024-09-16,3,Live Phone/Text-to-Web,Pennsylvania,48,-1.2,9,2024-09-12,481
+Kamala Harris,The Washington Post,1003,2024-09-16,3,Live Phone/Text-to-Web,Pennsylvania,48,-1.2,9,2024-09-12,481
+Kamala Harris,Siena,1003,2024-09-16,2.7,Live Phone/Text-to-Web,New York,52,-0.8,7,2024-09-11,522
+Kamala Harris,Siena,1003,2024-09-16,2.7,Live Phone/Text-to-Web,New York,55,-0.8,7,2024-09-11,552
+Kamala Harris,Siena/NYT,1082,2024-09-16,3,Live Phone,Pennsylvania,50,-1.5,9,2024-09-11,541
+Kamala Harris,Siena/NYT,1082,2024-09-16,3,Live Phone,Pennsylvania,50,-1.5,9,2024-09-11,541
+Kamala Harris,Siena/NYT,1082,2024-09-16,3,Live Phone,Pennsylvania,48,-1.5,9,2024-09-11,519
+Kamala Harris,Siena/NYT,1082,2024-09-16,3,Live Phone,Pennsylvania,49,-1.5,9,2024-09-11,530
+Kamala Harris,Noble Predictive Insights,692,2024-09-16,2.4,Online Panel/Text-to-Web,Nevada,48,-0.4,6,2024-09-09,332
+Kamala Harris,Noble Predictive Insights,812,2024-09-16,2.4,Online Panel/Text-to-Web,Nevada,48,-0.4,6,2024-09-09,390
+Kamala Harris,Noble Predictive Insights,692,2024-09-16,2.4,Online Panel/Text-to-Web,Nevada,47,-0.4,6,2024-09-09,325
+Kamala Harris,Noble Predictive Insights,812,2024-09-16,2.4,Online Panel/Text-to-Web,Nevada,46,-0.4,6,2024-09-09,374
+Kamala Harris,InsiderAdvantage,800,2024-09-15,2,Text,Pennsylvania,48.4,-0.3,5,2024-09-14,387
+Kamala Harris,U. Georgia SPIA,1000,2024-09-15,2.2,Live Phone,Georgia,44.4,-0.2,7,2024-09-09,444
+Kamala Harris,Pan Atlantic Research,812,2024-09-15,2.1,Online Panel,Maine,50,-0.1,7,2024-09-05,406
+Kamala Harris,Pan Atlantic Research,414,2024-09-15,2.1,Online Panel,Maine,58,-0.1,7,2024-09-05,240
+Kamala Harris,Pan Atlantic Research,398,2024-09-15,2.1,Online Panel,Maine,42,-0.1,7,2024-09-05,167
+Kamala Harris,Franklin and Marshall College,890,2024-09-15,2.4,Mail-to-Web/Mail-to-Phone,Pennsylvania,49,-0.1,8.5,2024-09-04,436
+Kamala Harris,Suffolk,500,2024-09-14,2.9,Live Phone,Pennsylvania,48.6,-1,8,2024-09-11,243
+Kamala Harris,Fabrizio/Impact,600,2024-09-14,1.7,Live Phone,Wisconsin,48,-0.3,2,2024-09-11,288
+Kamala Harris,Fabrizio/Impact,600,2024-09-14,1.7,Live Phone,Wisconsin,49,-0.3,2,2024-09-11,294
+Kamala Harris,Keating Research,500,2024-09-14,1.5,Live Phone/Text-to-Web,Colorado,53,0.1,3,2024-09-11,265
+Kamala Harris,Emerson,890,2024-09-13,2.9,Online Panel/Text-to-Web,Maryland,65.3,-1.1,7,2024-09-12,581
+Kamala Harris,Emerson,850,2024-09-13,2.9,Online Panel/Text-to-Web,Missouri,43.4,-1.1,7,2024-09-12,369
+Kamala Harris,Emerson,1000,2024-09-13,2.9,Online Panel/Text-to-Web,Indiana,40.7,-1.1,7,2024-09-12,407
+Kamala Harris,TIPP,973,2024-09-13,1.8,Online Panel,North Carolina,45.9,-0.4,3,2024-09-11,447
+Kamala Harris,Change Research,1237,2024-09-13,1.4,Text-to-Web/Online Ad,Missouri,41,0.6,5,2024-09-11,507
+Kamala Harris,Research & Polling,532,2024-09-13,2.1,Live Phone,New Mexico,49,-0.9,3.5,2024-09-06,261
+Kamala Harris,Elon U.,800,2024-09-13,2.5,Online Panel,North Carolina,46,-0.6,8,2024-09-04,368
+Kamala Harris,InsiderAdvantage,800,2024-09-12,2,Text,Michigan,48,-0.3,5,2024-09-11,384
+Kamala Harris,St. Anselm,2241,2024-09-12,2.4,Online Panel,New Hampshire,51,-0.5,6,2024-09-11,1143
+Kamala Harris,St. Anselm,2241,2024-09-12,2.4,Online Panel,New Hampshire,51,-0.5,6,2024-09-11,1143
+Kamala Harris,Alaska Survey Research,1254,2024-09-12,1.9,Online Panel,Alaska,42,-0.1,7,2024-09-11,527
+Kamala Harris,Mitchell,580,2024-09-11,2.4,IVR/Text-to-Web,Michigan,48,-0.2,7,2024-09-11,278
+Kamala Harris,Mitchell,580,2024-09-11,2.4,IVR/Text-to-Web,Michigan,47,-0.2,7,2024-09-11,273
+Kamala Harris,Selzer,656,2024-09-11,2.8,Live Phone,Iowa,43,-1.2,7.5,2024-09-08,282
+Kamala Harris,Data Orbital,550,2024-09-09,2.9,Live Phone/Text-to-Web,Arizona,46,-0.9,10,2024-09-07,253
+Kamala Harris,Redfield & Wilton Strategies,495,2024-09-09,1.8,Online Panel,North Carolina,45,0.4,9,2024-09-06,223
+Kamala Harris,Redfield & Wilton Strategies,765,2024-09-09,1.8,Online Panel,Arizona,46,0.4,9,2024-09-06,352
+Kamala Harris,Redfield & Wilton Strategies,1465,2024-09-09,1.8,Online Panel,Florida,44,0.4,9,2024-09-06,645
+Kamala Harris,Redfield & Wilton Strategies,562,2024-09-09,1.8,Online Panel,Georgia,47,0.4,9,2024-09-06,264
+Kamala Harris,Redfield & Wilton Strategies,556,2024-09-09,1.8,Online Panel,Michigan,48,0.4,9,2024-09-06,267
+Kamala Harris,Redfield & Wilton Strategies,617,2024-09-09,1.8,Online Panel,Minnesota,51,0.4,9,2024-09-06,315
+Kamala Harris,Redfield & Wilton Strategies,698,2024-09-09,1.8,Online Panel,Nevada,45,0.4,9,2024-09-06,314
+Kamala Harris,Redfield & Wilton Strategies,521,2024-09-09,1.8,Online Panel,New Mexico,49,0.4,9,2024-09-06,255
+Kamala Harris,Redfield & Wilton Strategies,801,2024-09-09,1.8,Online Panel,Pennsylvania,45,0.4,9,2024-09-06,360
+Kamala Harris,Redfield & Wilton Strategies,626,2024-09-09,1.8,Online Panel,Wisconsin,49,0.4,9,2024-09-06,307
+Kamala Harris,CWS Research,504,2024-09-09,1.6,Text-to-Web,Texas,41,0.2,6,2024-09-04,207
+Kamala Harris,PPIC,1071,2024-09-09,2.5,Probability Panel,California,60,-0.4,10,2024-08-29,643
+Kamala Harris,Quinnipiac,940,2024-09-08,2.8,Live Phone,North Carolina,49,-0.5,9,2024-09-04,461
+Kamala Harris,Quinnipiac,940,2024-09-08,2.8,Live Phone,North Carolina,50,-0.5,9,2024-09-04,470
+Kamala Harris,Quinnipiac,969,2024-09-08,2.8,Live Phone,Georgia,45,-0.5,9,2024-09-04,436
+Kamala Harris,Quinnipiac,969,2024-09-08,2.8,Live Phone,Georgia,46,-0.5,9,2024-09-04,446
+Kamala Harris,Washington Post/George Mason University,1005,2024-09-08,2.7,Live Phone/Text-to-Web,Virginia,50,-0.8,9,2024-09-04,502
+Kamala Harris,Washington Post/George Mason University,1005,2024-09-08,2.7,Live Phone/Text-to-Web,Virginia,51,-0.8,9,2024-09-04,513
+Kamala Harris,Washington Post/George Mason University,1005,2024-09-08,2.7,Live Phone/Text-to-Web,Virginia,49,-0.8,9,2024-09-04,492
+Kamala Harris,Washington Post/George Mason University,1005,2024-09-08,2.7,Live Phone/Text-to-Web,Virginia,51,-0.8,9,2024-09-04,513
+Kamala Harris,Embold Research,1616,2024-09-08,1.4,Text-to-Web/Online Ad,Minnesota,48.8,0.6,6,2024-09-04,789
+Kamala Harris,Morning Consult,901,2024-09-08,1.9,Online Panel,Arizona,46.89,-0.3,3,2024-08-30,422
+Kamala Harris,Morning Consult,3182,2024-09-08,1.9,Online Panel,Florida,47.05,-0.3,3,2024-08-30,1497
+Kamala Harris,Morning Consult,640,2024-09-08,1.9,Online Panel,Maryland,62.23,-0.3,3,2024-08-30,398
+Kamala Harris,Morning Consult,1368,2024-09-08,1.9,Online Panel,Michigan,49.19,-0.3,3,2024-08-30,673
+Kamala Harris,Morning Consult,516,2024-09-08,1.9,Online Panel,Nevada,47.58,-0.3,3,2024-08-30,246
+Kamala Harris,Morning Consult,1558,2024-09-08,1.9,Online Panel,Ohio,43.58,-0.3,3,2024-08-30,679
+Kamala Harris,Morning Consult,1910,2024-09-08,1.9,Online Panel,Pennsylvania,49.34,-0.3,3,2024-08-30,942
+Kamala Harris,Morning Consult,2940,2024-09-08,1.9,Online Panel,Texas,43.43,-0.3,3,2024-08-30,1277
+Kamala Harris,Morning Consult,638,2024-09-08,1.9,Online Panel,Wisconsin,49.48,-0.3,3,2024-08-30,316
+Kamala Harris,Morning Consult,1369,2024-09-08,1.9,Online Panel,North Carolina,48.22,-0.3,3,2024-08-30,660
+Kamala Harris,Morning Consult,498,2024-09-08,1.9,Online Panel,Colorado,54.8,-0.3,3,2024-08-30,273
+Kamala Harris,Morning Consult,1405,2024-09-08,1.9,Online Panel,Georgia,48.39,-0.3,3,2024-08-30,680
+Kamala Harris,Morning Consult,501,2024-09-08,1.9,Online Panel,Minnesota,50.92,-0.3,3,2024-08-30,255
+Kamala Harris,Morning Consult,873,2024-09-08,1.9,Online Panel,Virginia,51.97,-0.3,3,2024-08-30,454
+Kamala Harris,SurveyUSA,676,2024-09-07,2.8,Online Panel,North Carolina,49,-1.3,8,2024-09-04,331
+Kamala Harris,co/efficient,931,2024-09-06,1.1,IVR/Text,Michigan,47,0.3,5,2024-09-04,438
+Kamala Harris,co/efficient,917,2024-09-06,1.1,IVR/Text,Wisconsin,47,0.3,5,2024-09-04,431
+Kamala Harris,co/efficient,889,2024-09-06,1.1,IVR/Text,Pennsylvania,46,0.3,5,2024-09-04,409
+Kamala Harris,YouGov,1077,2024-09-06,3,Online Panel,Michigan,50,-1.1,9,2024-09-03,538
+Kamala Harris,YouGov,1078,2024-09-06,3,Online Panel,Pennsylvania,50,-1.1,9,2024-09-03,539
+Kamala Harris,YouGov,946,2024-09-06,3,Online Panel,Wisconsin,51,-1.1,9,2024-09-03,482
+Kamala Harris,Elway,403,2024-09-06,1.9,Live Phone/Text-to-Web,Washington,53,-0.2,6,2024-09-03,214
+Kamala Harris,Virginia Commonwealth U.,813,2024-09-06,2.1,Live Phone/Text-to-Web,Virginia,46,-0.1,9,2024-08-26,374
+Kamala Harris,Virginia Commonwealth U.,749,2024-09-06,2.1,Live Phone/Text-to-Web,Virginia,49.4,-0.1,9,2024-08-26,370
+Kamala Harris,Emerson,815,2024-09-05,2.9,Online Panel/Text-to-Web,California,60.8,-1.1,7,2024-09-03,496
+Kamala Harris,Emerson,815,2024-09-05,2.9,Online Panel/Text-to-Web,Florida,47.6,-1.1,7,2024-09-03,388
+Kamala Harris,Emerson,845,2024-09-05,2.9,Online Panel/Text-to-Web,Texas,48,-1.1,7,2024-09-03,406
+Kamala Harris,Emerson,945,2024-09-05,2.9,Online Panel/Text-to-Web,Ohio,44.7,-1.1,7,2024-09-03,422
+Kamala Harris,TIPP,1015,2024-09-05,1.8,Online Panel,Arizona,46,-0.4,3,2024-09-03,467
+Kamala Harris,TIPP,949,2024-09-05,1.8,Online Panel,Arizona,46.8,-0.4,3,2024-09-03,444
+Kamala Harris,TIPP,1015,2024-09-05,1.8,Online Panel,Arizona,45.8,-0.4,3,2024-09-03,465
+Kamala Harris,TIPP,949,2024-09-05,1.8,Online Panel,Arizona,48,-0.4,3,2024-09-03,456
+Kamala Harris,Marquette Law School,822,2024-09-05,3,Live Phone/Email,Wisconsin,52,-1.1,10,2024-08-28,427
+Kamala Harris,Marquette Law School,738,2024-09-05,3,Live Phone/Email,Wisconsin,52,-1.1,10,2024-08-28,384
+Kamala Harris,Marquette Law School,822,2024-09-05,3,Live Phone/Email,Wisconsin,47,-1.1,10,2024-08-28,386
+Kamala Harris,Marquette Law School,738,2024-09-05,3,Live Phone/Email,Wisconsin,48,-1.1,10,2024-08-28,354
+Kamala Harris,Patriot Polling,857,2024-09-03,1.1,IVR,Pennsylvania,47.9,0.6,5,2024-09-01,411
+Kamala Harris,Patriot Polling,822,2024-09-03,1.1,IVR,Michigan,48.4,0.6,5,2024-09-01,398
+Kamala Harris,Patriot Polling,826,2024-09-03,1.1,IVR,Wisconsin,47.9,0.6,5,2024-09-01,396
+Kamala Harris,Patriot Polling,804,2024-09-03,1.1,IVR,North Carolina,47.5,0.6,5,2024-09-01,382
+Kamala Harris,Patriot Polling,814,2024-09-03,1.1,IVR,Georgia,48.3,0.6,5,2024-09-01,393
+Kamala Harris,Patriot Polling,804,2024-09-03,1.1,IVR,Arizona,46.9,0.6,5,2024-09-01,377
+Kamala Harris,Patriot Polling,788,2024-09-03,1.1,IVR,Nevada,46.8,0.6,5,2024-09-01,369
+Kamala Harris,Lake Research,600,2024-09-02,1.2,Live Phone,Indiana,42,0.1,1,2024-08-26,252
+Kamala Harris,Cygnal,400,2024-09-01,2.1,Live Phone/Text-to-Web,Alaska,43.1,-1.1,4,2024-08-30,172
+Kamala Harris,SoonerPoll.com,323,2024-08-31,1.8,Online Panel,Oklahoma,39.9,0.3,10,2024-08-24,129
+Kamala Harris,YouGov,1200,2024-08-31,3,Online Panel,Texas,44,-1.1,9,2024-08-23,528
+Kamala Harris,YouGov,1200,2024-08-31,3,Online Panel,Texas,44,-1.1,9,2024-08-23,528
+Kamala Harris,Gonzales Research & Media Services,820,2024-08-30,1.2,Live Phone,Maryland,56,0.4,5,2024-08-24,459
+Kamala Harris,Wick,1607,2024-08-29,1.4,IVR/Text-to-Web,Pennsylvania,47,0.1,5,2024-08-27,755
+Kamala Harris,Wick,1607,2024-08-29,1.4,IVR/Text-to-Web,Pennsylvania,49,0.1,5,2024-08-27,787
+Kamala Harris,SurveyUSA,635,2024-08-29,2.8,Online Panel,Minnesota,48,-1.3,8,2024-08-27,305
+Kamala Harris,Global Strategy Group,600,2024-08-29,1.8,Live Phone/Text-to-Web,Nebraska,37,-0.5,1,2024-08-26,222
+Kamala Harris,Lake Research,800,2024-08-29,1.2,Live Phone,Texas,43,0.1,1,2024-08-24,344
+Kamala Harris,CNN/SSRS,682,2024-08-29,2.8,Probability Panel,Arizona,44,-0.6,10,2024-08-23,300
+Kamala Harris,CNN/SSRS,617,2024-08-29,2.8,Probability Panel,Georgia,48,-0.6,10,2024-08-23,296
+Kamala Harris,CNN/SSRS,708,2024-08-29,2.8,Probability Panel,Michigan,48,-0.6,10,2024-08-23,340
+Kamala Harris,CNN/SSRS,626,2024-08-29,2.8,Probability Panel,Nevada,48,-0.6,10,2024-08-23,300
+Kamala Harris,CNN/SSRS,789,2024-08-29,2.8,Probability Panel,Pennsylvania,47,-0.6,10,2024-08-23,371
+Kamala Harris,CNN/SSRS,976,2024-08-29,2.8,Probability Panel,Wisconsin,50,-0.6,10,2024-08-23,488
+Kamala Harris,East Carolina University,920,2024-08-28,2.6,IVR/Text-to-Web,North Carolina,46.9,-0.5,7,2024-08-26,431
+Kamala Harris,Glengariff Group Inc.,600,2024-08-28,1.5,Live Phone,Michigan,43.5,-0.2,1,2024-08-26,261
+Kamala Harris,Emerson,720,2024-08-28,2.9,IVR/Online Panel/Text-to-Web,Arizona,47.5,-1.1,7,2024-08-25,342
+Kamala Harris,Emerson,800,2024-08-28,2.9,IVR/Online Panel/Text-to-Web,Michigan,51.2,-1.1,7,2024-08-25,410
+Kamala Harris,Emerson,1168,2024-08-28,2.9,IVR/Online Panel/Text-to-Web,Nevada,49.4,-1.1,7,2024-08-25,577
+Kamala Harris,Emerson,950,2024-08-28,2.9,IVR/Online Panel/Text-to-Web,Pennsylvania,49.4,-1.1,7,2024-08-25,469
+Kamala Harris,Emerson,850,2024-08-28,2.9,IVR/Online Panel/Text-to-Web,Wisconsin,49.1,-1.1,7,2024-08-25,417
+Kamala Harris,Emerson,775,2024-08-28,2.9,IVR/Online Panel/Text-to-Web,North Carolina,49,-1.1,7,2024-08-25,380
+Kamala Harris,Emerson,800,2024-08-28,2.9,IVR/Online Panel/Text-to-Web,Georgia,50.1,-1.1,7,2024-08-25,401
+Kamala Harris,Redfield & Wilton Strategies,812,2024-08-28,1.8,Online Panel,North Carolina,44,0.4,9,2024-08-25,357
+Kamala Harris,Redfield & Wilton Strategies,530,2024-08-28,1.8,Online Panel,Arizona,45,0.4,9,2024-08-25,238
+Kamala Harris,Redfield & Wilton Strategies,850,2024-08-28,1.8,Online Panel,Florida,43,0.4,9,2024-08-25,366
+Kamala Harris,Redfield & Wilton Strategies,699,2024-08-28,1.8,Online Panel,Georgia,42,0.4,9,2024-08-25,294
+Kamala Harris,Redfield & Wilton Strategies,761,2024-08-28,1.8,Online Panel,Michigan,47,0.4,9,2024-08-25,358
+Kamala Harris,Redfield & Wilton Strategies,426,2024-08-28,1.8,Online Panel,Minnesota,51,0.4,9,2024-08-25,217
+Kamala Harris,Redfield & Wilton Strategies,490,2024-08-28,1.8,Online Panel,Nevada,47,0.4,9,2024-08-25,230
+Kamala Harris,Redfield & Wilton Strategies,488,2024-08-28,1.8,Online Panel,New Mexico,47,0.4,9,2024-08-25,229
+Kamala Harris,Redfield & Wilton Strategies,1071,2024-08-28,1.8,Online Panel,Pennsylvania,46,0.4,9,2024-08-25,493
+Kamala Harris,Redfield & Wilton Strategies,672,2024-08-28,1.8,Online Panel,Wisconsin,48,0.4,9,2024-08-25,323
+Kamala Harris,Morning Consult,805,2024-08-27,1.9,Online Panel,Arizona,49,-0.3,3,2024-08-23,394
+Kamala Harris,Morning Consult,805,2024-08-27,1.9,Online Panel,Arizona,48,-0.3,3,2024-08-23,386
+Kamala Harris,Morning Consult,776,2024-08-27,1.9,Online Panel,Arizona,49,-0.3,3,2024-08-23,380
+Kamala Harris,Morning Consult,776,2024-08-27,1.9,Online Panel,Arizona,48,-0.3,3,2024-08-23,372
+Kamala Harris,SurveyUSA,1293,2024-08-27,2.8,IVR/Online Panel/Text-to-Web,Nebraska,37,-1.3,8,2024-08-23,478
+Kamala Harris,SurveyUSA,507,2024-08-27,2.8,IVR/Online Panel/Text-to-Web,Nebraska,47,-1.3,8,2024-08-23,238
+Kamala Harris,Beacon/Shaw,1014,2024-08-26,2.8,Live Phone/Text-to-Web,Arizona,48,-1.1,9,2024-08-23,487
+Kamala Harris,Beacon/Shaw,1014,2024-08-26,2.8,Live Phone/Text-to-Web,Arizona,50,-1.1,9,2024-08-23,507
+Kamala Harris,Beacon/Shaw,1014,2024-08-26,2.8,Live Phone/Text-to-Web,Georgia,48,-1.1,9,2024-08-23,487
+Kamala Harris,Beacon/Shaw,1014,2024-08-26,2.8,Live Phone/Text-to-Web,Georgia,50,-1.1,9,2024-08-23,507
+Kamala Harris,Beacon/Shaw,1026,2024-08-26,2.8,Live Phone/Text-to-Web,Nevada,48,-1.1,9,2024-08-23,492
+Kamala Harris,Beacon/Shaw,1026,2024-08-26,2.8,Live Phone/Text-to-Web,Nevada,50,-1.1,9,2024-08-23,513
+Kamala Harris,Beacon/Shaw,999,2024-08-26,2.8,Live Phone/Text-to-Web,North Carolina,47,-1.1,9,2024-08-23,470
+Kamala Harris,Beacon/Shaw,999,2024-08-26,2.8,Live Phone/Text-to-Web,North Carolina,49,-1.1,9,2024-08-23,490
+Kamala Harris,Morning Consult,801,2024-08-26,1.9,Online Panel,Georgia,47,-0.3,3,2024-08-23,376
+Kamala Harris,Morning Consult,801,2024-08-26,1.9,Online Panel,Georgia,49,-0.3,3,2024-08-23,392
+Kamala Harris,Morning Consult,737,2024-08-26,1.9,Online Panel,Georgia,48,-0.3,3,2024-08-23,354
+Kamala Harris,Morning Consult,737,2024-08-26,1.9,Online Panel,Georgia,50,-0.3,3,2024-08-23,368
+Kamala Harris,Morning Consult,702,2024-08-26,1.9,Online Panel,Michigan,48,-0.3,3,2024-08-23,337
+Kamala Harris,Morning Consult,702,2024-08-26,1.9,Online Panel,Michigan,49,-0.3,3,2024-08-23,344
+Kamala Harris,Morning Consult,651,2024-08-26,1.9,Online Panel,Michigan,49,-0.3,3,2024-08-23,319
+Kamala Harris,Morning Consult,651,2024-08-26,1.9,Online Panel,Michigan,49,-0.3,3,2024-08-23,319
+Kamala Harris,Morning Consult,450,2024-08-26,1.9,Online Panel,Nevada,48,-0.3,3,2024-08-23,216
+Kamala Harris,Morning Consult,450,2024-08-26,1.9,Online Panel,Nevada,49,-0.3,3,2024-08-23,220
+Kamala Harris,Morning Consult,416,2024-08-26,1.9,Online Panel,Nevada,48,-0.3,3,2024-08-23,200
+Kamala Harris,Morning Consult,416,2024-08-26,1.9,Online Panel,Nevada,50,-0.3,3,2024-08-23,208
+Kamala Harris,Morning Consult,700,2024-08-26,1.9,Online Panel,North Carolina,48,-0.3,3,2024-08-23,336
+Kamala Harris,Morning Consult,700,2024-08-26,1.9,Online Panel,North Carolina,49,-0.3,3,2024-08-23,343
+Kamala Harris,Morning Consult,645,2024-08-26,1.9,Online Panel,North Carolina,48,-0.3,3,2024-08-23,310
+Kamala Harris,Morning Consult,645,2024-08-26,1.9,Online Panel,North Carolina,49,-0.3,3,2024-08-23,316
+Kamala Harris,Morning Consult,803,2024-08-26,1.9,Online Panel,Pennsylvania,51,-0.3,3,2024-08-23,410
+Kamala Harris,Morning Consult,803,2024-08-26,1.9,Online Panel,Pennsylvania,51,-0.3,3,2024-08-23,410
+Kamala Harris,Morning Consult,758,2024-08-26,1.9,Online Panel,Pennsylvania,51,-0.3,3,2024-08-23,387
+Kamala Harris,Morning Consult,758,2024-08-26,1.9,Online Panel,Pennsylvania,51,-0.3,3,2024-08-23,387
+Kamala Harris,Morning Consult,701,2024-08-26,1.9,Online Panel,Wisconsin,51,-0.3,3,2024-08-23,358
+Kamala Harris,Morning Consult,701,2024-08-26,1.9,Online Panel,Wisconsin,52,-0.3,3,2024-08-23,365
+Kamala Harris,Morning Consult,648,2024-08-26,1.9,Online Panel,Wisconsin,52,-0.3,3,2024-08-23,337
+Kamala Harris,Morning Consult,648,2024-08-26,1.9,Online Panel,Wisconsin,53,-0.3,3,2024-08-23,343
+Kamala Harris,EPIC/MRA,600,2024-08-26,1.9,Live Phone,Michigan,45,-0.7,3,2024-08-23,270
+Kamala Harris,EPIC/MRA,600,2024-08-26,1.9,Live Phone,Michigan,46,-0.7,3,2024-08-23,276
+Kamala Harris,Cherry Communications,600,2024-08-26,1,Live Phone,Florida,45,0.2,1,2024-08-15,270
+Kamala Harris,YouGov,500,2024-08-23,3,Online Panel,Pennsylvania,43,-1.1,9,2024-08-15,215
+Kamala Harris,YouGov,500,2024-08-23,3,Online Panel,Pennsylvania,43,-1.1,9,2024-08-15,215
+Kamala Harris,YouGov,500,2024-08-23,3,Online Panel,Wisconsin,48,-1.1,9,2024-08-15,240
+Kamala Harris,YouGov,500,2024-08-23,3,Online Panel,Wisconsin,45,-1.1,9,2024-08-15,225
+Kamala Harris,YouGov,500,2024-08-23,3,Online Panel,Michigan,44,-1.1,9,2024-08-15,220
+Kamala Harris,YouGov,500,2024-08-23,3,Online Panel,Michigan,44,-1.1,9,2024-08-15,220
+Kamala Harris,PPP,725,2024-08-22,1.4,IVR/Text-to-Web,Texas,42,0,4,2024-08-21,304
+Kamala Harris,PPP,725,2024-08-22,1.4,IVR/Text-to-Web,Texas,44,0,4,2024-08-21,319
+Kamala Harris,PPP,837,2024-08-22,1.4,IVR/Text-to-Web,Florida,45,0,4,2024-08-21,377
+Kamala Harris,PPP,837,2024-08-22,1.4,IVR/Text-to-Web,Florida,47,0,4,2024-08-21,393
+Kamala Harris,Emerson,965,2024-08-22,2.9,IVR/Online Panel/Text-to-Web,New Mexico,53.6,-1.1,7,2024-08-20,517
+Kamala Harris,Emerson,965,2024-08-22,2.9,IVR/Online Panel/Text-to-Web,New Mexico,51,-1.1,7,2024-08-20,492
+Kamala Harris,TIPP,1001,2024-08-22,1.8,Online Panel,Michigan,46.4,-0.4,3,2024-08-20,464
+Kamala Harris,TIPP,741,2024-08-22,1.8,Online Panel,Michigan,48.4,-0.4,3,2024-08-20,359
+Kamala Harris,TIPP,1001,2024-08-22,1.8,Online Panel,Michigan,43.7,-0.4,3,2024-08-20,437
+Kamala Harris,TIPP,741,2024-08-22,1.8,Online Panel,Michigan,46.8,-0.4,3,2024-08-20,347
+Kamala Harris,SurveyUSA/High Point University,1053,2024-08-21,2.8,Online Panel,North Carolina,46,-1.3,10,2024-08-19,484
+Kamala Harris,SurveyUSA/High Point University,941,2024-08-21,2.8,Online Panel,North Carolina,47,-1.3,10,2024-08-19,442
+Kamala Harris,Fabrizio Ward,400,2024-08-21,1.7,Online Panel/Text-to-Web,Michigan,44,-0.1,6.5,2024-08-19,176
+Kamala Harris,Fabrizio Ward,400,2024-08-21,1.7,Online Panel/Text-to-Web,Michigan,46,-0.1,6.5,2024-08-19,184
+Kamala Harris,Fabrizio Ward,400,2024-08-21,1.7,Online Panel/Text-to-Web,Pennsylvania,43,-0.1,6.5,2024-08-19,172
+Kamala Harris,Fabrizio Ward,400,2024-08-21,1.7,Online Panel/Text-to-Web,Pennsylvania,46,-0.1,6.5,2024-08-19,184
+Kamala Harris,Fabrizio Ward,400,2024-08-21,1.7,Online Panel/Text-to-Web,Wisconsin,47,-0.1,6.5,2024-08-19,188
+Kamala Harris,Fabrizio Ward,400,2024-08-21,1.7,Online Panel/Text-to-Web,Wisconsin,49,-0.1,6.5,2024-08-19,196
+Kamala Harris,BK Strategies,600,2024-08-21,1.3,Live Phone,Wisconsin,48,0.3,1.5,2024-08-19,288
+Kamala Harris,Fabrizio/Impact,600,2024-08-20,1.7,Live Phone,Maryland,59,-0.3,2,2024-08-14,354
+Kamala Harris,Fabrizio/Impact,600,2024-08-20,1.7,Live Phone,Maryland,64,-0.3,2,2024-08-14,384
+Kamala Harris,Spry Strategies,600,2024-08-20,1.5,IVR/Text-to-Web,Arizona,47.6,0.2,4,2024-08-14,286
+Kamala Harris,Spry Strategies,600,2024-08-20,1.5,IVR/Text-to-Web,Arizona,46.1,0.2,4,2024-08-14,277
+Kamala Harris,Spry Strategies,600,2024-08-20,1.5,IVR/Text-to-Web,Georgia,48.9,0.2,4,2024-08-14,293
+Kamala Harris,Spry Strategies,600,2024-08-20,1.5,IVR/Text-to-Web,Georgia,46.8,0.2,4,2024-08-14,281
+Kamala Harris,Spry Strategies,600,2024-08-20,1.5,IVR/Text-to-Web,North Carolina,47.2,0.2,4,2024-08-14,283
+Kamala Harris,Spry Strategies,600,2024-08-20,1.5,IVR/Text-to-Web,North Carolina,46.5,0.2,4,2024-08-14,279
+Kamala Harris,Spry Strategies,600,2024-08-20,1.5,IVR/Text-to-Web,Pennsylvania,48.2,0.2,4,2024-08-14,289
+Kamala Harris,Spry Strategies,600,2024-08-20,1.5,IVR/Text-to-Web,Pennsylvania,46.3,0.2,4,2024-08-14,278
+Kamala Harris,Spry Strategies,600,2024-08-20,1.5,IVR/Text-to-Web,Wisconsin,47.9,0.2,4,2024-08-14,287
+Kamala Harris,Spry Strategies,600,2024-08-20,1.5,IVR/Text-to-Web,Wisconsin,46.3,0.2,4,2024-08-14,278
+Kamala Harris,U. New Hampshire,2048,2024-08-19,2.6,Probability Panel,New Hampshire,50,-0.3,10,2024-08-15,1024
+Kamala Harris,U. New Hampshire,2048,2024-08-19,2.6,Probability Panel,New Hampshire,52,-0.3,10,2024-08-15,1065
+Kamala Harris,U. New Hampshire,924,2024-08-19,2.6,Probability Panel,Vermont,67,-0.3,10,2024-08-15,619
+Kamala Harris,U. New Hampshire,924,2024-08-19,2.6,Probability Panel,Vermont,70,-0.3,10,2024-08-15,647
+Kamala Harris,U. New Hampshire,951,2024-08-19,2.6,Probability Panel,Maine,55,-0.3,10,2024-08-15,523
+Kamala Harris,U. New Hampshire,951,2024-08-19,2.6,Probability Panel,Maine,58,-0.3,10,2024-08-15,552
+Kamala Harris,U. New Hampshire,490,2024-08-19,2.6,Probability Panel,Maine,62,-0.3,10,2024-08-15,304
+Kamala Harris,U. New Hampshire,476,2024-08-19,2.6,Probability Panel,Maine,64,-0.3,10,2024-08-15,305
+Kamala Harris,U. New Hampshire,443,2024-08-19,2.6,Probability Panel,Maine,49,-0.3,10,2024-08-15,217
+Kamala Harris,U. New Hampshire,432,2024-08-19,2.6,Probability Panel,Maine,52,-0.3,10,2024-08-15,225
+Kamala Harris,Remington,656,2024-08-17,2.6,IVR,Nebraska,50,-0.6,7,2024-08-14,328
+Kamala Harris,Change Research,437,2024-08-17,1.4,Text-to-Web/Online Ad,Nebraska,47,0.6,5,2024-08-10,205
+Kamala Harris,Roanoke College,691,2024-08-16,2.6,Live Phone/Online Panel,Virginia,47,-0.4,7,2024-08-12,325
+Kamala Harris,Roanoke College,691,2024-08-16,2.6,Live Phone/Online Panel,Virginia,45,-0.4,7,2024-08-12,311
+Kamala Harris,Noble Predictive Insights,1003,2024-08-16,2.4,Online Panel,Arizona,44,-0.4,6,2024-08-12,441
+Kamala Harris,Noble Predictive Insights,1003,2024-08-16,2.4,Online Panel,Arizona,43,-0.4,6,2024-08-12,431
+Kamala Harris,YouGov,900,2024-08-16,3,Online Panel,Missouri,41,-1.1,9,2024-08-08,369
+Kamala Harris,University of Houston/Texas Southern University,1365,2024-08-16,2.2,Online Panel,Texas,44.6,-0.3,9,2024-08-05,609
+Kamala Harris,Siena/NYT,677,2024-08-15,3,Live Phone,Nevada,46,-1.5,9,2024-08-12,311
+Kamala Harris,Siena/NYT,677,2024-08-15,3,Live Phone,Nevada,47,-1.5,9,2024-08-12,318
+Kamala Harris,Siena/NYT,677,2024-08-15,3,Live Phone,Nevada,42,-1.5,9,2024-08-12,284
+Kamala Harris,Siena/NYT,677,2024-08-15,3,Live Phone,Nevada,44,-1.5,9,2024-08-12,298
+Kamala Harris,Redfield & Wilton Strategies,592,2024-08-15,1.8,Online Panel,Arizona,43,0.4,9,2024-08-12,255
+Kamala Harris,Redfield & Wilton Strategies,1296,2024-08-15,1.8,Online Panel,Florida,43,0.4,9,2024-08-12,557
+Kamala Harris,Redfield & Wilton Strategies,692,2024-08-15,1.8,Online Panel,Georgia,46,0.4,9,2024-08-12,318
+Kamala Harris,Redfield & Wilton Strategies,530,2024-08-15,1.8,Online Panel,Michigan,44,0.4,9,2024-08-12,233
+Kamala Harris,Redfield & Wilton Strategies,475,2024-08-15,1.8,Online Panel,Minnesota,47,0.4,9,2024-08-12,223
+Kamala Harris,Redfield & Wilton Strategies,536,2024-08-15,1.8,Online Panel,Nevada,42,0.4,9,2024-08-12,225
+Kamala Harris,Redfield & Wilton Strategies,453,2024-08-15,1.8,Online Panel,New Mexico,47,0.4,9,2024-08-12,213
+Kamala Harris,Redfield & Wilton Strategies,601,2024-08-15,1.8,Online Panel,North Carolina,44,0.4,9,2024-08-12,264
+Kamala Harris,Redfield & Wilton Strategies,825,2024-08-15,1.8,Online Panel,Pennsylvania,46,0.4,9,2024-08-12,380
+Kamala Harris,Redfield & Wilton Strategies,469,2024-08-15,1.8,Online Panel,Wisconsin,48,0.4,9,2024-08-12,225
+Kamala Harris,Siena/NYT,677,2024-08-15,3,Live Phone,Arizona,49,-1.5,9,2024-08-08,332
+Kamala Harris,Siena/NYT,677,2024-08-15,3,Live Phone,Arizona,50,-1.5,9,2024-08-08,338
+Kamala Harris,Siena/NYT,677,2024-08-15,3,Live Phone,Arizona,45,-1.5,9,2024-08-08,305
+Kamala Harris,Siena/NYT,677,2024-08-15,3,Live Phone,Arizona,47,-1.5,9,2024-08-08,318
+Kamala Harris,St. Anselm,1656,2024-08-14,2.4,Online Panel,New Hampshire,51,-0.5,6,2024-08-13,845
+Kamala Harris,Emerson,1000,2024-08-14,2.9,IVR/Online Panel/Text-to-Web,Pennsylvania,49.3,-1.1,7,2024-08-13,493
+Kamala Harris,Emerson,1000,2024-08-14,2.9,IVR/Online Panel/Text-to-Web,Pennsylvania,46.8,-1.1,7,2024-08-13,468
+Kamala Harris,TIPP,1015,2024-08-14,1.8,Online Panel,Wisconsin,47,-0.4,3,2024-08-12,477
+Kamala Harris,TIPP,976,2024-08-14,1.8,Online Panel,Wisconsin,47.2,-0.4,3,2024-08-12,461
+Kamala Harris,TIPP,1015,2024-08-14,1.8,Online Panel,Wisconsin,45.3,-0.4,3,2024-08-12,460
+Kamala Harris,TIPP,976,2024-08-14,1.8,Online Panel,Wisconsin,46.2,-0.4,3,2024-08-12,451
+Kamala Harris,Siena/NYT,655,2024-08-14,3,Live Phone,North Carolina,49,-1.5,9,2024-08-09,321
+Kamala Harris,Siena/NYT,655,2024-08-14,3,Live Phone,North Carolina,49,-1.5,9,2024-08-09,321
+Kamala Harris,Siena/NYT,655,2024-08-14,3,Live Phone,North Carolina,45,-1.5,9,2024-08-09,295
+Kamala Harris,Siena/NYT,655,2024-08-14,3,Live Phone,North Carolina,46,-1.5,9,2024-08-09,301
+Kamala Harris,Siena/NYT,661,2024-08-14,3,Live Phone,Georgia,44,-1.5,9,2024-08-09,291
+Kamala Harris,Siena/NYT,661,2024-08-14,3,Live Phone,Georgia,46,-1.5,9,2024-08-09,304
+Kamala Harris,Siena/NYT,661,2024-08-14,3,Live Phone,Georgia,41,-1.5,9,2024-08-09,271
+Kamala Harris,Siena/NYT,661,2024-08-14,3,Live Phone,Georgia,44,-1.5,9,2024-08-09,291
+Kamala Harris,Strategies 360,400,2024-08-14,1.3,Online Panel/Text-to-Web,Arizona,47,0.1,5,2024-08-07,188
+Kamala Harris,Strategies 360,350,2024-08-14,1.3,Online Panel/Text-to-Web,Nevada,48,0.1,5,2024-08-07,168
+Kamala Harris,RMG Research,540,2024-08-14,2.3,Online Panel,Montana,39,-0.4,5,2024-08-06,211
+Kamala Harris,Quinnipiac,1738,2024-08-12,2.8,Live Phone,Pennsylvania,48,-0.5,9,2024-08-08,834
+Kamala Harris,Quinnipiac,1738,2024-08-12,2.8,Live Phone,Pennsylvania,50,-0.5,9,2024-08-08,869
+Kamala Harris,Suffolk,500,2024-08-11,2.9,Live Phone,Florida,41.8,-1,8,2024-08-07,209
+Kamala Harris,Fabrizio/Impact,600,2024-08-11,1.7,Live Phone/Text-to-Web,Michigan,43,-0.3,2,2024-08-07,258
+Kamala Harris,Fabrizio/Impact,600,2024-08-11,1.7,Live Phone/Text-to-Web,Michigan,48,-0.3,2,2024-08-07,288
+Kamala Harris,Franklin and Marshall College,920,2024-08-11,2.4,Mail-to-Web/Mail-to-Phone,Pennsylvania,46,-0.1,8.5,2024-07-21,423
+Kamala Harris,Siena/NYT,693,2024-08-09,3,Live Phone,Pennsylvania,49,-1.5,9,2024-08-06,340
+Kamala Harris,Siena/NYT,693,2024-08-09,3,Live Phone,Pennsylvania,50,-1.5,9,2024-08-06,346
+Kamala Harris,Siena/NYT,693,2024-08-09,3,Live Phone,Pennsylvania,45,-1.5,9,2024-08-06,312
+Kamala Harris,Siena/NYT,693,2024-08-09,3,Live Phone,Pennsylvania,46,-1.5,9,2024-08-06,319
+Kamala Harris,YouGov Blue,802,2024-08-09,3,Online Panel,North Carolina,46,-1.1,9,2024-08-05,369
+Kamala Harris,HarrisX,800,2024-08-09,1.5,Online Panel,Utah,25,-0.1,6,2024-08-02,200
+Kamala Harris,HarrisX,800,2024-08-09,1.5,Online Panel,Utah,28,-0.1,6,2024-08-02,224
+Kamala Harris,Siena/NYT,619,2024-08-08,3,Live Phone,Michigan,45,-1.5,9,2024-08-05,279
+Kamala Harris,Siena/NYT,619,2024-08-08,3,Live Phone,Michigan,50,-1.5,9,2024-08-05,310
+Kamala Harris,Siena/NYT,619,2024-08-08,3,Live Phone,Michigan,44,-1.5,9,2024-08-05,272
+Kamala Harris,Siena/NYT,619,2024-08-08,3,Live Phone,Michigan,48,-1.5,9,2024-08-05,297
+Kamala Harris,Siena/NYT,661,2024-08-08,3,Live Phone,Wisconsin,50,-1.5,9,2024-08-05,330
+Kamala Harris,Siena/NYT,661,2024-08-08,3,Live Phone,Wisconsin,50,-1.5,9,2024-08-05,330
+Kamala Harris,Siena/NYT,661,2024-08-08,3,Live Phone,Wisconsin,49,-1.5,9,2024-08-05,324
+Kamala Harris,Siena/NYT,661,2024-08-08,3,Live Phone,Wisconsin,49,-1.5,9,2024-08-05,324
+Kamala Harris,Navigator,600,2024-08-08,1.3,Text-to-Web,Arizona,45,0.3,4.5,2024-07-31,270
+Kamala Harris,Navigator,600,2024-08-08,1.3,Text-to-Web,Arizona,46,0.3,4.5,2024-07-31,276
+Kamala Harris,Navigator,600,2024-08-08,1.3,Text-to-Web,Michigan,44,0.3,4.5,2024-07-31,264
+Kamala Harris,Navigator,600,2024-08-08,1.3,Text-to-Web,Michigan,47,0.3,4.5,2024-07-31,282
+Kamala Harris,Navigator,600,2024-08-08,1.3,Text-to-Web,North Carolina,46,0.3,4.5,2024-07-31,276
+Kamala Harris,Navigator,600,2024-08-08,1.3,Text-to-Web,North Carolina,46,0.3,4.5,2024-07-31,276
+Kamala Harris,Navigator,600,2024-08-08,1.3,Text-to-Web,Pennsylvania,44,0.3,4.5,2024-07-31,264
+Kamala Harris,Navigator,600,2024-08-08,1.3,Text-to-Web,Pennsylvania,46,0.3,4.5,2024-07-31,276
+Kamala Harris,Navigator,600,2024-08-08,1.3,Text-to-Web,Wisconsin,45,0.3,4.5,2024-07-31,270
+Kamala Harris,Navigator,600,2024-08-08,1.3,Text-to-Web,Wisconsin,48,0.3,4.5,2024-07-31,288
+Kamala Harris,Emerson,1000,2024-08-06,2.9,Online Panel/Text-to-Web,Montana,42.5,-1.1,7,2024-08-05,425
+Kamala Harris,Emerson,1000,2024-08-06,2.9,Online Panel/Text-to-Web,Montana,39,-1.1,7,2024-08-05,390
+Kamala Harris,HighGround,500,2024-08-05,1.8,Live Phone,Arizona,44.4,-0.3,3.5,2024-07-30,222
+Kamala Harris,Redfield & Wilton Strategies,567,2024-08-03,1.8,Online Panel,Arizona,44,0.4,9,2024-07-31,249
+Kamala Harris,Redfield & Wilton Strategies,976,2024-08-03,1.8,Online Panel,Florida,41,0.4,9,2024-07-31,400
+Kamala Harris,Redfield & Wilton Strategies,1128,2024-08-03,1.8,Online Panel,Georgia,44,0.4,9,2024-07-31,496
+Kamala Harris,Redfield & Wilton Strategies,771,2024-08-03,1.8,Online Panel,Michigan,41,0.4,9,2024-07-31,316
+Kamala Harris,Redfield & Wilton Strategies,538,2024-08-03,1.8,Online Panel,Minnesota,46,0.4,9,2024-07-31,247
+Kamala Harris,Redfield & Wilton Strategies,470,2024-08-03,1.8,Online Panel,Nevada,40,0.4,9,2024-07-31,188
+Kamala Harris,Redfield & Wilton Strategies,493,2024-08-03,1.8,Online Panel,New Mexico,44,0.4,9,2024-07-31,217
+Kamala Harris,Redfield & Wilton Strategies,714,2024-08-03,1.8,Online Panel,North Carolina,41,0.4,9,2024-07-31,293
+Kamala Harris,Redfield & Wilton Strategies,743,2024-08-03,1.8,Online Panel,Pennsylvania,44,0.4,9,2024-07-31,327
+Kamala Harris,Redfield & Wilton Strategies,597,2024-08-03,1.8,Online Panel,Wisconsin,43,0.4,9,2024-07-31,257
+Kamala Harris,Fabrizio,600,2024-08-01,1.7,Live Phone/Text-to-Web,Pennsylvania,48,-0.1,6,2024-07-29,288
+Kamala Harris,Fabrizio,600,2024-08-01,1.7,Live Phone/Text-to-Web,Pennsylvania,45,-0.1,6,2024-07-29,270
+Kamala Harris,Siena,1199,2024-08-01,2.7,Live Phone,New York,53,-0.8,7,2024-07-28,635
+Kamala Harris,Siena,1199,2024-08-01,2.7,Live Phone,New York,49,-0.8,7,2024-07-28,588
+Kamala Harris,Marquette Law School,877,2024-08-01,3,Live Phone/Email,Wisconsin,49,-1.1,10,2024-07-24,430
+Kamala Harris,Marquette Law School,801,2024-08-01,3,Live Phone/Email,Wisconsin,50,-1.1,10,2024-07-24,400
+Kamala Harris,Marquette Law School,877,2024-08-01,3,Live Phone/Email,Wisconsin,45,-1.1,10,2024-07-24,395
+Kamala Harris,Marquette Law School,801,2024-08-01,3,Live Phone/Email,Wisconsin,46,-1.1,10,2024-07-24,368
+Kamala Harris,Fabrizio/Impact,600,2024-07-31,1.7,Live Phone,Georgia,44,-0.3,2,2024-07-24,264
+Kamala Harris,Fabrizio/Impact,600,2024-07-31,1.7,Live Phone,Georgia,48,-0.3,2,2024-07-24,288
+Kamala Harris,GQR,500,2024-07-30,2,Live Phone,Pennsylvania,50,0.1,5.5,2024-07-26,250
+Kamala Harris,Public Opinion Strategies,400,2024-07-29,1.6,Online Panel/Text-to-Web,Arizona,43,0.3,3,2024-07-23,172
+Kamala Harris,Public Opinion Strategies,400,2024-07-29,1.6,Online Panel/Text-to-Web,Michigan,45,0.3,3,2024-07-23,180
+Kamala Harris,Public Opinion Strategies,400,2024-07-29,1.6,Online Panel/Text-to-Web,Nevada,45,0.3,3,2024-07-23,180
+Kamala Harris,Public Opinion Strategies,400,2024-07-29,1.6,Online Panel/Text-to-Web,Pennsylvania,48,0.3,3,2024-07-23,192
+Kamala Harris,Public Opinion Strategies,400,2024-07-29,1.6,Online Panel/Text-to-Web,Wisconsin,48,0.3,3,2024-07-23,192
+Kamala Harris,Emerson,1000,2024-07-28,2.9,Online Panel/Text-to-Web,New Hampshire,52.4,-1.1,7,2024-07-26,524
+Kamala Harris,Emerson,1000,2024-07-28,2.9,Online Panel/Text-to-Web,New Hampshire,47.7,-1.1,7,2024-07-26,477
+Kamala Harris,Morning Consult,804,2024-07-28,1.9,Online Panel,Arizona,48,-0.3,3,2024-07-24,386
+Kamala Harris,Morning Consult,804,2024-07-28,1.9,Online Panel,Arizona,49,-0.3,3,2024-07-24,394
+Kamala Harris,Morning Consult,799,2024-07-28,1.9,Online Panel,Georgia,45,-0.3,3,2024-07-24,360
+Kamala Harris,Morning Consult,799,2024-07-28,1.9,Online Panel,Georgia,47,-0.3,3,2024-07-24,376
+Kamala Harris,Morning Consult,706,2024-07-28,1.9,Online Panel,Michigan,51,-0.3,3,2024-07-24,360
+Kamala Harris,Morning Consult,706,2024-07-28,1.9,Online Panel,Michigan,53,-0.3,3,2024-07-24,374
+Kamala Harris,Morning Consult,454,2024-07-28,1.9,Online Panel,Nevada,43,-0.3,3,2024-07-24,195
+Kamala Harris,Morning Consult,454,2024-07-28,1.9,Online Panel,Nevada,47,-0.3,3,2024-07-24,213
+Kamala Harris,Morning Consult,706,2024-07-28,1.9,Online Panel,North Carolina,44,-0.3,3,2024-07-24,311
+Kamala Harris,Morning Consult,706,2024-07-28,1.9,Online Panel,North Carolina,46,-0.3,3,2024-07-24,325
+Kamala Harris,Morning Consult,804,2024-07-28,1.9,Online Panel,Pennsylvania,44,-0.3,3,2024-07-24,354
+Kamala Harris,Morning Consult,804,2024-07-28,1.9,Online Panel,Pennsylvania,46,-0.3,3,2024-07-24,370
+Kamala Harris,Morning Consult,700,2024-07-28,1.9,Online Panel,Wisconsin,44,-0.3,3,2024-07-24,308
+Kamala Harris,Morning Consult,700,2024-07-28,1.9,Online Panel,Wisconsin,49,-0.3,3,2024-07-24,343
+Kamala Harris,Fabrizio/Impact,600,2024-07-28,1.7,Live Phone,Ohio,39,-0.3,2,2024-07-23,234
+Kamala Harris,Fabrizio/Impact,600,2024-07-28,1.7,Live Phone,Ohio,42,-0.3,2,2024-07-23,252
+Kamala Harris,U. North Florida,774,2024-07-27,2.8,Live Phone/Text-to-Web,Florida,42,-0.6,10,2024-07-24,325
+Kamala Harris,Hoffman Research,700,2024-07-26,1.7,Live Phone,Oregon,49,0.1,5,2024-07-24,343
+Kamala Harris,Hoffman Research,700,2024-07-26,1.7,Live Phone,Oregon,45,0.1,5,2024-07-24,315
+Kamala Harris,St. Anselm,2083,2024-07-25,2.4,Online Panel,New Hampshire,50,-0.5,6,2024-07-24,1042
+Kamala Harris,PPP,581,2024-07-25,1.4,IVR/Text-to-Web,Washington,52,0,4,2024-07-24,302
+Kamala Harris,U. New Hampshire,1445,2024-07-25,2.6,Online Panel/Text-to-Web,Maine,48,-0.3,10,2024-07-23,694
+Kamala Harris,U. New Hampshire,1445,2024-07-25,2.6,Online Panel/Text-to-Web,Maine,54,-0.3,10,2024-07-23,780
+Kamala Harris,U. New Hampshire,2875,2024-07-25,2.6,Online Panel/Text-to-Web,New Hampshire,49,-0.3,10,2024-07-23,1409
+Kamala Harris,U. New Hampshire,2875,2024-07-25,2.6,Online Panel/Text-to-Web,New Hampshire,53,-0.3,10,2024-07-23,1524
+Kamala Harris,SurveyUSA,656,2024-07-25,2.8,Online Panel,Minnesota,50,-1.3,8,2024-07-23,328
+Kamala Harris,U. New Hampshire,732,2024-07-25,2.6,Online Panel/Text-to-Web,Maine,56,-0.3,10,2024-07-23,410
+Kamala Harris,U. New Hampshire,732,2024-07-25,2.6,Online Panel/Text-to-Web,Maine,60,-0.3,10,2024-07-23,439
+Kamala Harris,U. New Hampshire,701,2024-07-25,2.6,Online Panel/Text-to-Web,Maine,40,-0.3,10,2024-07-23,280
+Kamala Harris,U. New Hampshire,701,2024-07-25,2.6,Online Panel/Text-to-Web,Maine,49,-0.3,10,2024-07-23,343
+Kamala Harris,Redfield & Wilton Strategies,435,2024-07-24,1.8,Online Panel,Nevada,43,0.4,9,2024-07-22,187
+Kamala Harris,Redfield & Wilton Strategies,851,2024-07-24,1.8,Online Panel,Pennsylvania,42,0.4,9,2024-07-22,357
+Kamala Harris,Redfield & Wilton Strategies,586,2024-07-24,1.8,Online Panel,North Carolina,43,0.4,9,2024-07-22,252
+Kamala Harris,Redfield & Wilton Strategies,510,2024-07-24,1.8,Online Panel,Arizona,43,0.4,9,2024-07-22,219
+Kamala Harris,Redfield & Wilton Strategies,572,2024-07-24,1.8,Online Panel,Florida,39,0.4,9,2024-07-22,223
+Kamala Harris,Redfield & Wilton Strategies,1180,2024-07-24,1.8,Online Panel,Georgia,42,0.4,9,2024-07-22,496
+Kamala Harris,Redfield & Wilton Strategies,512,2024-07-24,1.8,Online Panel,Michigan,41,0.4,9,2024-07-22,210
+Kamala Harris,Redfield & Wilton Strategies,475,2024-07-24,1.8,Online Panel,Minnesota,44,0.4,9,2024-07-22,209
+Kamala Harris,Redfield & Wilton Strategies,523,2024-07-24,1.8,Online Panel,Wisconsin,44,0.4,9,2024-07-22,230
+Kamala Harris,Glengariff Group Inc.,600,2024-07-24,1.5,Live Phone,Michigan,41.6,-0.2,1,2024-07-22,250
+Kamala Harris,Beacon/Shaw,1046,2024-07-24,2.8,Live Phone/Text-to-Web,Wisconsin,46,-1.1,9,2024-07-22,481
+Kamala Harris,Beacon/Shaw,1046,2024-07-24,2.8,Live Phone/Text-to-Web,Wisconsin,49,-1.1,9,2024-07-22,513
+Kamala Harris,Beacon/Shaw,1034,2024-07-24,2.8,Live Phone/Text-to-Web,Pennsylvania,45,-1.1,9,2024-07-22,465
+Kamala Harris,Beacon/Shaw,1034,2024-07-24,2.8,Live Phone/Text-to-Web,Pennsylvania,49,-1.1,9,2024-07-22,507
+Kamala Harris,Beacon/Shaw,1071,2024-07-24,2.8,Live Phone/Text-to-Web,Minnesota,47,-1.1,9,2024-07-22,503
+Kamala Harris,Beacon/Shaw,1071,2024-07-24,2.8,Live Phone/Text-to-Web,Minnesota,52,-1.1,9,2024-07-22,557
+Kamala Harris,Beacon/Shaw,1012,2024-07-24,2.8,Live Phone/Text-to-Web,Michigan,43,-1.1,9,2024-07-22,435
+Kamala Harris,Beacon/Shaw,1012,2024-07-24,2.8,Live Phone/Text-to-Web,Michigan,49,-1.1,9,2024-07-22,496
+Kamala Harris,Targoz Market Research,1200,2024-07-24,1.8,Online Panel,Florida,39,0.1,7,2024-07-19,468
+Kamala Harris,Targoz Market Research,988,2024-07-24,1.8,Online Panel,Florida,42,0.1,7,2024-07-19,415
+Kamala Harris,Emerson,800,2024-07-23,2.9,IVR/Online Panel/Text-to-Web,Arizona,47.4,-1.1,7,2024-07-22,379
+Kamala Harris,Emerson,800,2024-07-23,2.9,IVR/Online Panel/Text-to-Web,Arizona,39.8,-1.1,7,2024-07-22,318
+Kamala Harris,Emerson,800,2024-07-23,2.9,IVR/Online Panel/Text-to-Web,Georgia,48.9,-1.1,7,2024-07-22,391
+Kamala Harris,Emerson,800,2024-07-23,2.9,IVR/Online Panel/Text-to-Web,Georgia,43.3,-1.1,7,2024-07-22,346
+Kamala Harris,Emerson,800,2024-07-23,2.9,IVR/Online Panel/Text-to-Web,Michigan,49.1,-1.1,7,2024-07-22,393
+Kamala Harris,Emerson,800,2024-07-23,2.9,IVR/Online Panel/Text-to-Web,Michigan,43.8,-1.1,7,2024-07-22,350
+Kamala Harris,Emerson,845,2024-07-23,2.9,IVR/Online Panel/Text-to-Web,Wisconsin,50.6,-1.1,7,2024-07-22,428
+Kamala Harris,Emerson,845,2024-07-23,2.9,IVR/Online Panel/Text-to-Web,Wisconsin,45.4,-1.1,7,2024-07-22,384
+Kamala Harris,Emerson,850,2024-07-23,2.9,IVR/Online Panel/Text-to-Web,Pennsylvania,48.9,-1.1,7,2024-07-22,416
+Kamala Harris,Emerson,850,2024-07-23,2.9,IVR/Online Panel/Text-to-Web,Pennsylvania,44.3,-1.1,7,2024-07-22,377
+Kamala Harris,North Star Opinion Research,600,2024-07-23,1.1,Live Phone,Pennsylvania,45,0.3,3,2024-07-20,270

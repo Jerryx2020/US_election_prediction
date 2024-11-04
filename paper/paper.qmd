@@ -129,6 +129,55 @@ In the Residuals vs. Fitted, there is no clear curved pattern, which suggests th
 
 ## Results 
 
+```{r}
+#| echo: false
+#| eval: true
+#| warning: false
+#| message: false
+all_states <- c("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming")
+
+just_harris <- read.csv(here("data/02-analysis_data/just_harris.csv"))
+just_harris$end_date <- as.Date(just_harris$end_date)
+just_harris$predicted_pct <- predict(linear_model, newdata = just_harris)
+
+# Calculate the average pct for each state
+state_avg_pct <- just_harris %>%
+  group_by(state) %>%
+  summarize(avg_pct = mean(pct, na.rm = TRUE))
+
+# Classify each state as a "win" or "loss" based on a 50% threshold and handle NA values
+state_avg_pct <- state_avg_pct %>%
+  mutate(win_state = ifelse(avg_pct > 50, "Harris Win", "Harris Loss"))
+
+# Replace NA values with "Uncertain"
+state_avg_pct$win_state[is.na(state_avg_pct$win_state)] <- "Uncertain"
+
+# Convert win_state to a factor to control levels and ensure "Uncertain" is displayed in the legend
+state_avg_pct$win_state <- factor(state_avg_pct$win_state, levels = c("Harris Win", "Harris Loss", "Uncertain"))
+existing_states <- unique(state_avg_pct$state)
+missing_states <- setdiff(all_states, existing_states)
+missing_states_df <- data.frame(
+  state = missing_states,
+  avg_pct = NA,  # No average percentage available
+  win_state = "Uncertain"
+)
+state_avg_pct_complete <- bind_rows(state_avg_pct, missing_states_df)
+state_avg_pct_complete <- state_avg_pct_complete %>% arrange(state)
+
+state_avg_pct_complete$win_state <- factor(state_avg_pct_complete$win_state, 
+                                           levels = c("Harris Win", "Harris Loss", "Uncertain"))
+
+# Plot the map with the updated classifications
+plot_usmap(data = state_avg_pct_complete, values = "win_state", regions = "states") +
+  scale_fill_manual(values = c("Harris Win" = "blue", "Harris Loss" = "red", "Uncertain" = "gray"), 
+                    name = "Prediction Outcome") +
+  labs(title = "Predicted 2024 Presidential Election Outcome for Kamala Harris",
+       subtitle = "States where Kamala Harris is predicted to win (blue) or lose (red), unpolled states as Uncertain (gray)") +
+  theme_minimal()
+
+```
+
+
 # Discussion
 
 ## First discussion point {#sec-first-point}
