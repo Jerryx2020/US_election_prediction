@@ -28,7 +28,6 @@ simulated_data <- tibble(
   pollster = sample(pollsters, n_polls, replace = TRUE),
   sample_size = sample(500:3000, n_polls, replace = TRUE),  # Sample sizes between 500 and 3000
   pct = round(runif(n_polls, 40, 60), 1),  # Polling percentage between 40% and 60%
-  start_date = sample(seq(as.Date("2024-01-01"), as.Date("2024-10-01"), by = "day"), n_polls, replace = TRUE),
   end_date = sample(seq(as.Date("2024-01-02"), as.Date("2024-10-02"), by = "day"), n_polls, replace = TRUE)
 )
 
