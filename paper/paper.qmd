@@ -195,7 +195,7 @@ The survey will be implemented on Google Forms, with a link provided in the appe
 ## Idealized Survey 
 
 The proposed survey is designed using Google Forms,
-https://docs.google.com/forms/d/e/1FAIpQLSeHHeKaryNQ6sKgbuOH-ZgXwQYkNw9jBdxIbgeXWVj_t1ob2w/viewform?usp=sf_link
+https://forms.gle/Vhmm1b1XnqTSoBWq8
 
 
 ## Survey Copy 
@@ -246,8 +246,8 @@ https://docs.google.com/forms/d/e/1FAIpQLSeHHeKaryNQ6sKgbuOH-ZgXwQYkNw9jBdxIbgeX
   - Native Hawaiian or Other Pacific Islander 
   - Other: 
   
-7. **In which U.S. state do you currently reside**
-  - ______________
+7. **In which U.S. state do you currently reside?**
+  - ___
 
 8. **If you voted in 2020, who did you vote for?**
   - Joe Biden 
