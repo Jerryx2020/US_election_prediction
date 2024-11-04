@@ -166,13 +166,17 @@ Our target population is voters aged 18 and above, with a sample size of approxi
 
 For recruitment, we will combine online survey panels, social media outreach, and targeted telephone recruitment. These methods are chosen to increase accessibility for harder-to-reach demographics, such as older adults and rural residents. To encourage participation, we will offer modest incentives, such as a small monetary compensation or entry into a prize draw. All data collection will be conducted through a reliable survey platform—Google Forms. 
 
-The survey itself will be concise and straightforward, focusing on voting intentions, key issues, and demographic information. For data validation, in the survey, we will include attention-check questions as respondents are very likely to complete the form for an entry into a prize draw. We will also conduct multiple waves of the survey, we will adopt a "poll-of-polls" approach, aggregating responses from different waves while applying weights based on relevance. 
+The survey itself will be concise and straightforward, focusing on voting intentions, key issues, and demographic information. For data validation, the survey will include attention-check questions as respondents are very likely to complete the form for an entry into a prize draw. We will also conduct multiple waves of the survey, we will adopt a "poll-of-polls" approach, aggregating responses from different waves while applying weights based on relevance. 
 
 To mitigate biases such as non-response bias, social desirability bias, and order bias, our team will implement several strategies. We will send reminders to non-respondents to encourage participation, emphasizing the prize draw incentives to increase response rates. Survey questions will be carefully crafted to maintain neutral wording and avoid sensitive topics that might discourage honest responses. Additionally, within each wave of polls, we will randomize the order of questions to minimize the impact of question order on responses. These measures aim to enhance the reliability and accuracy of our survey results. 
 
-Ethically, our approach prioritizes respondent privacy and data security. We will ensure that participants’ responses remain anonymous and that all data is handled securely. Transparency is also essential; respondents will be informed about the survey’s sponsorship, methodology, and data use
+Ethically, our approach prioritizes respondent privacy and data security. We will ensure that participants’ responses remain anonymous and that all data is handled securely. Transparency is also essential; respondents will be informed about the survey’s sponsorship, methodology, and data use.
 
 The survey will be implemented on Google Forms, with a link provided in the appendix. We also included the questions in the appendix for better understandings. 
+
+### Budget Allocation 
+
+- 
 
 ## Idealized Survey 
 
@@ -182,27 +186,39 @@ https://forms.gle/Vhmm1b1XnqTSoBWq8
 
 ## Survey Copy 
 Welcome to our survey! We are conducting research to understand public perceptions and opinions related to the upcoming 2024 Presidential Election. Your responses are valuable in helping us gain insight into voter perspectives and preferences.
+By participating, you will gain the chance to enter a prize draw. Prizes include a chance to win gift cards, exclusive merchandise, and special deals with our sponsors. 
 
-Contact Information: For any questions regarding this survey, please contact:
+The survey should take about 10-15 minutes to complete. 
 
-Name: [Jason Yang]
-Email: ["jzc.yang@mail.utoronto.ca"]
-Phone: ["123-234-5678"]
+Please note: 
 
-Your responses are confidential and will be used only for research purposes. This survey will take approximately [estimated time] to complete.
+- Your Privacy are our top concern. All responses are confidential and will be used solely for research purposes. 
+- Participation is entirely voluntary.
 
-1. **Who do you intend to vote for in the 2024 U.S. Presidential Election?**
+Contact Information 
+
+If you have any inquiries or need assistance with this survye, please contact us at: 
+
+- jzc.yang@mail.utoronto.ca
+- 123-456-7891
+
+1. **Are you eligible to vote in the upcoming 2024 U.S. Presidential Election?**
+  - Yes 
+  - No 
+  - Not sure 
+
+2. **Who do you intend to vote for in the 2024 U.S. Presidential Election?**
   - Kamala Harris (Democratic Party)
   - Donald Trump (Republican Party)
   - Undecided 
   - Other:
 
-2. **How certain are you about your choice?  **
+3. **How certain are you about your choice?  **
   - Very Certain
   - Somewhat certain
   - Unsure
 
-3. **Which of the following issues are most important in deciding your vote? (Select up to 3)**
+4. **Which of the following issues are most important in deciding your vote? (Select up to 3)**
   - Economy and jobs
   - Healthcare
   - Climate Change
@@ -214,7 +230,7 @@ Your responses are confidential and will be used only for research purposes. Thi
   - Gun control
   - Other: 
   
-4. **What is your age?**
+5. **What is your age?**
   - 18-24
   - 24-34
   - 35-44
@@ -222,13 +238,14 @@ Your responses are confidential and will be used only for research purposes. Thi
   - 55-64
   - 65 or older
   
-5. **What is your gender?**
+6. **What is your gender?**
   - Male 
   - Female
-  - Non-binary/Other
+  - Non-binary
   - Prefer not to say
+  - Other: 
   
-6. **What is your race/ethnicity? (Select all that apply)**
+7. **What is your race/ethnicity? (Select all that apply)**
   - White
   - Black or African American 
   - Hispanic or Latino 
@@ -237,15 +254,41 @@ Your responses are confidential and will be used only for research purposes. Thi
   - Native Hawaiian or Other Pacific Islander 
   - Other: 
   
-7. **In which U.S. state do you currently reside?**
-  - ___
+8. **In which U.S. state do you currently reside?**
+  - [Drop Down With All the States]
 
-8. **If you voted in 2020, who did you vote for?**
+9. **If you voted in 2020, who did you vote for?**
   - Joe Biden 
   - Donald Trump 
   - Other: 
+  
+10. **Source of Information: What are your primary sources for political news?**
+  - Television
+  - Newspapers/Magazines
+  - Online News Websites
+  - Social Media
+  - Radio 
+  - Friends and Family 
+  - Other (Please specify): _____ 
+  
+11. **What is your highest level of education?**
+  - High school graduate, equivalent, or less
+  - College Degree
+  - Associate degree
+  - Bachelor's degree
+  - Graduate degree 
+
+12. **Would you be willing to participate in follow-up surveys regarding the election?** 
+  - Yes
+  - No 
+
+13. **Do you have any additional comments or concerns about the 2024 election?**
+  - [Open Text Response]
+
+
 
 Thank you for taking the time to complete our survey. Your input is greatly appreciated and will contribute to our understanding of public opinion for the upcoming 2024 Presidential Election.
+
 
 
 \newpage
