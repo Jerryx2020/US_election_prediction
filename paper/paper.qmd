@@ -2,12 +2,15 @@
 title: "Forecasting the 2024 U.S. Presidential Election"
 author: 
   - Jason Yang
-  - Another author
+  - Jerry Xia 
+  - Peter Fan
 thanks: "Code and data are available at: [https://github.com/Jerryx2020/US_election_prediction/tree/main]."
 date: "`r format(Sys.Date() - 1, '%A, %B %d, %Y')`" #chatgpt assisted how to create a custom date for due date November 4
 date-format: long
 abstract: ""
 format: pdf
+header-includes: 
+  - \usepackage{pdfpages}
 number-sections: true
 bibliography: references.bib
 ---
@@ -65,12 +68,12 @@ In this analysis, the outcome variable of interest is the percentage of support 
 To accurately predict the 2024 Presidential Election, we have identified several key variables that capture a range of factors influencing voter behavior. These predictor variables include: 
 
 - Polling Percentage (PCT): Represents the percentage of respondents in a poll who support a specific candidate
-- Numeric Grade (numeric_grade): Represents the rating of the pollster to indicate their quality
+- Pollster: Represents the name of the polling organization that conducted the poll. 
+- Candidate: The name of the candidate in the poll
 - Sample Size (sample_size): size of the respondents participating in the poll
 - State (state): the state of the poll was taken in 
 - End_date: the day the poll ended
 - Start_date: the day the poll started 
-
 
 
 # Model
@@ -83,15 +86,17 @@ This analysis employs predictive models to estimate the anticipated support for 
 The multiple linear regression model is designed to predict the candidate's percentage of support (pct) as a linear function of various predictors. Formally, we define the model as:
 
 \begin{align*}
-\text{pct}_i &= \beta_0 + \beta_1 \cdot \text{numeric\_grade}_i + \beta_2 \cdot \text{sample\_size}_i + \sum_{k=1}^{K} \delta_k \cdot \text{state}_{ik} + \beta_4 \cdot \text{end\_date}_i + \epsilon_i,
+\text{pct}_i &= \beta_0 + \beta_1 \cdot \text{pollster}_i + \beta_2 \cdot \text{sample\_size}_i + \sum_{k=1}^{K} \delta_k \cdot \text{state}_{ik} + \beta_4 \cdot \text{end\_date}_i + \beta_5 \cdot \text{candidate}_i + \epsilon_i,
 \end{align*}
 
-- pct: The percentage of the vote or support that the candidate received in the poll (e.g., 51.0 for Kamala Harris, 48.0 for Donald Trump).
-- numeric_grade: A numeric rating given to the pollster to indicate their quality or reliability (e.g., 3.0).
-- sample_size: The total number of respondents participating in the poll (e.g., 2712).
-- state: The U.S. state where the poll was conducted or focused, if applicable.
-- end_date: The date the poll ended (e.g., 10/11/24).
-- $\epsilon_i$: The error term for poll accounting for variability not explained by the predictors.
+Where 
+
+- $\beta_0$ is the expected value of PCT when all predictor variables are zero, intercept 
+- $\beta_1$ captures the effect pollsters have on the response variable 
+- $\beta_2$ captures the effect sample_size have on the response variable
+- $\delta_k$ captures the difference in PCT between states
+- $\beta_4$ captures the expected change in PCT for each additional unit increase in the end date variable 
+- $\beta_5$ captures the difference in PCT associated with difference candidates 
 
 
 ### Model justification
@@ -113,19 +118,9 @@ In the Residuals vs. Fitted, there is no clear curved pattern, which suggests th
 
 # Discussion
 
-## First discussion point {#sec-first-point}
 
-If my paper were 10 pages, then should be be at least 2.5 pages. The discussion is a chance to show off what you know and what you learnt from all this. 
 
-## Second discussion point
 
-Please don't use these as sub-heading labels - change them to be what your point actually is.
-
-## Third discussion point
-
-## Weaknesses and next steps
-
-Weaknesses and next steps should also be included.
 
 \newpage
 
@@ -162,13 +157,15 @@ The questionnaire is well-designed, with a collaborative approach that reduces r
 
 In designing a forecast for the upcoming US presidential election with a $100,000 budget, our methodology focuses on creating a representative survey that captures the voting intentions of likely voters across the United States. The objective is to gather reliable, high-quality data that supports a well-informed forecast through effective sampling, data validation, and aggregation techniques.
 
-Our target population is voters aged 18 and above, with a sample size of approximately 10,000 responses, 200 responses from each state, to ensure a statistically significance at the national level and within key demographic groups. To achieve balanced representation, we will employ stratified random sampling based on age, gender, race/ethnicity, education, region, and urban/rural status. This approach will involve weighting responses using recent census data and voter turnout statistics to address any demographic discrepancies. 
+Our target population is voters aged 18 and above, with a sample size of approximately 10,000 responses, 200 responses from each state, to ensure  statistical significance at the national level and within key demographic groups. To achieve balanced representation, we will employ stratified random sampling based on age, gender, race/ethnicity, education, region, and urban/rural status. This approach will involve weighting responses using recent census data and voter turnout statistics to address any demographic discrepancies. 
 
-For recruitment, we will combine online survey panels, social media outreach, and targeted telephone recruitment. These methods are chosen to increase accessibility for harder-to-reach demographics, such as older adults and rural residents. To encourage participation, we will offer modest incentives, such as a small monetary compensation or entry into a prize draw. All data collection will be conducted through a reliable survey platform—Google Forms. 
+We will combine online survey panels, social media outreach, and targeted telephone recruitment. These methods are chosen to increase accessibility for harder-to-reach demographics, such as older adults and rural residents. To encourage participation, we will offer modest incentives, such as a small monetary compensation or entry into a prize draw. All data collection will be conducted through a reliable survey platform—Google Forms. 
 
 The survey itself will be concise and straightforward, focusing on voting intentions, key issues, and demographic information. For data validation, the survey will include attention-check questions as respondents are very likely to complete the form for an entry into a prize draw. We will also conduct multiple waves of the survey, we will adopt a "poll-of-polls" approach, aggregating responses from different waves while applying weights based on relevance. 
 
 To mitigate biases such as non-response bias, social desirability bias, and order bias, our team will implement several strategies. We will send reminders to non-respondents to encourage participation, emphasizing the prize draw incentives to increase response rates. Survey questions will be carefully crafted to maintain neutral wording and avoid sensitive topics that might discourage honest responses. Additionally, within each wave of polls, we will randomize the order of questions to minimize the impact of question order on responses. These measures aim to enhance the reliability and accuracy of our survey results. 
+
+To ensure data validity, IP addresses would be recorded to prevent multiple submissions from the same source. Additionally, cookies would be implemented to prevent users from retaking the survey on the same device. Finally, we will verify respondents' email addresses to ensure uniqueness.
 
 Ethically, our approach prioritizes respondent privacy and data security. We will ensure that participants’ responses remain anonymous and that all data is handled securely. Transparency is also essential; respondents will be informed about the survey’s sponsorship, methodology, and data use.
 
@@ -188,108 +185,8 @@ https://forms.gle/Vhmm1b1XnqTSoBWq8
 
 
 ## Survey Copy 
-Welcome to our survey! We are conducting research to understand public perceptions and opinions related to the upcoming 2024 Presidential Election. Your responses are valuable in helping us gain insight into voter perspectives and preferences.
-By participating, you will gain the chance to enter a prize draw. Prizes include a chance to win gift cards, exclusive merchandise, and special deals with our sponsors. 
 
-The survey should take about 10-15 minutes to complete. 
-
-Please note: 
-
-- Your Privacy are our top concern. All responses are confidential and will be used solely for research purposes. 
-- Participation is entirely voluntary.
-
-Contact Information 
-
-If you have any inquiries or need assistance with this survey, please contact us at: 
-
-- jzc.yang@mail.utoronto.ca
-- 123-456-7891
-
-1. **Are you eligible to vote in the upcoming 2024 U.S. Presidential Election?**
-  - Yes 
-  - No 
-  - Not sure 
-
-2. **Who do you intend to vote for in the 2024 U.S. Presidential Election?**
-  - Kamala Harris (Democratic Party)
-  - Donald Trump (Republican Party)
-  - Undecided 
-  - Other:
-
-3. **How certain are you about your choice?  **
-  - Very Certain
-  - Somewhat certain
-  - Unsure
-
-4. **Which of the following issues are most important in deciding your vote? (Select up to 3)**
-  - Economy and jobs
-  - Healthcare
-  - Climate Change
-  - Education
-  - Immigration
-  - National Security 
-  - Social justice and Equality 
-  - Abortion rights
-  - Gun control
-  - Other: 
-  
-5. **What is your age?**
-  - 18-24
-  - 24-34
-  - 35-44
-  - 45-54
-  - 55-64
-  - 65 or older
-  
-6. **What is your gender?**
-  - Male 
-  - Female
-  - Non-binary
-  - Prefer not to say
-  - Other: 
-  
-7. **What is your race/ethnicity? (Select all that apply)**
-  - White
-  - Black or African American 
-  - Hispanic or Latino 
-  - Asian
-  - Native American or Alaska Native
-  - Native Hawaiian or Other Pacific Islander 
-  - Other: 
-  
-8. **In which U.S. state do you currently reside?**
-  - [Drop Down With All the States]
-
-9. **If you voted in 2020, who did you vote for?**
-  - Joe Biden 
-  - Donald Trump 
-  - Other: 
-  
-10. **Source of Information: What are your primary sources for political news?**
-  - Television
-  - Newspapers/Magazines
-  - Online News Websites
-  - Social Media
-  - Radio 
-  - Friends and Family 
-  - Other (Please specify): _____ 
-  
-11. **What is your highest level of education?**
-  - High school graduate, equivalent, or less
-  - College Degree
-  - Associate degree
-  - Bachelor's degree
-  - Graduate degree 
-
-12. **Would you be willing to participate in follow-up surveys regarding the election?** 
-  - Yes
-  - No 
-
-13. **Do you have any additional comments or concerns about the 2024 election?**
-  - [Open Text Response]
-
-
-Thank you for taking the time to complete our survey. Your input is greatly appreciated and will contribute to our understanding of public opinion for the upcoming 2024 Presidential Election.
+\includepdf[pages=-]{../other/Survey/Survey.pdf}
 
 
 
