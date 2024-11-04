@@ -227,6 +227,8 @@ To address non-response and improve representativeness, SSRS applies weighting a
 
 ## What is good and bad about the questionnaire?
 
+The questionnaire is well-designed, with a collaborative approach that reduces respondent burden and improves comprehension. A thoughtfully structured skip pattern enhances flow and minimizes dropout rates. The probability-based sampling, combined with extensive weighting and stratification, enables a representative sample of adults. However, heavy reliance on web-based responses may introduce Internet bias, potentially underrepresenting non-Internet households. Additionally, the questionnaire’s complexity may increase participant fatigue, affecting response completeness. The response rate of approximately 47.4% also indicates some level of attrition in the sample.
+
 
 
 
