@@ -68,3 +68,4 @@ sim_results_df <- bind_rows(sim_results, .id = "simulation") %>%
 
 # Save electoral college estimate with uncertainty
 write_csv(sim_results_df, "data/04-electoral_college_estimate/electoral_college_totals_with_uncertainty.csv")
+write_parquet(state_support_stats, "data/04-electoral_college_estimate/states_support.parquet")
