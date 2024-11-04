@@ -39,7 +39,7 @@ state_support_stats <- state_support_stats %>%
 n_simulations <- 1000
 
 # Run Monte Carlo simulations for electoral college estimate
-set.seed(853)
+set.seed(304)
 sim_results <- replicate(n_simulations, {
   # Simulate support for each candidate in each state
   simulated_support <- state_support_stats %>%
