@@ -14,4 +14,4 @@ library(here)
 
 #### Load data ####
 # Load the manually provided raw data
-the_raw_data <- read_csv(here("data/president_polls.csv"))
+the_raw_data <- read_csv(here("data/01-raw_data/president_polls.csv"))

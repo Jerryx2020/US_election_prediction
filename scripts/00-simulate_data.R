@@ -1,5 +1,5 @@
 #### Preamble ####
-# Purpose: To simulate polling data for Kamala Harris and Donald Trump in the 
+# Purpose: To simulate plausible polling data for Kamala Harris and Donald Trump in the 
 #          2024 U.S. presidential election, supporting a poll of polls approach.
 # Authors: Peter Fan, Jerry Xia, Jason Yang
 # Date: 04 November 2024
@@ -23,7 +23,6 @@ pollsters <- c("YouGov", "Ipsos", "CNN", "Gallup", "Emerson")  # Realistic polls
 
 # Generate simulated data relevant for the poll-of-polls approach
 simulated_data <- tibble(
-  poll_id = 1:n_polls,
   candidate = sample(candidates, n_polls, replace = TRUE),
   state = sample(states, n_polls, replace = TRUE),
   pollster = sample(pollsters, n_polls, replace = TRUE),

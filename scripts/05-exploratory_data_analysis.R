@@ -1,37 +1,29 @@
 #### Preamble ####
-# Purpose: Models... [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 11 February 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
-# License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
-
+# Purpose: To model the 2024 U.S. presidential election polling data to predict support for candidates.
+# Authors: Peter Fan, Jerry Xia, Jason Yang
+# Date: 04 November 2024
+# Contact: 
+# License: None
+# Pre-requisites: 
+# - Ensure the 'tidyverse' package is installed for data manipulation and modeling.
+# - The cleaned data must be available in 'data/02-analysis_data/analysis_data.csv'.
 
 #### Workspace setup ####
 library(tidyverse)
-library(rstanarm)
 
 #### Read data ####
-analysis_data <- read_csv("data/analysis_data/analysis_data.csv")
+analysis_data <- read_csv("data/02-analysis_data/analysis_data.csv")
 
-### Model data ####
-first_model <-
-  stan_glm(
-    formula = flying_time ~ length + width,
-    data = analysis_data,
-    family = gaussian(),
-    prior = normal(location = 0, scale = 2.5, autoscale = TRUE),
-    prior_intercept = normal(location = 0, scale = 2.5, autoscale = TRUE),
-    prior_aux = exponential(rate = 1, autoscale = TRUE),
-    seed = 853
+#### Model data ####
+# Fit a model to predict support for the candidates using polling data
+support_model <-
+  lm(
+    formula = pct ~ candidate_name + state + sample_size + pollster,
+    data = analysis_data
   )
-
 
 #### Save model ####
 saveRDS(
-  first_model,
-  file = "models/first_model.rds"
+  support_model,
+  file = "models/support_model.rds"
 )
-
-

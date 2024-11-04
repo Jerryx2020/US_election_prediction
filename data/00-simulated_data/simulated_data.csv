@@ -1,101 +1,101 @@
-poll_id,candidate,state,pollster,sample_size,pct
-1,Kamala Harris,Hawaii,Marquette Law School,598,42.1
-2,Kamala Harris,Louisiana,Marquette Law School,848,49.6
-3,Kamala Harris,New York,Siena/NYT,680,51.7
-4,Donald Trump,South Dakota,YouGov/Center for Working Class Politics,778,43.2
-5,Donald Trump,Oklahoma,McCourtney Institute/YouGov,999,57.1
-6,Kamala Harris,Oklahoma,YouGov/Center for Working Class Politics,802,56.1
-7,Kamala Harris,Idaho,YouGov,516,41.3
-8,Donald Trump,Washington,McCourtney Institute/YouGov,607,55.5
-9,Donald Trump,Nevada,The Washington Post,572,57.1
-10,Kamala Harris,Illinois,ABC/Washington Post,769,59.2
-11,Donald Trump,Arizona,Siena/NYT,720,50.5
-12,Kamala Harris,Maine,YouGov,668,55.9
-13,Donald Trump,Oregon,McCourtney Institute/YouGov,570,58.7
-14,Donald Trump,Washington,Marquette Law School,537,48.3
-15,Donald Trump,Maryland,ABC/Washington Post,815,51.4
-16,Donald Trump,Washington,YouGov Blue,845,54.3
-17,Kamala Harris,Arizona,YouGov,818,49.9
-18,Donald Trump,Kentucky,YouGov/Center for Working Class Politics,675,46.4
-19,Kamala Harris,Utah,Siena/NYT,766,49.1
-20,Kamala Harris,Ohio,YouGov/Center for Working Class Politics,995,58.4
-21,Donald Trump,North Dakota,The Washington Post,850,51.9
-22,Kamala Harris,Hawaii,YouGov/Center for Working Class Politics,656,54.9
-23,Donald Trump,Nebraska,YouGov/Center for Working Class Politics,510,47.9
-24,Kamala Harris,Louisiana,ABC/Washington Post,689,47.6
-25,Kamala Harris,Mississippi,The Washington Post,536,55.6
-26,Kamala Harris,California,Siena/NYT,788,48.9
-27,Donald Trump,Colorado,YouGov Blue,829,56
-28,Kamala Harris,Nebraska,Siena/NYT,564,41.1
-29,Donald Trump,Virginia,The Washington Post,613,53.5
-30,Kamala Harris,South Dakota,YouGov,795,42.2
-31,Kamala Harris,Pennsylvania,Marquette Law School,852,51.2
-32,Donald Trump,California,ABC/Washington Post,710,51.6
-33,Donald Trump,Virginia,YouGov Blue,540,41.1
-34,Kamala Harris,Alabama,ABC/Washington Post,761,57.2
-35,Kamala Harris,Missouri,YouGov/Center for Working Class Politics,645,51
-36,Kamala Harris,New Jersey,Siena/NYT,715,43.8
-37,Donald Trump,Oklahoma,McCourtney Institute/YouGov,611,42.5
-38,Kamala Harris,Missouri,McCourtney Institute/YouGov,751,48.1
-39,Kamala Harris,Louisiana,YouGov Blue,850,44.6
-40,Donald Trump,Colorado,The Washington Post,726,55.8
-41,Kamala Harris,Georgia,ABC/Washington Post,885,54.8
-42,Kamala Harris,Texas,YouGov,663,45.3
-43,Kamala Harris,New Hampshire,ABC/Washington Post,802,41
-44,Kamala Harris,New Mexico,The Washington Post,945,54.5
-45,Kamala Harris,North Dakota,The Washington Post,864,42.8
-46,Kamala Harris,Arizona,Siena/NYT,670,49.5
-47,Kamala Harris,Illinois,Marquette Law School,862,45.4
-48,Kamala Harris,Utah,YouGov/Center for Working Class Politics,683,47.2
-49,Kamala Harris,Florida,YouGov,848,47.9
-50,Kamala Harris,New Mexico,Siena/NYT,963,50.3
-51,Donald Trump,Indiana,YouGov Blue,770,51.5
-52,Kamala Harris,Alaska,McCourtney Institute/YouGov,652,58.3
-53,Donald Trump,California,McCourtney Institute/YouGov,928,54.2
-54,Donald Trump,Delaware,YouGov/Center for Working Class Politics,866,45.6
-55,Kamala Harris,Hawaii,Siena/NYT,649,54.9
-56,Kamala Harris,Massachusetts,McCourtney Institute/YouGov,872,46.7
-57,Kamala Harris,Idaho,YouGov,542,41.7
-58,Kamala Harris,Maryland,YouGov/Center for Working Class Politics,780,42.7
-59,Donald Trump,Arizona,YouGov Blue,985,56.7
-60,Donald Trump,Washington,YouGov Blue,890,45.6
-61,Donald Trump,Tennessee,The Washington Post,505,46.3
-62,Kamala Harris,Georgia,YouGov Blue,618,41.9
-63,Donald Trump,New York,The Washington Post,939,52.2
-64,Donald Trump,Virginia,YouGov,720,49.7
-65,Donald Trump,Louisiana,YouGov,838,49.9
-66,Kamala Harris,New Mexico,The Washington Post,926,52.4
-67,Kamala Harris,North Carolina,ABC/Washington Post,974,46
-68,Kamala Harris,Oklahoma,ABC/Washington Post,725,52.4
-69,Kamala Harris,Oregon,YouGov Blue,688,56.2
-70,Kamala Harris,Tennessee,ABC/Washington Post,850,46.9
-71,Donald Trump,Michigan,ABC/Washington Post,518,44.2
-72,Kamala Harris,Oklahoma,YouGov,841,55.5
-73,Donald Trump,New Jersey,YouGov,688,59.1
-74,Donald Trump,Arkansas,YouGov,503,45.7
-75,Kamala Harris,Illinois,YouGov Blue,619,41.6
-76,Donald Trump,Oklahoma,YouGov,961,53.2
-77,Kamala Harris,Kansas,Marquette Law School,554,46.2
-78,Kamala Harris,New Jersey,Marquette Law School,732,52.6
-79,Donald Trump,Kansas,ABC/Washington Post,993,52.1
-80,Kamala Harris,Missouri,McCourtney Institute/YouGov,723,57.5
-81,Kamala Harris,Oklahoma,YouGov,787,40.7
-82,Kamala Harris,South Dakota,YouGov/Center for Working Class Politics,592,55.4
-83,Donald Trump,West Virginia,YouGov/Center for Working Class Politics,851,58.7
-84,Kamala Harris,Vermont,YouGov,618,45.1
-85,Donald Trump,Kentucky,YouGov/Center for Working Class Politics,911,47.9
-86,Donald Trump,Iowa,Siena/NYT,889,48.2
-87,Kamala Harris,New Mexico,McCourtney Institute/YouGov,970,53
-88,Kamala Harris,New Hampshire,ABC/Washington Post,606,44.7
-89,Donald Trump,Virginia,McCourtney Institute/YouGov,925,44.8
-90,Donald Trump,New Hampshire,McCourtney Institute/YouGov,858,49.3
-91,Kamala Harris,Idaho,YouGov Blue,634,41.5
-92,Kamala Harris,Montana,YouGov Blue,773,54.8
-93,Kamala Harris,Nevada,ABC/Washington Post,952,53
-94,Donald Trump,Mississippi,YouGov Blue,828,50
-95,Kamala Harris,Virginia,YouGov,949,56.9
-96,Donald Trump,Arizona,Marquette Law School,852,48.5
-97,Kamala Harris,New Hampshire,The Washington Post,596,45.2
-98,Donald Trump,New Hampshire,McCourtney Institute/YouGov,977,56.9
-99,Kamala Harris,Hawaii,The Washington Post,620,46.5
-100,Donald Trump,Virginia,ABC/Washington Post,590,41.5
+candidate,state,pollster,sample_size,pct,start_date,end_date
+Donald Trump,New Hampshire,Gallup,1748,59.4,2024-02-16,2024-01-28
+Kamala Harris,West Virginia,CNN,1876,43.8,2024-02-07,2024-04-09
+Kamala Harris,West Virginia,Emerson,2295,46.3,2024-06-25,2024-09-03
+Donald Trump,New Mexico,Ipsos,1439,47,2024-07-16,2024-01-28
+Donald Trump,Nevada,Emerson,1419,46.9,2024-03-20,2024-05-04
+Donald Trump,Arizona,YouGov,1647,45.5,2024-06-23,2024-07-23
+Donald Trump,Nebraska,YouGov,1173,54.6,2024-02-02,2024-02-19
+Kamala Harris,Wisconsin,Emerson,2966,55.4,2024-05-07,2024-06-20
+Kamala Harris,Idaho,Ipsos,2469,53.5,2024-01-13,2024-01-18
+Kamala Harris,Alaska,CNN,1633,49.8,2024-03-05,2024-09-11
+Kamala Harris,Mississippi,CNN,2103,58.6,2024-09-14,2024-01-28
+Donald Trump,Virginia,Gallup,2785,42.7,2024-07-29,2024-03-21
+Donald Trump,Iowa,CNN,831,51.2,2024-06-30,2024-08-20
+Kamala Harris,New Mexico,YouGov,1521,50.5,2024-08-08,2024-01-21
+Kamala Harris,Montana,Gallup,2182,44.8,2024-09-28,2024-05-04
+Donald Trump,Arizona,Emerson,2125,56.3,2024-08-27,2024-04-09
+Kamala Harris,Wyoming,YouGov,557,58.9,2024-01-17,2024-03-25
+Donald Trump,Kentucky,Emerson,1586,48.9,2024-04-30,2024-07-02
+Donald Trump,Texas,YouGov,960,55.8,2024-04-27,2024-01-10
+Kamala Harris,Connecticut,Ipsos,2518,54.4,2024-09-08,2024-02-27
+Donald Trump,Vermont,CNN,1030,56.3,2024-02-21,2024-09-06
+Kamala Harris,Louisiana,Gallup,2487,45.6,2024-02-08,2024-07-02
+Kamala Harris,Arkansas,Emerson,2311,50.8,2024-04-09,2024-01-10
+Donald Trump,Oregon,YouGov,506,56.9,2024-07-05,2024-05-10
+Donald Trump,Nevada,Emerson,925,49,2024-08-28,2024-02-05
+Donald Trump,Kansas,YouGov,616,42.7,2024-01-12,2024-09-12
+Kamala Harris,Kentucky,Ipsos,1355,54.5,2024-08-04,2024-03-16
+Kamala Harris,Ohio,CNN,715,41.5,2024-02-02,2024-05-26
+Donald Trump,Oregon,Emerson,2600,44.2,2024-01-29,2024-07-05
+Kamala Harris,Connecticut,CNN,2830,59.8,2024-07-16,2024-08-29
+Donald Trump,Missouri,Ipsos,1559,59.2,2024-02-21,2024-09-11
+Kamala Harris,Texas,YouGov,1174,49,2024-06-18,2024-07-02
+Kamala Harris,Texas,Gallup,2891,45.7,2024-09-06,2024-07-26
+Kamala Harris,Oklahoma,Gallup,1976,43.7,2024-05-14,2024-05-16
+Donald Trump,California,Emerson,1518,46.1,2024-05-01,2024-04-09
+Kamala Harris,South Dakota,Ipsos,2809,50.8,2024-05-31,2024-06-10
+Donald Trump,Minnesota,CNN,1285,50.6,2024-09-23,2024-04-04
+Kamala Harris,Connecticut,Gallup,759,41.5,2024-06-30,2024-03-03
+Kamala Harris,Rhode Island,YouGov,810,41.1,2024-09-18,2024-02-21
+Donald Trump,Massachusetts,Gallup,1630,60,2024-06-27,2024-07-19
+Kamala Harris,Washington,CNN,2736,57.8,2024-08-06,2024-02-28
+Kamala Harris,Oregon,CNN,1133,56.8,2024-09-03,2024-05-26
+Donald Trump,Georgia,Ipsos,1161,41.3,2024-02-29,2024-01-09
+Donald Trump,Indiana,YouGov,1512,42.3,2024-06-07,2024-02-03
+Donald Trump,West Virginia,Gallup,980,46.1,2024-02-28,2024-07-22
+Donald Trump,Texas,Ipsos,1901,58.9,2024-05-29,2024-01-08
+Kamala Harris,Michigan,Emerson,1682,48.9,2024-01-26,2024-04-06
+Kamala Harris,Nevada,YouGov,836,54.6,2024-09-12,2024-09-11
+Kamala Harris,Iowa,YouGov,2346,54.6,2024-07-10,2024-05-10
+Donald Trump,Michigan,YouGov,2624,40.5,2024-02-04,2024-03-05
+Donald Trump,Florida,CNN,992,42.6,2024-05-05,2024-09-11
+Kamala Harris,New York,Gallup,1255,57.1,2024-03-11,2024-04-24
+Donald Trump,New Mexico,Ipsos,2752,48,2024-06-15,2024-06-21
+Donald Trump,Washington,YouGov,1860,51.4,2024-09-22,2024-03-02
+Donald Trump,Alaska,Emerson,2739,53.3,2024-01-09,2024-08-02
+Kamala Harris,Wyoming,YouGov,996,50.6,2024-02-08,2024-03-26
+Kamala Harris,Maryland,Gallup,2514,50.1,2024-04-30,2024-05-16
+Kamala Harris,Maine,Emerson,2916,40.8,2024-07-28,2024-08-29
+Kamala Harris,Iowa,CNN,1779,56.7,2024-03-29,2024-06-07
+Donald Trump,Kentucky,Gallup,2882,56.2,2024-05-21,2024-08-20
+Donald Trump,Missouri,Gallup,2045,52.1,2024-08-23,2024-08-28
+Kamala Harris,Idaho,Emerson,2279,41.5,2024-06-26,2024-09-17
+Donald Trump,Arkansas,Gallup,1168,41.6,2024-06-01,2024-05-21
+Kamala Harris,Minnesota,CNN,1915,45.9,2024-05-31,2024-02-23
+Donald Trump,Connecticut,CNN,1316,53.9,2024-02-22,2024-03-31
+Donald Trump,Illinois,YouGov,2790,50.5,2024-05-25,2024-04-09
+Donald Trump,New Mexico,Emerson,1294,47.4,2024-09-21,2024-03-04
+Kamala Harris,Idaho,Emerson,1130,48,2024-06-04,2024-06-14
+Kamala Harris,Kansas,YouGov,2504,44.8,2024-09-18,2024-09-17
+Kamala Harris,Nevada,CNN,2096,48.8,2024-04-23,2024-04-03
+Kamala Harris,Washington,YouGov,1005,56.1,2024-04-12,2024-05-27
+Donald Trump,Pennsylvania,Gallup,2994,55.8,2024-04-12,2024-09-20
+Kamala Harris,Wisconsin,YouGov,728,53,2024-09-04,2024-02-04
+Donald Trump,Louisiana,Ipsos,1898,50.9,2024-03-09,2024-07-31
+Kamala Harris,Vermont,Ipsos,2941,51.2,2024-06-19,2024-05-02
+Kamala Harris,Kansas,CNN,2485,55.4,2024-07-09,2024-02-13
+Kamala Harris,Missouri,CNN,2110,42.7,2024-01-25,2024-09-19
+Kamala Harris,Oklahoma,Emerson,1646,53.2,2024-04-06,2024-07-07
+Kamala Harris,South Dakota,Gallup,1633,48.7,2024-09-15,2024-05-01
+Kamala Harris,Delaware,Emerson,2340,40.5,2024-01-21,2024-05-13
+Kamala Harris,Minnesota,Ipsos,2922,47,2024-07-15,2024-07-30
+Kamala Harris,Iowa,CNN,1984,46.6,2024-03-17,2024-04-09
+Kamala Harris,New Mexico,YouGov,751,56.7,2024-07-23,2024-08-10
+Kamala Harris,South Carolina,CNN,585,52.8,2024-09-05,2024-04-12
+Donald Trump,West Virginia,YouGov,2447,46.6,2024-01-03,2024-05-22
+Donald Trump,Arizona,CNN,2900,40.7,2024-05-09,2024-04-20
+Donald Trump,Pennsylvania,Emerson,1671,50.8,2024-05-16,2024-07-28
+Kamala Harris,Nebraska,Gallup,2857,47.2,2024-04-09,2024-01-09
+Kamala Harris,Washington,YouGov,2154,40.9,2024-01-06,2024-05-13
+Donald Trump,Michigan,Emerson,2206,41,2024-03-01,2024-08-27
+Kamala Harris,Virginia,YouGov,983,48.2,2024-06-12,2024-04-08
+Donald Trump,Vermont,Emerson,1196,58.9,2024-04-25,2024-09-16
+Kamala Harris,Oregon,CNN,532,44.7,2024-03-03,2024-08-02
+Donald Trump,Kentucky,Emerson,1738,47.9,2024-01-20,2024-09-13
+Donald Trump,Washington,CNN,2337,43.3,2024-04-10,2024-02-15
+Kamala Harris,Louisiana,Gallup,2331,49.4,2024-08-30,2024-03-12
+Donald Trump,Minnesota,Gallup,1067,40.3,2024-02-13,2024-08-16
+Donald Trump,Illinois,Gallup,844,45.6,2024-01-02,2024-06-18
+Donald Trump,Texas,YouGov,2131,55.5,2024-01-10,2024-02-13
+Kamala Harris,Texas,Gallup,1017,48.9,2024-04-04,2024-06-08
