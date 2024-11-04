@@ -1,18 +1,17 @@
 #### Preamble ####
-# Purpose: Downloads and saves the data from 
-# Author: Group 15
-# Date: 11 February 2023 
-# Contact: rohan.alexander@utoronto.ca 
-# License: MIT
+# Purpose: To load polling data from FiveThirtyEight for the 2024 U.S. presidential election.
+# Authors: Peter Fan, Jerry Xia, Jason Yang
+# Date: 04 November 2024
+# Contact: 
+# License: None
 # Pre-requisites: 
-# Any other information needed? 
-
+# - Ensure that the 'tidyverse' and 'here' packages are installed for data manipulation.
+# - The raw data ('president_polls.csv') should be manually added to the project folder.
 
 #### Workspace setup ####
-library(opendatatoronto)
 library(tidyverse)
+library(here)
 
-#### Save data ####
-write_csv(the_raw_data, "inputs/data/raw_data.csv") 
-
-         
+#### Load data ####
+# Load the manually provided raw data
+the_raw_data <- read_csv(here("data/president_polls.csv"))
