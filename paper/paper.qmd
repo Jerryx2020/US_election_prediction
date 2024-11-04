@@ -6,7 +6,7 @@ author:
 thanks: "Code and data are available at: [https://github.com/Jerryx2020/US_election_prediction/tree/main]."
 date: "`r format(Sys.Date() - 1, '%A, %B %d, %Y')`" #chatgpt assisted how to create a custom date for due date November 4
 date-format: long
-abstract: "This paper presents a multiple linear regression model and a bayesian model for forecasting the outcome of the 2024 U.S. Presidential Election. Using the data collected from high-quality polls from various pollsters, we generate these models by selecting relevant variables such as sample size, percentage support for each candidate, and sate. By comparing the predictive power of both models, we aim to provide a reliable forecast of the election outcome and a deeper understanding of public sentiment and polling reliability."
+abstract: ""
 format: pdf
 number-sections: true
 bibliography: references.bib
@@ -41,10 +41,6 @@ Why it matters paragraph
 Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data....
 
 
-
-
-
-
 # Data {#sec-data}
 
 ## Overview
@@ -57,6 +53,8 @@ Overview text
 
 
 
+
+
 ## Outcome variables
 
 In this analysis, the outcome variable of interest is the percentage of support a candidate receives in each poll, represented by pct. This variable indicates the proportion of respondents within a poll who favor a particular candidate, measured as a percentage. Given that pct serves as a continuous variable bounded between 0 and 100, it is well-suited for modeling the levels of support across different polls and over time.
@@ -64,9 +62,14 @@ In this analysis, the outcome variable of interest is the percentage of support 
 
 ## Predictor variables
 
-Add graphs, tables and text.
+To accurately predict the 2024 Presidential Election, we have identified several key variables that capture a range of factors influencing voter behavior. These predictor variables include: 
 
-Use sub-sub-headings for each outcome variable and feel free to combine a few into one if they go together naturally.
+- Polling Percentage (PCT): Represents the percentage of respondents in a poll who support a specific candidate
+- Numeric Grade (numeric_grade): Represents the rating of the pollster to indicate their quality
+- Sample Size (sample_size): size of the respondents participating in the poll
+- State (state): the state of the poll was taken in 
+- End_date: the day the poll ended
+- Start_date: the day the poll started 
 
 
 
@@ -80,14 +83,12 @@ This analysis employs predictive models to estimate the anticipated support for 
 The multiple linear regression model is designed to predict the candidate's percentage of support (pct) as a linear function of various predictors. Formally, we define the model as:
 
 \begin{align*}
-\text{pct}_i &= \beta_0 + \beta_1 \cdot \text{numeric\_grade}_i + \beta_2 \cdot \text{sample\_size}_i + \beta_3 \cdot \text{transparency\_score}_i \\
-&\quad + \sum_{k=1}^{K} \delta_k \cdot \text{state}_{ik} + \beta_4 \cdot \text{end\_date}_i + \epsilon_i,
+\text{pct}_i &= \beta_0 + \beta_1 \cdot \text{numeric\_grade}_i + \beta_2 \cdot \text{sample\_size}_i + \sum_{k=1}^{K} \delta_k \cdot \text{state}_{ik} + \beta_4 \cdot \text{end\_date}_i + \epsilon_i,
 \end{align*}
 
 - pct: The percentage of the vote or support that the candidate received in the poll (e.g., 51.0 for Kamala Harris, 48.0 for Donald Trump).
 - numeric_grade: A numeric rating given to the pollster to indicate their quality or reliability (e.g., 3.0).
 - sample_size: The total number of respondents participating in the poll (e.g., 2712).
-- transparency_score:A score reflecting the pollster’s transparency about their methodology (e.g., 9.0). "A grade for how transparent a pollster is, calculated based on how much information it discloses about its polls and weighted by recency. The highest Transparency Score is 10."
 - state: The U.S. state where the poll was conducted or focused, if applicable.
 - end_date: The date the poll ended (e.g., 10/11/24).
 - $\epsilon_i$: The error term for poll accounting for variability not explained by the predictors.
@@ -105,77 +106,9 @@ Linear regression was chosen for this analysis due to several key advantages. Fi
 
 ### Checking Assumptions 
 
-```{r}
-#| tbl-cap: Checking Assumptions
-#| echo: false
-#| eval: true
-#| warning: false
-#| message: false
-
-linear_model <- readRDS(here::here("models/linear_model.rds"))
-
-plot(linear_model$fitted.values, residuals(linear_model), 
-     main = "Residuals vs Fitted", 
-     xlab = "Fitted values", 
-     ylab = "Residuals")
-
-# Q-Q Plot for Normality
-qqnorm(residuals(linear_model))
-qqline(residuals(linear_model))
-
-
-```
 In the Residuals vs. Fitted, there is no clear curved pattern, which suggests that the linear relationship might be appropriate. However, there are some clusters and a slight spread, which may indicate minor issues in capturing the relationship fully. Secondly, in the qqnorm plot, the points closely follow the diagonal line, indicating that residuals are approximately normal. This supports the normality assumption of the residuals, which is essential for reliable inference in linear regression. 
 
 ## Results 
-
-```{r}
-#| echo: false
-#| eval: true
-#| warning: false
-#| message: false
-all_states <- c("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming")
-
-just_harris <- read.csv(here("data/02-analysis_data/just_harris.csv"))
-just_harris$end_date <- as.Date(just_harris$end_date)
-just_harris$predicted_pct <- predict(linear_model, newdata = just_harris)
-
-# Calculate the average pct for each state
-state_avg_pct <- just_harris %>%
-  group_by(state) %>%
-  summarize(avg_pct = mean(pct, na.rm = TRUE))
-
-# Classify each state as a "win" or "loss" based on a 50% threshold and handle NA values
-state_avg_pct <- state_avg_pct %>%
-  mutate(win_state = ifelse(avg_pct > 50, "Harris Win", "Harris Loss"))
-
-# Replace NA values with "Uncertain"
-state_avg_pct$win_state[is.na(state_avg_pct$win_state)] <- "Uncertain"
-
-# Convert win_state to a factor to control levels and ensure "Uncertain" is displayed in the legend
-state_avg_pct$win_state <- factor(state_avg_pct$win_state, levels = c("Harris Win", "Harris Loss", "Uncertain"))
-existing_states <- unique(state_avg_pct$state)
-missing_states <- setdiff(all_states, existing_states)
-missing_states_df <- data.frame(
-  state = missing_states,
-  avg_pct = NA,  # No average percentage available
-  win_state = "Uncertain"
-)
-state_avg_pct_complete <- bind_rows(state_avg_pct, missing_states_df)
-state_avg_pct_complete <- state_avg_pct_complete %>% arrange(state)
-
-state_avg_pct_complete$win_state <- factor(state_avg_pct_complete$win_state, 
-                                           levels = c("Harris Win", "Harris Loss", "Uncertain"))
-
-# Plot the map with the updated classifications
-plot_usmap(data = state_avg_pct_complete, values = "win_state", regions = "states") +
-  scale_fill_manual(values = c("Harris Win" = "blue", "Harris Loss" = "red", "Uncertain" = "gray"), 
-                    name = "Prediction Outcome") +
-  labs(title = "Predicted 2024 Presidential Election Outcome for Kamala Harris",
-       subtitle = "States where Kamala Harris is predicted to win (blue) or lose (red), unpolled states as Uncertain (gray)") +
-  theme_minimal()
-
-```
 
 
 # Discussion
@@ -248,6 +181,15 @@ https://forms.gle/Vhmm1b1XnqTSoBWq8
 
 
 ## Survey Copy 
+Welcome to our survey! We are conducting research to understand public perceptions and opinions related to the upcoming 2024 Presidential Election. Your responses are valuable in helping us gain insight into voter perspectives and preferences.
+
+Contact Information: For any questions regarding this survey, please contact:
+
+Name: [Jason Yang]
+Email: ["jzc.yang@mail.utoronto.ca"]
+Phone: ["123-234-5678"]
+
+Your responses are confidential and will be used only for research purposes. This survey will take approximately [estimated time] to complete.
 
 1. **Who do you intend to vote for in the 2024 U.S. Presidential Election?**
   - Kamala Harris (Democratic Party)
@@ -303,6 +245,7 @@ https://forms.gle/Vhmm1b1XnqTSoBWq8
   - Donald Trump 
   - Other: 
 
+Thank you for taking the time to complete our survey. Your input is greatly appreciated and will contribute to our understanding of public opinion for the upcoming 2024 Presidential Election.
 
 
 \newpage
