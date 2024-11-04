@@ -31,7 +31,11 @@ library(knitr)
 library(flextable)
 library(arrow)
 
+<<<<<<< HEAD
 #Reads the data and store it into analysis_data 
+=======
+## Load cleaned dataset
+>>>>>>> 4108e37 (fixed parquet loading error)
 analysis_data <- read_parquet(here("data/02-analysis_data/analysis_data.parquet"))
 ```
 
@@ -312,5 +316,3 @@ https://forms.gle/Vhmm1b1XnqTSoBWq8
 
 
 # References
-
-
