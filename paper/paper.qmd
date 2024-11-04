@@ -118,6 +118,61 @@ ggplot(filtered_data, aes(x = state, y = pct, fill = candidate_name)) +
 ```
 
 Figure 2.2 displays the percentage support for each candidate across different states. This visualization helps identify regional strengths and weaknesses for both candidates, providing a more granular view of voter sentiment.
+```{r}
+#| warning: false
+#| message: false
+#| echo: false
+
+
+if (!require(usmap)) install.packages("usmap")
+if (!require(ggplot2)) install.packages("ggplot2")
+if (!require(dplyr)) install.packages("dplyr")
+if (!require(readr)) install.packages("readr")
+state_support_stats <- read_parquet(here("data/04-electoral_college_estimate/states_support.parquet"))
+winners <- state_support_stats %>%
+  group_by(state) %>%
+  filter(avg_support == max(avg_support)) %>%
+  ungroup()
+
+# Convert state names to abbreviations (required by usmap)
+winners$abbr <- state.abb[match(winners$state, state.name)]
+
+all_states <- state.name
+
+# Find the states present in the winners data
+states_in_winners <- unique(winners$state)
+
+# Find the missing states by comparing with the list of all states
+missing_states <- setdiff(all_states, states_in_winners)
+
+# Create a data frame for the missing states with "Uncertainty" as the candidate
+missing_states_df <- data.frame(
+  state = missing_states,
+  candidate_name = "Uncertainty",
+  avg_support = NA,  # Since we don't have support data for missing states
+  sd_support = NA,
+  electoral_votes = NA,
+  abbr = state.abb[match(missing_states, state.name)] # Add state abbreviations
+)
+
+# Add the missing states to the winners dataset
+winners <- bind_rows(winners, missing_states_df)
+
+# Change Nebraska's candidate to "Uncertainty" for all entries
+winners <- winners %>%
+  mutate(candidate_name = ifelse(state == "Nebraska", "Uncertainty", candidate_name))
+
+# Remove duplicate entries for Nebraska, keeping only one
+winners <- winners %>%
+  distinct(state, .keep_all = TRUE)
+
+plot_usmap(data = winners, values = "candidate_name", regions = "states") +
+  scale_fill_manual(values = c("Donald Trump" = "red", "Kamala Harris" = "blue", "Uncertainty" = "grey")) +
+  labs(title = "2024 U.S. Presidential Election: State Winners",
+       fill = "Candidate") +
+  theme(legend.position = "right")
+
+```
 
 
 #### Variable Transformations and Feature Engineering
@@ -146,7 +201,6 @@ The final cleaned dataset contains approximately 3,000 observations, each repres
 
 #### Data Visualization
 To gain insights into the distribution of key variables, visualizations such as histograms and bar charts were created. For instance, a histogram of **Sample Size** helps illustrate the variability in poll sizes, while bar charts displaying **Percentage Support** for each candidate across different states provide a clearer understanding of regional dynamics. These visualizations are included in the exploratory data analysis (Section 3) to help identify underlying trends and patterns in the dataset. The visualizations were created using `ggplot2` [@ggplot2], ensuring that they are both informative and visually appealing, similar to the standards set by
-
 
 
 Overview text
