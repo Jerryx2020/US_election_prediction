@@ -19,7 +19,7 @@ raw_data <- read_csv("data/01-raw_data/president_polls.csv") |>
 
 Analysis_data <- raw_data |> 
   filter(numeric_grade >= 3.0) %>% 
-  select(candidate_name, pollster, sample_size, end_date, numeric_grade, methodology, state, pct, pollscore) %>%
+  select(candidate_name, pollster, sample_size, end_date, numeric_grade, methodology, state, pct, pollscore, transparency_score, start_date) %>%
   mutate(
     end_date = mdy(end_date),
     state = if_else(is.na(state), "National", state)
