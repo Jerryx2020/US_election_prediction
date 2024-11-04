@@ -17,26 +17,32 @@ library(tidyverse)
 raw_data <- read_csv("data/01-raw_data/president_polls.csv") |>
   clean_names()
 
-Analysis_data <- raw_data |> 
-  filter(numeric_grade >= 3.0) %>% 
+Analysis_data <- raw_data  %>% 
   select(candidate_name, pollster, sample_size, end_date, numeric_grade, methodology, state, pct, pollscore, transparency_score, start_date) %>%
   mutate(
     end_date = mdy(end_date),
-    state = if_else(is.na(state), "National", state)
+    start_date = mdy(start_date)
   ) %>%
   filter(candidate_name %in% c("Donald Trump", "Kamala Harris"))
 
 Analysis_data <- Analysis_data %>%
   mutate(state = case_when(
     state == "Nebraska CD-2" ~ "Nebraska",
+    state == "Maine CD-1" ~ "Maine" , 
+    state == "Maine CD-2" ~ "Maine",
     TRUE ~ state  # Keeps all other values as they are
   ))
+
+Analysis_data <- Analysis_data %>% drop_na()
+
+Analysis_data <- Analysis_data %>% filter(numeric_grade >= 1)
 
 just_harris_high_quality <- Analysis_data |>
   filter(
     candidate_name == "Kamala Harris",
     end_date >= as.Date("2024-07-21"))  |> 
   mutate(
+    state = if_else(is.na(state), "National", state),
     num_harris = round((pct / 100) * sample_size, 0) 
   )
 
