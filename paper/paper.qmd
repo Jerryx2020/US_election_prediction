@@ -18,6 +18,13 @@ bibliography: references.bib
 #| message: false
 
 library(tidyverse)
+library(usmap)
+library(dplyr)
+library(here)
+library(ggplot2)
+library(janitor)
+library(knitr)
+library(flextable)
 ```
 
 
@@ -65,7 +72,7 @@ Use sub-sub-headings for each outcome variable and feel free to combine a few in
 
 # Model
 
-This analysis employs two predictive models to estimate the anticipated support for the two major candidates in the 2024 U.S. Presidential Election: a multiple linear regression model. These models use high-quality polling data from reputable sources, with relevant predictors to provide insights into public opinion trends.
+This analysis employs predictive models to estimate the anticipated support for the two major candidates in the 2024 U.S. Presidential Election: a multiple linear regression model. These models use high-quality polling data from reputable sources, with relevant predictors to provide insights into public opinion trends.
 
 
 ## Model set-up
@@ -86,19 +93,41 @@ The multiple linear regression model is designed to predict the candidate's perc
 - $\epsilon_i$: The error term for poll accounting for variability not explained by the predictors.
 
 
-
 ### Model justification
 
-We expect a positive relationship between the size of the wings and time spent aloft. In particular...
+Predictors Selection: Variables such as sample_size, pollster, and state are included to capture systematic differences in polling methods and geographic variations in support. The date (end_date) of each poll controls for temporal effects on candidate popularity.
 
-We can use maths by including latex between dollar signs, for instance $\theta$.
+Linear regression was chosen for this analysis due to several key advantages. First, its simplicity and interpret ability make it highly suitable for examining the relationship between predictor variables and the response variable, specifically the candidate support percentage. Each coefficient in a linear regression model clearly represents the influence of a predictor on the outcome, which facilitates straightforward interpretation and communication of results. Moreover, linear regression is computationally efficient, making it ideal for rapid model estimation, tuning, and testing, even on relatively large datasets.
+
+## Regression Assumptions 
+- Linearity: The relationship between each predictor and the response (pct) is assumed to be linear.
+- Normality: Errors are assumed to follow a normal distribution, which is tested during model diagnostics.
+
+### Checking Assumptions 
+
+```{r}
+#| tbl-cap: Checking Assumptions
+#| echo: false
+#| eval: true
+#| warning: false
+#| message: false
+
+linear_model <- readRDS(here::here("models/linear_model.rds"))
+
+plot(linear_model$fitted.values, residuals(linear_model), 
+     main = "Residuals vs Fitted", 
+     xlab = "Fitted values", 
+     ylab = "Residuals")
+
+# Q-Q Plot for Normality
+qqnorm(residuals(linear_model))
+qqline(residuals(linear_model))
 
 
-# Results
+```
+In the Residuals vs. Fitted, there is no clear curved pattern, which suggests that the linear relationship might be appropriate. However, there are some clusters and a slight spread, which may indicate minor issues in capturing the relationship fully. Secondly, in the qqnorm plot, the points closely follow the diagonal line, indicating that residuals are approximately normal. This supports the normality assumption of the residuals, which is essential for reliable inference in linear regression. 
 
-Our results are summarized in @tbl-modelresults.
-
-
+## Results 
 
 # Discussion
 
@@ -122,10 +151,30 @@ Weaknesses and next steps should also be included.
 
 # Appendix {-}
 
+# Pollster Analysis
 
-# Additional data details
+The Marquette Law School Poll employs a rigorous methodology to survey adults in the US on national issues, incorporating probability-based sampling that combines Address-Based Sampling (ABS) and Stratified Random Sampling [@citemarquette]. This approach, including online and offline respondents, ensures broad representativeness. The SSRS Polling Panel supports participant recruitment, and weighting adjustments enhance result accuracy.
 
-# Model details {#sec-model-details}
+## What is the population, frame, and sample?
+
+The population for the poll includes adults aged 18 and over across all 50 states and the District of Columbia. The sampling frame was constructed through ABS, leveraging the US Postal Service's Computerized Delivery Sequence (CDS), a comprehensive, regularly updated list of residential addresses. The primary source for participants is the SSRS Opinion Panel, which includes both ABS and telephone survey data to capture hard-to-reach demographics, like non-internet users. The survey ultimately included 1,005 adults, including registered and likely voters, with weighted samples to ensure proportional representation [@citemarquette].
+
+## How is the sample recruited?
+
+Participants were recruited via the SSRS Omnibus Panel, a probability panel formed from ABS and telephone survey data. This dual approach ensured that both internet and non-internet users were included, minimizing online-only bias. Stratified by demographics (age, gender, race, education, region, and partisan affiliation), this process produced a balanced representation across groups. Selected participants received an email invitation with a unique link to the survey. Non-responders received up to two reminder emails, and those who opted for text notifications also received reminders. Participants received an e-gift card incentive upon survey completion [@citemarquette].
+
+## What sampling approach is taken, and what are some of the trade-offs of this?
+
+The Marquette Law School Poll combines ABS and stratified random sampling. The ABS covers all residential addresses using USPS delivery sequences, ensuring broad geographic reach. To include hard-to-reach demographics, SSRS supplements ABS data with telephone survey responses. Stratified sampling by key demographics (age, gender, race, education, region, and political party) ensures representation across major groups [@citemarquette]. This probability-based sampling minimizes bias but requires significant resources. Stratification and weighting to represent specific populations add to survey complexity and cost.
+
+## How is non-response handled?
+
+To address non-response and improve representativeness, SSRS applies weighting adjustments based on demographic variables such as age, gender, race, education, region, and internet use [@citemarquette]. This process aligns sample characteristics with adult population parameters, reducing bias from demographic differences in response rates.
+
+## What is good and bad about the questionnaire?
+
+The questionnaire is well-designed, with a collaborative approach that reduces respondent burden and improves comprehension. A thoughtfully structured skip pattern enhances flow and minimizes dropout rates. The probability-based sampling, combined with extensive weighting and stratification, enables a representative sample of adults. However, heavy reliance on web-based responses may introduce internet bias, potentially underrepresenting non-internet households. Additionally, the questionnaire’s complexity may increase participant fatigue, affecting response completeness. The response rate of approximately 47.4% also indicates some level of attrition in the sample [@citemarquette].
+
 
 ## Idealized Methodology 
 
@@ -204,31 +253,6 @@ https://docs.google.com/forms/d/e/1FAIpQLSeHHeKaryNQ6sKgbuOH-ZgXwQYkNw9jBdxIbgeX
   - Joe Biden 
   - Donald Trump 
   - Other: 
-
-# Pollster Analysis
-
-The Marquette Law School Poll employs a rigorous methodology to survey adults in the US on national issues, incorporating probability-based sampling that combines Address-Based Sampling (ABS) and Stratified Random Sampling [@citemarquette]. This approach, including online and offline respondents, ensures broad representativeness. The SSRS Polling Panel supports participant recruitment, and weighting adjustments enhance result accuracy.
-
-## What is the population, frame, and sample?
-
-The population for the poll includes adults aged 18 and over across all 50 states and the District of Columbia. The sampling frame was constructed through ABS, leveraging the US Postal Service's Computerized Delivery Sequence (CDS), a comprehensive, regularly updated list of residential addresses. The primary source for participants is the SSRS Opinion Panel, which includes both ABS and telephone survey data to capture hard-to-reach demographics, like non-internet users. The survey ultimately included 1,005 adults, including registered and likely voters, with weighted samples to ensure proportional representation [@citemarquette].
-
-## How is the sample recruited?
-
-Participants were recruited via the SSRS Omnibus Panel, a probability panel formed from ABS and telephone survey data. This dual approach ensured that both internet and non-internet users were included, minimizing online-only bias. Stratified by demographics (age, gender, race, education, region, and partisan affiliation), this process produced a balanced representation across groups. Selected participants received an email invitation with a unique link to the survey. Non-responders received up to two reminder emails, and those who opted for text notifications also received reminders. Participants received an e-gift card incentive upon survey completion [@citemarquette].
-
-## What sampling approach is taken, and what are some of the trade-offs of this?
-
-The Marquette Law School Poll combines ABS and stratified random sampling. The ABS covers all residential addresses using USPS delivery sequences, ensuring broad geographic reach. To include hard-to-reach demographics, SSRS supplements ABS data with telephone survey responses. Stratified sampling by key demographics (age, gender, race, education, region, and political party) ensures representation across major groups [@citemarquette]. This probability-based sampling minimizes bias but requires significant resources. Stratification and weighting to represent specific populations add to survey complexity and cost.
-
-## How is non-response handled?
-
-To address non-response and improve representativeness, SSRS applies weighting adjustments based on demographic variables such as age, gender, race, education, region, and internet use [@citemarquette]. This process aligns sample characteristics with adult population parameters, reducing bias from demographic differences in response rates.
-
-## What is good and bad about the questionnaire?
-
-The questionnaire is well-designed, with a collaborative approach that reduces respondent burden and improves comprehension. A thoughtfully structured skip pattern enhances flow and minimizes dropout rates. The probability-based sampling, combined with extensive weighting and stratification, enables a representative sample of adults. However, heavy reliance on web-based responses may introduce internet bias, potentially underrepresenting non-internet households. Additionally, the questionnaire’s complexity may increase participant fatigue, affecting response completeness. The response rate of approximately 47.4% also indicates some level of attrition in the sample [@citemarquette].
-
 
 
 
