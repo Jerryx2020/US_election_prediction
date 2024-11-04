@@ -31,6 +31,8 @@ library(knitr)
 library(flextable)
 ```
 
+# Load the cleaned dataset for use in this section
+analysis_data <- read_csv("data/02-analysis_data/analysis_data.csv")
 
 # Introduction
 
@@ -45,11 +47,99 @@ Why it matters paragraph
 Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data....
 
 
+
 # Data {#sec-data}
 
-## Overview
+## 2. Data Overview
 
-The dataset used for this analysis was sourced from FiveThirtyEight’s poll aggregation platform, which compiles high-quality polling data from various reputable pollsters across the U.S. (@fivethirtyeight). This analysis uses the statistical programming language R (@R) and various libraries for data manipulation and visualization, including tidyverse for efficient data wrangling and ggplot2 for creating insightful visualizations (@tidyverse, @ggplot2). By employing robust statistical methods and tools, this analysis seeks to forecast potential outcomes of the 2024 U.S. Presidential Election. 
+### 2.1 Scope and Relevance of the Dataset
+The dataset used in this analysis is sourced from the FiveThirtyEight poll aggregation for the 2024 U.S. presidential election [@fivethirtyeight]. It focuses on polling data collected at both the national and state levels, with an emphasis on the two main presidential candidates: Kamala Harris and Donald Trump. The dataset's relevance is tied to its ability to capture voter sentiment during a highly dynamic election period, specifically from July 2024 onwards. The aim of leveraging this dataset is to develop a robust model that forecasts the election outcome by integrating trends from both the popular vote and electoral college perspectives. By concentrating on data from the official campaign period, we ensure that the dataset reflects the most current and meaningful voter preferences.
+
+### 2.2 Characteristics of the Dataset
+The dataset contains a variety of features that provide a nuanced understanding of voter sentiment across different demographics and regions. Key variables include candidate name, pollster, sample size, poll end date, state (or national), and percentage support for each candidate. With approximately 3,667 observations from multiple polling organizations, the dataset is both diverse and representative, allowing for an analysis that incorporates various polling methodologies. This diversity enhances the robustness of the forecasting model, as discussed in Section 4, where the modeling approach is detailed. Including data from multiple pollsters also allows us to account for biases that may arise from differing methodologies, thereby making the model results more reliable.
+
+### 2.3 Data Collection Methodology
+
+#### 2.3.1 Polling Organizations and Methodologies
+The polling data is aggregated from numerous organizations, each employing distinct methodologies to gather voter preferences. These pollsters are assigned numeric grades by FiveThirtyEight based on their reliability, transparency, and historical performance. By selecting only high-quality polling data, we aim to enhance the predictive power of our election model. The inclusion of a variety of polling methodologies is crucial, as it allows us to capture the nuances in voter sentiment across different regions and demographic groups, as elaborated in Section 5.2.
+
+#### 2.3.2 Ensuring Data Quality
+To ensure data quality, a filtering process was applied to remove polls conducted by organizations with low numeric grades. Specifically, only pollsters with a numeric grade of 1 or higher were included. This threshold helps to minimize biases and inaccuracies in the data, thereby enhancing the robustness of the subsequent analysis. Additionally, pollsters with fewer than five polls were excluded to avoid unreliable estimates, ensuring that only consistent and representative polling data are used.
+
+### 2.4 Data Cleaning Process
+
+#### 2.4.1 Initial Data Cleaning and Transformations
+The raw data was subjected to multiple cleaning steps to prepare it for analysis. First, duplicate entries were removed, and column names were standardized for consistency. Key variables, such as candidate name, pollster, sample size, and poll end date, were retained, while irrelevant or redundant information was discarded. Additionally, the state variable was adjusted to aggregate specific districts—such as Nebraska CD-2 and Maine CD-1—into their respective states to facilitate streamlined geographic analysis. This transformation is essential for creating a consistent dataset that aligns with the electoral college framework discussed in Section 6.
+
+```{r}
+# Visualization: Distribution of Sample Sizes
+library(ggplot2)
+ggplot(analysis_data, aes(x = sample_size)) +
+  geom_histogram(binwidth = 100, fill = "skyblue", color = "black") +
+  labs(title = "Distribution of Sample Sizes in Polls", 
+       x = "Sample Size", 
+       y = "Frequency") +
+  theme_minimal()
+```
+
+This histogram (Figure 2.1) illustrates the distribution of sample sizes across all polls, highlighting the variability in poll sizes. Larger sample sizes are generally associated with more reliable polls, which is critical for making robust predictions.
+
+#### 2.4.2 Addressing Missing Data
+Handling missing data was a critical step to ensure dataset completeness. Missing values were primarily found in the state column, which were replaced with "National" to denote national-level polls. Rows with missing information in key variables (e.g., candidate name or sample size) were removed. This approach ensured that the dataset was both complete and reliable for further analysis, as incomplete data could introduce biases into the model.
+
+### 2.5 Key Variables and Derived Features
+
+#### 2.5.1 Description of Key Variables
+The key variables retained for analysis include:
+- **Candidate Name**: Indicates the candidate (either Kamala Harris or Donald Trump) for whom polling data is reported.
+- **Pollster**: The organization conducting the poll, which is used to assess the quality and reliability of the poll.
+- **Sample Size**: Represents the number of respondents surveyed in each poll, which impacts the poll's margin of error.
+- **End Date**: The date when polling ended, used to calculate recency and weigh polls accordingly.
+- **State**: Specifies whether the poll is conducted at the state level or is national in scope.
+- **Percentage Support (pct)**: The percentage of respondents supporting each candidate, which serves as the primary measure of voter preference.
+
+```{r}
+# Visualization: Candidate Support by State
+filtered_data <- analysis_data %>% filter(state != "National")
+ggplot(filtered_data, aes(x = state, y = pct, fill = candidate_name)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Candidate Support by State", 
+       x = "State", 
+       y = "Percentage Support") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), 
+        legend.position = "top")
+```
+
+Figure 2.2 displays the percentage support for each candidate across different states. This visualization helps identify regional strengths and weaknesses for both candidates, providing a more granular view of voter sentiment.
+
+#### 2.5.2 Variable Transformations and Feature Engineering
+Several transformations were applied to prepare the data for modeling. Dates were standardized using the `lubridate` package to ensure uniformity across observations. Geographic transformations were also performed by aggregating specific state districts to their respective states, which simplified the geographic analysis and aligned with the electoral college modeling approach. Additionally, a new feature called **Recency** was engineered, representing the number of days since the most recent poll. This feature allows the model to weigh more recent polls more heavily, as explained in Section 4.3.
+
+### 2.6 Filtering Criteria and Data Selection
+
+#### 2.6.1 Timeframe Filtering
+To maintain the dataset's relevance to the current election cycle, polling data collected before July 21, 2024 (the official declaration of Kamala Harris's candidacy), was excluded. This filtering step was crucial for ensuring that the dataset reflects voter sentiment during the official campaign period. By focusing on this timeframe, the analysis becomes more representative of the dynamics that are most likely to influence the election outcome.
+
+#### 2.6.2 Pollster Reliability Filtering
+As previously mentioned in Section 2.3.2, only pollsters with a numeric grade of 1 or higher were included. This criterion was set to enhance the reliability of the dataset and to focus on data sources that have historically shown accuracy in predicting election outcomes. Furthermore, pollsters with fewer than five conducted polls were excluded to avoid potential biases from underrepresented data sources.
+
+### 2.7 Recency and Its Importance in Poll Weighting
+
+#### 2.7.1 Calculating Recency
+Recency was calculated as the number of days between the reference date (the most recent poll in the dataset) and the poll end date. This calculation was used to create a recency weight for each poll, with more recent polls receiving higher weights. This weighting mechanism is essential for accurately forecasting voter preferences, as it allows the model to place greater emphasis on current data.
+
+#### 2.7.2 Application of Recency Weights
+The recency weights were applied during the modeling process to account for the evolving nature of voter sentiment. By incorporating recency, the model becomes more adaptive to recent changes in voter preferences, which is particularly important given the rapidly changing political landscape. The use of recency weighting is further discussed in Section 4.4, where we elaborate on the modeling approach and its implications for forecast accuracy.
+
+### 2.8 Summary and Visualization of Cleaned Data
+
+#### 2.8.1 Cleaned Dataset Overview
+The final cleaned dataset contains approximately 3,000 observations, each representing a unique poll. The dataset includes details such as sample sizes, pollster information, candidate support percentages, and geographic coverage. This refined dataset serves as a robust foundation for the subsequent modeling and analysis steps, as described in Section 4.
+
+#### 2.8.2 Data Visualization
+To gain insights into the distribution of key variables, visualizations such as histograms and bar charts were created. For instance, a histogram of **Sample Size** helps illustrate the variability in poll sizes, while bar charts displaying **Percentage Support** for each candidate across different states provide a clearer understanding of regional dynamics. These visualizations are included in the exploratory data analysis (Section 3) to help identify underlying trends and patterns in the dataset. The visualizations were created using `ggplot2` [@ggplot2], ensuring that they are both informative and visually appealing, similar to the standards set by
+
+
 
 Overview text
 

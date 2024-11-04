@@ -6,7 +6,7 @@
 # License: None
 # Pre-requisites: 
 # - Ensure the necessary packages ('tidyverse', 'broom', 'modelsummary') are installed for data manipulation and model analysis.
-# - The cleaned data must be available in 'data/02-analysis_data/analysis_data.csv'.
+# - The cleaned data must be available in 'data/02-analysis_data/analysis_data.parquet'.
 
 #### Workspace setup ####
 library(tidyverse)
@@ -15,7 +15,7 @@ library(modelsummary)
 
 #### Read data ####
 # Load cleaned dataset for Kamala Harris's polling performance
-analysis_data <- read_csv("data/02-analysis_data/analysis_data.csv")
+analysis_data <- read_parquet("data/02-analysis_data/analysis_data.parquet")
 
 # Filter data for Kamala Harris
 just_harris_high_quality <- analysis_data %>%

@@ -5,14 +5,15 @@
 # Contact: 
 # License: None
 # Pre-requisites: 
-# - Ensure the 'tidyverse' package is installed for data manipulation and modeling.
-# - The cleaned data must be available in 'data/02-analysis_data/analysis_data.csv'.
+# - Ensure the 'tidyverse' and 'arrow' packages are installed for data manipulation and modeling.
+# - The cleaned data must be available in 'data/02-analysis_data/analysis_data.parquet'.
 
 #### Workspace setup ####
 library(tidyverse)
+library(arrow)
 
 #### Read data ####
-analysis_data <- read_csv("data/02-analysis_data/analysis_data.csv")
+analysis_data <- read_parquet("data/02-analysis_data/analysis_data.parquet")
 
 #### Model data ####
 # Fit a model to predict support for the candidates using polling data

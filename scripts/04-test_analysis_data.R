@@ -6,14 +6,14 @@
 # License: None
 # Pre-requisites: 
 # - Ensure the 'tidyverse' and 'testthat' packages are installed for data manipulation and testing.
-# - The cleaned data must be available in 'data/02-analysis_data/analysis_data.csv'.
+# - The cleaned data must be available in 'data/02-analysis_data/analysis_data.parquet'.
 
 #### Workspace setup ####
 library(tidyverse)
 library(testthat)
 
 # Load the cleaned data
-analysis_data <- read_csv("data/02-analysis_data/analysis_data.csv")
+analysis_data <- read_parquet("data/02-analysis_data/analysis_data.parquet")
 
 #### Test data ####
 
