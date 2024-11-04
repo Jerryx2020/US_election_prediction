@@ -186,17 +186,17 @@ This analysis employs predictive models to estimate the anticipated support for 
 The multiple linear regression model is designed to predict the candidate's percentage of support (pct) as a linear function of various predictors. Formally, we define the model as:
 
 \begin{align*}
-\text{pct}_i &= \beta_0 + \beta_1 \cdot \text{pollster}_i + \beta_2 \cdot \text{sample\_size}_i + \sum_{k=1}^{K} \delta_k \cdot \text{state}_{ik} + \beta_4 \cdot \text{end\_date}_i + \beta_5 \cdot \text{candidate}_i + \epsilon_i,
+\text{pct}_i &= \beta_0 + \beta_1 \cdot \text{sample\_size}_i + \sum_{k=1}^{K} \delta_k \cdot \text{state}_{ik} + \beta_2 \cdot \text{end\_date}_i + \epsilon_i,
 \end{align*}
 
 Where 
 
-- $\beta_0$ is the expected value of PCT when all predictor variables are zero, intercept 
-- $\beta_1$ captures the effect pollsters have on the response variable 
-- $\beta_2$ captures the effect sample_size have on the response variable
-- $\delta_k$ captures the difference in PCT between states
-- $\beta_4$ captures the expected change in PCT for each additional unit increase in the end date variable 
-- $\beta_5$ captures the difference in PCT associated with difference candidates 
+- $pct_i$ is the the predicted percentage of support for Kamala Harris in each poll 
+- $\beta_0$ is the intercept or expected value of PCT when all predictor variables are zero
+- $\beta_1$ is the coefficient for sample size, showing the effect of the number of respondents in each poll on support
+- $\delta_k$ is the coefficients representing the effect of each state
+- $\beta_2$ is the coefficient for end_date, shoing how support changes over time
+- $\epsilon_i$ is the error term, accounting for unexplained variability in support
 
 
 ### Model justification
