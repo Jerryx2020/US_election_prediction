@@ -219,6 +219,8 @@ Participants were recruited via the SSRS Omnibus Panel, a probability panel form
 
 ## What sampling approach is taken, and what are some of the trade-offs of this?
 
+The Marquette Law School Poll combines ABS and stratified random sampling. The ABS covers all residential addresses using USPS delivery sequences, ensuring broad geographic reach. To include hard-to-reach demographics, SSRS supplements ABS data with telephone survey responses. Stratified sampling by key demographics (age, gender, race, education, region, and political party) ensures representation across major groups. This probability-based sampling minimizes bias but requires significant resources. Stratification and weighting to represent specific populations add to survey complexity and cost.
+
 ## How is non-response handled?
 
 ## What is good and bad about the questionnaire?
