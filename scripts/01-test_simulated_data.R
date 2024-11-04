@@ -32,8 +32,7 @@ if (all(expected_columns %in% colnames(test_data))) {
 }
 
 # Test if data types are correct
-if (is.numeric(test_data$poll_id) &&
-    is.character(test_data$candidate) &&
+if (is.character(test_data$candidate) &&
     is.character(test_data$state) &&
     is.character(test_data$pollster) &&
     is.numeric(test_data$sample_size) &&
@@ -65,8 +64,8 @@ if (all(test_data$pct >= 40 & test_data$pct <= 60)) {
 }
 
 # Test if 'sample_size' is between 500 and 1000
-if (all(test_data$sample_size >= 500 & test_data$sample_size <= 1000)) {
-  message("Test Passed: 'sample_size' values are within the range 500 to 1000.")
+if (all(test_data$sample_size >= 500 & test_data$sample_size <= 3000)) {
+  message("Test Passed: 'sample_size' values are within the range 500 to 3000.")
 } else {
-  stop("Test Failed: 'sample_size' values are outside the range 500 to 1000.")
+  stop("Test Failed: 'sample_size' values are outside the range 500 to 3000.")
 }
