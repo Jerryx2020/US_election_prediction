@@ -6,18 +6,13 @@
 # License: None
 # Pre-requisites: 
 # - Ensure the 'tidyverse' package is installed for data manipulation.
-# - The cleaned data must be available in 'data/02-analysis_data/analysis_data.csv'.
+# - The cleaned data must be available in 'data/02-analysis_data/analysis_data.parquet'.
 
 #### Workspace setup ####
 library(tidyverse)
 
-#### Create necessary directories ####
-if (!dir.exists("data/04-electoral_college_estimate")) {
-  dir.create("data/04-electoral_college_estimate", recursive = TRUE)
-}
-
 #### Read data ####
-analysis_data <- read_csv("data/02-analysis_data/analysis_data.csv")
+analysis_data <- read_parquet("data/02-analysis_data/analysis_data.parquet")
 
 #### Electoral College Estimate with Uncertainty ####
 # Assign electoral votes to each state

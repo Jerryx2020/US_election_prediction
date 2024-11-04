@@ -14,6 +14,7 @@
 library(tidyverse)
 library(janitor)
 library(lubridate)
+library(arrow)
 
 #### Read raw data ####
 raw_data <- read_csv("data/01-raw_data/president_polls.csv") |>
@@ -52,4 +53,4 @@ analysis_data <- analysis_data %>%
   ungroup()
 
 #### Save cleaned dataset ####
-write_csv(analysis_data, "data/02-analysis_data/analysis_data.csv")
+write_parquet(analysis_data, "data/02-analysis_data/analysis_data.parquet")
