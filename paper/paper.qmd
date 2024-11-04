@@ -158,7 +158,7 @@ To address non-response and improve representativeness, SSRS applies weighting a
 The questionnaire is well-designed, with a collaborative approach that reduces respondent burden and improves comprehension. A thoughtfully structured skip pattern enhances flow and minimizes dropout rates. The probability-based sampling, combined with extensive weighting and stratification, enables a representative sample of adults. However, heavy reliance on web-based responses may introduce internet bias, potentially underrepresenting non-internet households. Additionally, the questionnaire’s complexity may increase participant fatigue, affecting response completeness. The response rate of approximately 47.4% also indicates some level of attrition in the sample [@citemarquette].
 
 
-## Idealized Methodology 
+# Idealized Methodology 
 
 In designing a forecast for the upcoming US presidential election with a $100,000 budget, our methodology focuses on creating a representative survey that captures the voting intentions of likely voters across the United States. The objective is to gather reliable, high-quality data that supports a well-informed forecast through effective sampling, data validation, and aggregation techniques.
 
@@ -174,11 +174,14 @@ Ethically, our approach prioritizes respondent privacy and data security. We wil
 
 The survey will be implemented on Google Forms, with a link provided in the appendix. We also included the questions in the appendix for better understandings. 
 
-### Budget Allocation 
+## Budget Allocation 
 
-- 
+- Sampling and Data Collection (Advertisements and Recruitment Platforms): $40,000
+- Participant Incentives (Prize Pool): $20,000
+- Survey Design and Testing: $20,000
+- Data Analysis and Validation: $20,000
 
-## Idealized Survey 
+# Idealized Survey 
 
 The proposed survey is designed using Google Forms,
 https://forms.gle/Vhmm1b1XnqTSoBWq8
@@ -284,7 +287,6 @@ If you have any inquiries or need assistance with this survye, please contact us
 
 13. **Do you have any additional comments or concerns about the 2024 election?**
   - [Open Text Response]
-
 
 
 Thank you for taking the time to complete our survey. Your input is greatly appreciated and will contribute to our understanding of public opinion for the upcoming 2024 Presidential Election.
