@@ -73,7 +73,6 @@ To accurately predict the 2024 Presidential Election, we have identified several
 - Sample Size (sample_size): size of the respondents participating in the poll
 - State (state): the state of the poll was taken in 
 - End_date: the day the poll ended
-- Start_date: the day the poll started 
 
 
 # Model
@@ -197,7 +196,7 @@ https://forms.gle/Vhmm1b1XnqTSoBWq8
 
 ## Survey Copy 
 
-\includepdf[pages=-]{../other/Survey/Survey.pdf}
+\includepdf[pages=-]{../other/survey/survey.pdf}
 
 
 
