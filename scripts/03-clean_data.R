@@ -36,9 +36,9 @@ analysis_data <- raw_data %>%
   drop_na()
 
 # Filter observations to include only recent polling data (after Harris was declared)
-cutoff_date <- as.Date("2024-07-21")
-analysis_data <- analysis_data %>%
-  filter(end_date >= cutoff_date)
+# cutoff_date <- as.Date("2024-07-21")
+# analysis_data <- analysis_data %>%
+# filter(end_date >= cutoff_date)
 
 # Calculate poll recency to enhance depth of analysis
 reference_date <- max(analysis_data$end_date, na.rm = TRUE)
