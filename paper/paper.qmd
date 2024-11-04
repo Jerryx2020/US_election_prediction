@@ -29,10 +29,11 @@ library(ggplot2)
 library(janitor)
 library(knitr)
 library(flextable)
+library(arrow)
 ```
 
 # Load the cleaned dataset for use in this section
-analysis_data <- read_csv("data/02-analysis_data/analysis_data.csv")
+analysis_data <- read_parquet("data/02-analysis_data/analysis_data.parquet")
 
 # Introduction
 
@@ -71,15 +72,15 @@ To ensure data quality, a filtering process was applied to remove polls conducte
 #### 2.4.1 Initial Data Cleaning and Transformations
 The raw data was subjected to multiple cleaning steps to prepare it for analysis. First, duplicate entries were removed, and column names were standardized for consistency. Key variables, such as candidate name, pollster, sample size, and poll end date, were retained, while irrelevant or redundant information was discarded. Additionally, the state variable was adjusted to aggregate specific districts—such as Nebraska CD-2 and Maine CD-1—into their respective states to facilitate streamlined geographic analysis. This transformation is essential for creating a consistent dataset that aligns with the electoral college framework discussed in Section 6.
 
-```{r}
-# Visualization: Distribution of Sample Sizes
-library(ggplot2)
+```{r visualize-sample-size}
+# Ensure 'analysis_data' is already loaded at this point
 ggplot(analysis_data, aes(x = sample_size)) +
   geom_histogram(binwidth = 100, fill = "skyblue", color = "black") +
   labs(title = "Distribution of Sample Sizes in Polls", 
        x = "Sample Size", 
        y = "Frequency") +
   theme_minimal()
+
 ```
 
 This histogram (Figure 2.1) illustrates the distribution of sample sizes across all polls, highlighting the variability in poll sizes. Larger sample sizes are generally associated with more reliable polls, which is critical for making robust predictions.
