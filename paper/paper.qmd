@@ -205,7 +205,7 @@ In our study predicting the 2024 U.S. Presidential Election outcome, we focused 
 
 To figure out what might affect this support percentage, we looked at several factors. We considered who conducted the poll (the pollster) because different polling organizations might have different methods that can influence results. We also looked at the sample size, since polls with more people might be more accurate. Where the poll was conducted (which state) was important, too, because voter preferences can vary by location. We noted the date the poll ended, thinking that more recent polls might better reflect current opinions. Lastly, we identified which candidate the support percentage was for.
 
-By measuring these things, we aimed to see how each factor might influence voter support in the polls. This helped us build a model to predict how the election might turn out based on the polling data we collected.
+Polling data have been used for many years to predict which candidate will win the presidential race. The results are utilized by policymakers and corporations to refine and continue their strategies.
 
 
 ## Outcome variables
