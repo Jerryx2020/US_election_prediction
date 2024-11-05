@@ -6,7 +6,7 @@ author:
   - Jerry Xia 
   - Peter Fan
 thanks: "Code and data are available at: <https://github.com/Jerryx2020/US_election_prediction/tree/main>."
-date: today
+date: "November 4, 2024"
 date-format: long
 abstract: "This paper develops a forecast model for the 2024 U.S. Presidential Election, analyzing over 1,000 aggregated national and state-level polls. The model uses variables including candidate support percentages, pollster reliability, sample size, and geographic distribution, with recency weighting applied to enhance the relevance of current voter sentiment. Results show Donald Trump leading nationally with an average of 46.3% support. In battleground states, Trump is projected to edge out Harris by 3.5% in Arizona, while Harris narrows the gap to within 1% in Pennsylvania. Monte Carlo simulations estimate the distribution of Electoral College outcomes, factoring in polling uncertainty and state-level variations. The analysis indicates that sample size and state-specific factors significantly influence prediction accuracy, though non-response bias and polling methodology may limit forecast reliability."
 format: pdf
