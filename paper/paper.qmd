@@ -50,6 +50,8 @@ Our methodology involves developing a multiple linear regression model to predic
 
 ## Data Overview
 
+This study employs various R packages (@R) for data cleaning and analysis, including libraries from tidyverse (@tidyverse), ggplot2 (@ggplot2), rstanarm (@rstanarm), testthat (@Test), here (@Here), janitor (@janitor), lubridate (@lubridate), broom (@broom), dplyr (@dplyr), knitr (@knitr), and modelsummary (@ModelSummary). Lastly, the arrow was used to store data efficiently. 
+
 ### Scope and Relevance of the Dataset
 The dataset used in this analysis is sourced from the FiveThirtyEight poll aggregation for the 2024 U.S. presidential election [@fivethirtyeight]. It focuses on polling data collected at both the national and state levels, with an emphasis on the two main presidential candidates: Kamala Harris and Donald Trump. The dataset's relevance is tied to its ability to capture voter sentiment during a highly dynamic election period, specifically from July 2024 onwards. The aim of leveraging this dataset is to develop a robust model that forecasts the election outcome by integrating trends from both the popular vote and electoral college perspectives. By concentrating on data from the official campaign period, we ensure that the dataset reflects the most current and meaningful voter preferences.
 
