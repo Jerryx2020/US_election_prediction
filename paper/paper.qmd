@@ -1,6 +1,6 @@
 ---
-title: "Forecasting the 2024 U.S. Presidential Election: Polling Trends and Dynamics Based on National General Election Polls"
-subtitle: "Trump Consistently Leads in National Polls, with Harris Showing Sporadic Gains in Certain Polling Periods"
+title: "Forecasting the 2024 U.S. Presidential Election: Analyzing National Polling Trends, Sample Size Impact, and State-Level Variations"
+subtitle: "National Polls Indicate a 46.3% Average Support for Trump, with Sample Size and State Differences Showing Significant Influence in Arizona, California, and Colorado"
 author: 
   - Jason Yang
   - Jerry Xia 
@@ -8,7 +8,7 @@ author:
 thanks: "Code and data are available at: <https://github.com/Jerryx2020/US_election_prediction/tree/main>."
 date: today
 date-format: long
-abstract: "This paper presents a predictive analysis of the 2024 U.S. Presidential Election between Kamala Harris and Donald Trump, utilizing national and state-level polling data aggregated from FiveThirtyEight. We developed a multiple linear regression model incorporating variables such as candidate support percentages, pollster reliability, sample size, poll end dates, and geographic distribution, applying recency weighting to emphasize current voter sentiment. Monte Carlo simulations were conducted to estimate the distribution of possible Electoral College outcomes, accounting for state-level variations and uncertainties in polling data. Our findings indicate that Donald Trump consistently leads in national polls, though limitations like potential polling biases and non-response errors may affect forecast accuracy."
+abstract: "This paper develops a forecast model for the 2024 U.S. Presidential Election, analyzing over 1,000 aggregated national and state-level polls. The model uses variables including candidate support percentages, pollster reliability, sample size, and geographic distribution, with recency weighting applied to enhance the relevance of current voter sentiment. Results show Donald Trump leading nationally with an average of 46.3% support. In battleground states, Trump is projected to edge out Harris by 3.5% in Arizona, while Harris narrows the gap to within 1% in Pennsylvania. Monte Carlo simulations estimate the distribution of Electoral College outcomes, factoring in polling uncertainty and state-level variations. The analysis indicates that sample size and state-specific factors significantly influence prediction accuracy, though non-response bias and polling methodology may limit forecast reliability."
 format: pdf
 header-includes: 
   - \usepackage{pdfpages}
