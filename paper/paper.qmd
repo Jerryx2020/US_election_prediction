@@ -50,7 +50,7 @@ Our methodology involves developing a multiple linear regression model to predic
 
 ## Data Overview
 
-This study employs various R packages (@R) for data cleaning and analysis, including libraries from tidyverse (@tidyverse), ggplot2 (@ggplot2), rstanarm (@rstanarm), testthat (@Test), here (@Here), janitor (@janitor), lubridate (@lubridate), broom (@broom), dplyr (@dplyr), knitr (@knitr), and modelsummary (@ModelSummary). Lastly, the arrow was used to store data efficiently. 
+This study employs various R packages (@R) for data cleaning and analysis, including libraries from tidyverse (@tidyverse), ggplot2 (@ggplot2), rstanarm (@rstanarm), testthat (@Test), here (@Here), janitor (@janitor), lubridate (@lubridate), broom (@broom), dplyr (@dplyr), knitr (@knitr), and modelsummary (@ModelSummary). Lastly, arrow (@arrow) was used to store data efficiently. 
 
 ### Scope and Relevance of the Dataset
 The dataset used in this analysis is sourced from the FiveThirtyEight poll aggregation for the 2024 U.S. presidential election [@fivethirtyeight]. It focuses on polling data collected at both the national and state levels, with an emphasis on the two main presidential candidates: Kamala Harris and Donald Trump. The dataset's relevance is tied to its ability to capture voter sentiment during a highly dynamic election period, specifically from July 2024 onwards. The aim of leveraging this dataset is to develop a robust model that forecasts the election outcome by integrating trends from both the popular vote and electoral college perspectives. By concentrating on data from the official campaign period, we ensure that the dataset reflects the most current and meaningful voter preferences.
@@ -287,21 +287,26 @@ all_states <- state.name
 # Find the states present in the winners data
 states_in_winners <- unique(winners$state)
 
-# Find the missing states by comparing with the list of all states
+# Find the missing states
 missing_states <- setdiff(all_states, states_in_winners)
 
-# Create a data frame for the missing states with "Uncertainty" as the candidate
-missing_states_df <- data.frame(
-  state = missing_states,
-  candidate_name = "Uncertainty",
-  avg_support = NA,  # Since we don't have support data for missing states
-  sd_support = NA,
-  electoral_votes = NA,
-  abbr = state.abb[match(missing_states, state.name)] # Add state abbreviations
-)
-
-# Add the missing states to the winners dataset
-winners <- bind_rows(winners, missing_states_df)
+# Proceed only if there are missing states
+if (length(missing_states) > 0) {
+  # Create a data frame for the missing states with "Uncertainty" as the candidate
+  missing_states_df <- data.frame(
+    state = missing_states,
+    candidate_name = rep("Uncertainty", length(missing_states)),
+    avg_support = rep(NA, length(missing_states)),  # Since we don't have support data for missing states
+    sd_support = rep(NA, length(missing_states)),
+    electoral_votes = rep(NA, length(missing_states)),
+    abbr = state.abb[match(missing_states, state.name)]  # Add state abbreviations
+  )
+  
+  # Add the missing states to the winners dataset
+  winners <- bind_rows(winners, missing_states_df)
+} else {
+  message("No missing states found.")
+}
 
 # Change Nebraska's candidate to "Uncertainty" for all entries
 winners <- winners %>%
