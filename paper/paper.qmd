@@ -103,6 +103,7 @@ The key variables retained for analysis include:
 - **State**: Specifies whether the poll is conducted at the state level or is national in scope.
 - **Percentage Support (pct)**: The percentage of respondents supporting each candidate, which serves as the primary measure of voter preference.
 
+
 ```{r}
 #| warning: false
 #| message: false
@@ -111,70 +112,61 @@ The key variables retained for analysis include:
 filtered_data <- analysis_data %>% filter(state != "National")
 ggplot(filtered_data, aes(x = state, y = pct, fill = candidate_name)) +
   geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Candidate Support by State", 
+  labs(title = "Figure 1: Candidate Support by State", 
        x = "State", 
        y = "Percentage Support") +
   theme(axis.text.x = element_text(angle = 90, hjust = 1), 
         legend.position = "top")
 
-```
+# Candidate Name vs Percentage Support (pct)
+# Boxplot showing distribution of support for each candidate
+ggplot(analysis_data, aes(x = candidate_name, y = pct, fill = candidate_name)) +
+  geom_boxplot() +
+  labs(title = "Figure 2: Distribution of Support for Each Candidate", 
+       x = "Candidate", 
+       y = "Percentage Support") +
+  theme_minimal()
 
-Figure 2.2 displays the percentage support for each candidate across different states. This visualization helps identify regional strengths and weaknesses for both candidates, providing a more granular view of voter sentiment.
-```{r}
-#| warning: false
-#| message: false
-#| echo: false
+# Sample Size vs Percentage Support (pct)
+# Scatter plot with a trend line to see relationship between sample size and support
+ggplot(analysis_data, aes(x = sample_size, y = pct)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE, color = "blue") +
+  labs(title = "Figure 3: Sample Size vs Percentage Support", 
+       x = "Sample Size", 
+       y = "Percentage Support") +
+  theme_minimal()
+
+# End Date vs Percentage Support (pct)
+# Line plot showing change in support over time
+ggplot(analysis_data, aes(x = as.Date(end_date), y = pct, color = candidate_name)) +
+  geom_line() +
+  labs(title = "Figure 4: Polling End Date vs Percentage Support", 
+       x = "End Date", 
+       y = "Percentage Support") +
+  theme_minimal()
 
 
-if (!require(usmap)) install.packages("usmap")
-if (!require(ggplot2)) install.packages("ggplot2")
-if (!require(dplyr)) install.packages("dplyr")
-if (!require(readr)) install.packages("readr")
-state_support_stats <- read_parquet(here("data/04-electoral_college_estimate/states_support.parquet"))
-winners <- state_support_stats %>%
-  group_by(state) %>%
-  filter(avg_support == max(avg_support)) %>%
-  ungroup()
-
-# Convert state names to abbreviations (required by usmap)
-winners$abbr <- state.abb[match(winners$state, state.name)]
-
-all_states <- state.name
-
-# Find the states present in the winners data
-states_in_winners <- unique(winners$state)
-
-# Find the missing states by comparing with the list of all states
-missing_states <- setdiff(all_states, states_in_winners)
-
-# Create a data frame for the missing states with "Uncertainty" as the candidate
-missing_states_df <- data.frame(
-  state = missing_states,
-  candidate_name = "Uncertainty",
-  avg_support = NA,  # Since we don't have support data for missing states
-  sd_support = NA,
-  electoral_votes = NA,
-  abbr = state.abb[match(missing_states, state.name)] # Add state abbreviations
-)
-
-# Add the missing states to the winners dataset
-winners <- bind_rows(winners, missing_states_df)
-
-# Change Nebraska's candidate to "Uncertainty" for all entries
-winners <- winners %>%
-  mutate(candidate_name = ifelse(state == "Nebraska", "Uncertainty", candidate_name))
-
-# Remove duplicate entries for Nebraska, keeping only one
-winners <- winners %>%
-  distinct(state, .keep_all = TRUE)
-
-plot_usmap(data = winners, values = "candidate_name", regions = "states") +
-  scale_fill_manual(values = c("Donald Trump" = "red", "Kamala Harris" = "blue", "Uncertainty" = "grey")) +
-  labs(title = "2024 U.S. Presidential Election: State Winners",
-       fill = "Candidate") +
-  theme(legend.position = "right")
+# Percentage Support (pct) Distribution
+# Histogram showing the distribution of pct
+ggplot(analysis_data, aes(x = pct, fill = candidate_name)) +
+  geom_histogram(binwidth = 5, alpha = 0.7, position = "identity") +
+  labs(title = "Figure 5: Distribution of Percentage Support", 
+       x = "Percentage Support", 
+       y = "Frequency") +
+  theme_minimal()
 
 ```
+
+Figure 1 displays the percentage support for each candidate across different states. This visualization helps identify regional strengths and weaknesses for both candidates, providing a more granular view of voter sentiment.
+
+Figure 2 displays a boxplot of distribution of support for Donald Trump and Kamala Harris, which is similar, with both candidates having median support around 50% and a comparable range, though there are outliers indicating some extreme opinions. Therefore, we can conclude that the 2024 U.S. presidential election will be quite close. 
+
+Figure 3 display a scatter plot that shows the relationship between sample size and percentage support, with a trend line indicating a slight negative slope. As sample size increases, the percentage support tends to decrease slightly, suggesting that larger sample sizes may slightly reduce support percentages, though the overall effect is minimal.
+
+Figure 4 displays a line plot that shows the percentage support trends for Donald Trump and Kamala Harris over time. Trump's support fluctuates more widely with a slight downward trend, while Harris’s support shows an upward trend, particularly toward the end of the time frame, when Joe Biden dropped the race. This suggests increasing support for Harris over time, as compared to a more variable and slightly declining trend for Trump.
+
+Figure 5 displays a histogram that shows the distribution of percentage support for Donald Trump and Kamala Harris. Trump’s support tends to cluster around the 45-50% range, while Harris’s support is more spread but peaks around the 40-45% range. Both candidates have a similar central range of support, but from our simulated data set, Trump has a higher frequency of support values in the upper part of the range.
 
 
 #### Variable Transformations and Feature Engineering
@@ -209,8 +201,11 @@ Overview text
 
 ## Measurement
 
+In our study predicting the 2024 U.S. Presidential Election outcome, we focused on understanding what influences the percentage of support each candidate gets in the polls. The main thing we measured was the candidate support percentage—that's just the percentage of people in each poll who said they support either Kamala Harris or Donald Trump.
 
+To figure out what might affect this support percentage, we looked at several factors. We considered who conducted the poll (the pollster) because different polling organizations might have different methods that can influence results. We also looked at the sample size, since polls with more people might be more accurate. Where the poll was conducted (which state) was important, too, because voter preferences can vary by location. We noted the date the poll ended, thinking that more recent polls might better reflect current opinions. Lastly, we identified which candidate the support percentage was for.
 
+By measuring these things, we aimed to see how each factor might influence voter support in the polls. This helped us build a model to predict how the election might turn out based on the polling data we collected.
 
 
 ## Outcome variables
@@ -268,6 +263,68 @@ Linear regression was chosen for this analysis due to several key advantages. Fi
 In the Residuals vs. Fitted, there is no clear curved pattern, which suggests that the linear relationship might be appropriate. However, there are some clusters and a slight spread, which may indicate minor issues in capturing the relationship fully. Secondly, in the qqnorm plot, the points closely follow the diagonal line, indicating that residuals are approximately normal. This supports the normality assumption of the residuals, which is essential for reliable inference in linear regression. 
 
 ## Results 
+```{r}
+#| warning: false
+#| message: false
+#| echo: false
+
+
+if (!require(usmap)) install.packages("usmap")
+if (!require(ggplot2)) install.packages("ggplot2")
+if (!require(dplyr)) install.packages("dplyr")
+if (!require(readr)) install.packages("readr")
+state_support_stats <- read_parquet(here("data/04-electoral_college_estimate/states_support.parquet"))
+winners <- state_support_stats %>%
+  group_by(state) %>%
+  filter(avg_support == max(avg_support)) %>%
+  ungroup()
+
+# Convert state names to abbreviations (required by usmap)
+winners$abbr <- state.abb[match(winners$state, state.name)]
+
+all_states <- state.name
+
+# Find the states present in the winners data
+states_in_winners <- unique(winners$state)
+
+# Find the missing states by comparing with the list of all states
+missing_states <- setdiff(all_states, states_in_winners)
+
+# Create a data frame for the missing states with "Uncertainty" as the candidate
+missing_states_df <- data.frame(
+  state = missing_states,
+  candidate_name = "Uncertainty",
+  avg_support = NA,  # Since we don't have support data for missing states
+  sd_support = NA,
+  electoral_votes = NA,
+  abbr = state.abb[match(missing_states, state.name)] # Add state abbreviations
+)
+
+# Add the missing states to the winners dataset
+winners <- bind_rows(winners, missing_states_df)
+
+# Change Nebraska's candidate to "Uncertainty" for all entries
+winners <- winners %>%
+  mutate(candidate_name = ifelse(state == "Nebraska", "Uncertainty", candidate_name))
+
+# Remove duplicate entries for Nebraska, keeping only one
+winners <- winners %>%
+  distinct(state, .keep_all = TRUE)
+
+plot_usmap(data = winners, values = "candidate_name", regions = "states") +
+  scale_fill_manual(values = c("Donald Trump" = "red", "Kamala Harris" = "blue", "Uncertainty" = "grey")) +
+  labs(title = "2024 U.S. Presidential Election: State Winners",
+       fill = "Candidate") +
+  theme(legend.position = "right")
+
+```
+
+This map shows the predicted winners by state in the 2024 U.S. Presidential Election between Kamala Harris and Donald Trump based on polling data.
+
+- Red States: These states are predicted to lean toward Donald Trump. His support is concentrated in parts of the South, Midwest, and Mountain West regions, where he has historically performed well and appears to maintain a strong base of support.
+- Blue States: These states are predicted to lean toward Kamala Harris. Her support is more concentrated in coastal regions like the West Coast and the Northeast, where more progressive policies and diverse populations tend to favor Democratic candidates.
+- Gray States (Uncertainty): These states have uncertain outcomes, meaning that the polls do not show a clear leader. These could be considered potential swing states, where voter preferences may shift or are closely contested. These states will likely be highly targeted by both campaigns due to their potential to swing the overall election result.
+
 
 # Discussion
 
