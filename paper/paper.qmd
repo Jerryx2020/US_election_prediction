@@ -39,11 +39,11 @@ analysis_data <- read_parquet(here("data/02-analysis_data/analysis_data.parquet"
 
 # Introduction
 
-The 2024 U.S. Presidential Election stands as a pivotal moment in American politics, with widespread implications for both domestic policy and international relations. Accurately forecasting the election outcome is crucial for stakeholders ranging from policymakers to the general public. This study leverages national and state-level polling data to analyze voter sentiment toward the two main presidential candidates, Kamala Harris and Donald Trump. By focusing on polling trends since July 2024, we aim to provide an up-to-date assessment that reflects the most recent shifts in the political landscape.
+The 2024 U.S. Presidential Election stands as a important moment in American politics, with widespread implications for both domestic policy and international relations. Accurately forecasting the election outcome is crucial for stakeholders ranging from policymakers to the general public. This study leverages national and state-level polling data to analyze voter sentiment toward the two main presidential candidates, Kamala Harris and Donald Trump. By focusing on polling trends since July 2024, we aim to provide an up-to-date assessment that reflects the most recent shifts in the political landscape.
 
-To conduct our analysis, we utilize the statistical programming language R (@R), along with a suite of specialized packages that enhance data manipulation and visualization. Key libraries include the tidyverse collection (@tidyverse), which offers a cohesive set of tools for data science tasks; janitor (@janitor), which simplifies data cleaning processes; and ggplot2 (@ggplot2), renowned for its advanced plotting capabilities. These tools enable us to efficiently manage complex datasets and generate insightful visualizations that elucidate polling trends across different regions and demographics.
+To conduct our analysis, we utilize the statistical programming language R (@R), along with packages that enhance data manipulation and visualization. Key libraries include the tidyverse collection (@tidyverse), which offers a set of tools for data science tasks; janitor (@janitor), which simplifies data cleaning processes; and ggplot2 (@ggplot2), for data visualization. These tools enable us to efficiently manage complex datasets and generate inferential visualizations that indicate polling trends across different regions and demographics.
 
-Our methodology involves developing a multiple linear regression model to predict candidate support percentages based on variables such as pollster reliability, sample size, poll end dates, and geographic distribution. Additionally, we implement Monte Carlo simulations to estimate the distribution of possible Electoral College outcomes, accounting for state-level variations and uncertainties inherent in polling data. By integrating these statistical techniques, we aim to provide a robust framework for election forecasting that contributes valuable insights into the dynamics of the 2024 electoral race.
+Our methodology involves developing a multiple linear regression model to predict candidate support percentages based on variables such as pollster reliability, sample size, poll end dates, and geographic distribution. Additionally, we implement Monte Carlo simulations to estimate the distribution of possible Electoral College outcomes, accounting for state-level variations and uncertainties inherent in polling data. By integrating these statistical techniques, we aim to provide a robust framework for election forecasting that contributes valuable insights into the 2024 electoral race.
 
 
 # Data {#sec-data}
@@ -232,25 +232,6 @@ To accurately predict the 2024 Presidential Election, we have identified several
 
 This analysis employs predictive models to estimate the anticipated support for the two major candidates in the 2024 U.S. Presidential Election: a multiple linear regression model. These models use high-quality polling data from reputable sources, with relevant predictors to provide insights into public opinion trends.
 
-## Prediction Model
-
-### Monte Carlo Simulation
-
-We used a Monte Carlo simulation to create a distribution of potential support levels for Kamala Harris. This simulation can explain the uncertainty in polling estimates.
-
-For each poll, we generated a simulated support level, denoted as $\hat{y}{i,j}$, by adding a random error term $\epsilon{i,j}$ to the model’s predicted support $\hat{y}i$. The error term, $\epsilon{i,j}$, is the sampling variability which is drawn from a normal distribution $N(0, \sigma^2)$:
-
-$$
-\hat{y}_{i,j} = \hat{y}_i + \epsilon_{i,j}
-$$
-
-In each simulation $j$, we calculated the average support level for Harris, $\bar{y}_j$, by aggregating the simulated support values across all polls:
-
-$$
-\bar{y}_j = \frac{1}{n} \sum_{i=1}^n \hat{y}_{i,j}
-$$
-
-Repeating the process 1,000 times will produce a distribution of $\bar{y}_j$ values that captures the range of plausible support levels. This distribution enables us to estimate the likelihood of various support thresholds for Harris, taking into account the inherent uncertainty in polling data.
 
 ## Model set-up
 
@@ -290,15 +271,20 @@ In the Residuals vs. Fitted, there is no clear curved pattern, which suggests th
 
 ## Purpose 
 
-This paper analyzes and predicts the 2024 U.S. presidential election by fitting a regression model based on polling data downloaded from FiveThirtyEight (@fivethirtyeight). Our analysis focuses on the leading candidates, examining key variables such as the pollster, the date the poll was conducted, sample size, and the percentage of respondents supporting each candidate. 
+In this study, we conducted a comprehensive analysis to forecast the outcome of the 2024 U.S. Presidential Election between Kamala Harris and Donald Trump. Utilizing national and state-level polling data aggregated from FiveThirtyEight [@fivethirtyeight], we aimed to capture the most recent shifts in voter sentiment since July 2024. Our methodology involved developing a multiple linear regression model that incorporated critical variables such as candidate support percentages, pollster reliability (as graded by FiveThirtyEight), sample size, poll end dates, and geographic distribution across states.
 
-Additionally, this analysis aimed to estimate the 2024 U.S. presidential election electoral college outcome by propagating uncertainty through polling data. Using Monte Carlo simulations, we captured the variability in candidate support across states and produced a distribution of possible electoral outcomes. This integration enabled us to estimate electoral votes for each candidate by state, taking into account each state's unique polling landscape. 
+To enhance the predictive accuracy of our model, we applied recency weighting, emphasizing more recent polls to reflect current voter preferences more accurately. Recognizing that voter sentiment can change rapidly, especially in the months leading up to an election, this approach allowed us to give greater importance to the most current data. Additionally, we implemented Monte Carlo simulations to estimate the distribution of possible Electoral College outcomes. By accounting for state-level variations and uncertainties inherent in polling data, these simulations provided a probabilistic forecast rather than a deterministic one, offering a more nuanced understanding of potential election scenarios.
 
-## Limitations 
+Our analysis not only focused on national trends but also delved into state trends, acknowledging the critical role of the Electoral College in determining the election outcome. 
 
-While Monte Carlo simulations provide a robust framework for propagating uncertainty, the reliability of our estimates is reliant upon the accuracy and representatives of polling data. 
+## Limitation
 
-As our estimates are contingent upon the accuracy and representativeness of polling data, we cannot guarantee absolute precision in our projections. Nate Silver (2024) highlights a particular challenge in polling known as "herding," where polling organizations may unintentionally align their results to avoid being statistical outliers (@NYMagHerding2024).This alignment can distort the true range of our estimates. Since our projections suggest that Trump would win, it’s important to address the role of standard deviations in our estimates and consider the possibility that Harris’s support may be underestimated, similar to how Trump’s support was in 2020 (@FTArticle2024). The idea of Harris being underestimated, much like Trump was in 2020, hinges on the possibility that polling errors or biases could be systematically missing certain groups of voters who support her. In 2020, Trump’s support was underestimated in some key swing states due to factors such as nonresponse bias, where Trump-leaning voters were less likely to participate in polls, and demographic weighting errors. 
+Despite the robustness of our methodology, several limitations affect the generalizability and accuracy of our findings. A primary concern is the reliance on polling data, which is inherently subject to various biases and uncertainties. Polling errors can arise from sampling biases, non-response biases, and inaccuracies in weighting methodologies. For example, certain demographic groups may be underrepresented in polls due to lower participation rates, leading to skewed results. The phenomenon of "herding," where pollsters adjust their results to align with others to avoid being outliers [@NYMagHerding2024], can further distort the true range of voter sentiment
+
+Since our projections suggest that Trump would win, it’s important to address the role of standard deviations in our estimates and consider the possibility that Harris’s support may be underestimated, similar to how Trump’s support was in 2020 (@FTArticle2024). The idea of Harris being underestimated, much like Trump was in 2020, hinges on the possibility that polling errors or biases could be systematically missing certain groups of voters who support her. In 2020, Trump’s support was underestimated in some key swing states due to factors such as non response bias, where Trump-leaning voters were less likely to participate in polls, and demographic weighting errors. 
+
+
+
 
 
 
