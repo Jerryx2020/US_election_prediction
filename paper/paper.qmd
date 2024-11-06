@@ -229,6 +229,19 @@ To accurately predict the 2024 Presidential Election, we have identified several
 
 This analysis employs predictive models to estimate the anticipated support for the two major candidates in the 2024 U.S. Presidential Election: a multiple linear regression model. These models use high-quality polling data from reputable sources, with relevant predictors to provide insights into public opinion trends.
 
+## Prediction Model
+### Monte Carlo Simulation
+We used a Monte Carlo simulation to create a distribution of potential support levels for Kamala Harris. This simulation can explain the uncertainty in polling estimates.
+For each poll, we generated a simulated support level, denoted as $\hat{y}{i,j}$, by adding a random error term $\epsilon{i,j}$ to the model’s predicted support $\hat{y}i$. The error term, $\epsilon{i,j}$, is the sampling variability which is drawn from a normal distribution $N(0, \sigma^2)$:
+$$
+\hat{y}_{i,j} = \hat{y}_i + \epsilon_{i,j}
+$$
+In each simulation $j$, we calculated the average support level for Harris, $\bar{y}_j$, by aggregating the simulated support values across all polls:
+$$
+\bar{y}_j = \frac{1}{n} \sum_{i=1}^n \hat{y}_{i,j}
+$$
+Repeating the process 1,000 times will produce a distribution of $\bar{y}_j$ values that captures the range of plausible support levels. This distribution enables us to estimate the likelihood of various support thresholds for Harris, taking into account the inherent uncertainty in polling data.
+
 
 ## Model set-up
 
